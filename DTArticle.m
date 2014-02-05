@@ -11,43 +11,33 @@
 
 @implementation DTArticle
 
-- (id) initWithAttributes: (NSDictionary *) attributes {
+@dynamic contentId;
+@dynamic contentType;
+@dynamic countryCode;
+@dynamic date;
+@dynamic headline;
+@dynamic htmlBody;
+@dynamic imageBinary;
+@dynamic linkString;
+@dynamic thumbnailURL;
+@dynamic favourite;
+
+- (void) setAttributes: (NSDictionary *) attributes {
     
-    if(self = [super init]) {
-        
-        self.contentId = attributes[@"id"];
-        
-        if([attributes[@"type"] isEqualToString: @"news"]) {
-            
-            self.contentType = ContentTypeNews;
-        }
-        else if([attributes[@"type"] isEqualToString: @"event"]) {
-            
-            self.contentType = ContentTypeEvent;
-        }
-        else {
-            
-            self.contentType = ContentTypeNone;
-        }
-        
-        self.headline = attributes[@"headline"];
-        self.thumbnailURL = attributes[@"thumbnail"];
-        self.htmlBody = attributes[@"body"];
-        self.countryCode = attributes[@"country"];
-        self.linkString = attributes[@"link"];
-        
-        NSTimeInterval timeInterval = [attributes[@"date"] intValue];
-        
-        self.date = [NSDate dateWithTimeIntervalSince1970: timeInterval];
-        
-    }
+    self.contentId = attributes[@"id"];
+    self.contentType = attributes[@"type"];
+    self.headline = attributes[@"headline"];
+    self.thumbnailURL = attributes[@"thumbnail"];
+    self.htmlBody = attributes[@"body"];
+    self.countryCode = attributes[@"country"];
+    self.linkString = attributes[@"link"];
     
-    return self;
+    self.favourite = 0;
+    
+    NSTimeInterval timeInterval = [attributes[@"date"] intValue];
+    self.date = [NSDate dateWithTimeIntervalSince1970: timeInterval];
 }
 
-- (ContentType) articleType {
-    
-    return self.contentType;
-}
+
 
 @end

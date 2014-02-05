@@ -82,7 +82,7 @@
                                                   configuration: nil URL: storeUrl options: nil error: &error]) {
         /*Error for store creation should be handled in here*/
         
-        NSLog(@"No store created");
+        NSLog(@"No store created %@", error);
     }
     
     return _persistentStoreCoordinator;

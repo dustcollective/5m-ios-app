@@ -10,4 +10,44 @@
 
 @implementation DTMacros
 
+void loadImage(UIImageView *imageView, NSURL *imageURL, NSString *placeholderURLString) {
+    
+    imageView.image = nil;
+    
+    NSURLRequest *imageReq = [NSURLRequest requestWithURL: imageURL];
+    
+    __weak UIImageView *weakImageView = imageView;
+    [imageView setImageWithURLRequest: imageReq
+                     placeholderImage: [UIImage imageNamed: placeholderURLString]
+                              success: ^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                  
+                                  if(response == nil && request == nil) {
+                                      
+                                      weakImageView.image = image;
+                                  }
+                                  else {
+                                      
+                                      [UIView transitionWithView: weakImageView
+                                                        duration: 0.2f
+                                                         options: UIViewAnimationOptionTransitionCrossDissolve
+                                                      animations: ^{
+                                                          weakImageView.image = image;
+                                                      }
+                                                      completion: nil];
+                                  }
+                                  
+                              } failure: ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+                                  
+
+                              }];
+}
+
+
+NSString * documentPath() {
+    
+    NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    return [documentPath objectAtIndex: 0];
+}
+
 @end

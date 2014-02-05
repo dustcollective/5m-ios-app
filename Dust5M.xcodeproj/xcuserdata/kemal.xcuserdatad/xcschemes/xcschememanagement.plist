@@ -4,20 +4,100 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Dust5M.xcscheme</key>
+		<key>beef.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>cattle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>crop.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>dairy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>elsitio.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>fish.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>meat.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>pig.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>poultry.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0A14AEDF18A13F32001EBC22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A14AF4A18A13F3D001EBC22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A14AFB518A13F45001EBC22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A14B02018A13F4D001EBC22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A14B08B18A13F54001EBC22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A14B0F618A13F5E001EBC22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0A37620218312558001C484E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>0A37622618312558001C484E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A9BCA4D18A13E4C00AC8F34</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A9BCAB818A13E5400AC8F34</key>
 		<dict>
 			<key>primary</key>
 			<true/>

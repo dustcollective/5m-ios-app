@@ -9,28 +9,19 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-typedef enum {
-    
-    ContentTypeNone,
-    ContentTypeNews,
-    ContentTypeEvent
-    
-} ContentType;
+@interface DTArticle : NSManagedObject
 
-@interface DTArticle : NSObject
-
-@property (nonatomic, retain) NSString * contentId;
+@property (nonatomic, retain) NSNumber * contentId;
+@property (nonatomic, retain) NSString * contentType;
 @property (nonatomic, retain) NSString * countryCode;
-@property (nonatomic, retain) NSString * thumbnailURL;
+@property (nonatomic, retain) NSDate * date;
 @property (nonatomic, retain) NSString * headline;
 @property (nonatomic, retain) NSString * htmlBody;
+@property (nonatomic, retain) NSData * imageBinary;
 @property (nonatomic, retain) NSString * linkString;
-@property (nonatomic, retain) NSDate * date;
-@property (nonatomic, assign) ContentType contentType;
-@property (nonatomic, assign) ContentType articleType;
+@property (nonatomic, retain) NSString * thumbnailURL;
+@property (nonatomic, retain) NSNumber * favourite;
 
-- (id) initWithAttributes: (NSDictionary *) attributes;
-
-- (ContentType) articleType;
+- (void) setAttributes: (NSDictionary *) attributes;
 
 @end

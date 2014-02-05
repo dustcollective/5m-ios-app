@@ -10,26 +10,24 @@
 
 #import "DTArticle.h"
 
-typedef enum {
-    
-    ArticleTypeInicio,
-    ArticleTypeEvent,
-    ArticleTypeNoticias
-    
-} ArticleType;
-
 @interface DTArticleModel : NSObject
 
 + (AFHTTPRequestOperation *) articleListWithBlock: (void (^)(DTArticleModel *articleModel, NSError *error))block;
 
-- (id) initWithAttributes: (NSDictionary *) attributes;
+- (void) setWithAttributes: (NSDictionary *) attributes;
 
-@property (nonatomic, strong) NSArray *newsContent;
-@property (nonatomic, strong) NSArray *eventContent;
-@property (nonatomic, strong) NSArray *favouriteContent;
+- (void) fetchContentForContentType:(NSString *) contentType withRegion: (NSString *) region;
+- (void) fetchFavouriteContentForContentType:(NSString *) contentType;
+
+@property (nonatomic, strong) NSArray *content;
+@property (nonatomic, strong) NSArray *adverts;
 
 @property (nonatomic, strong) NSArray *territories;
 
-@property (nonatomic, assign) ArticleType selectedArticleType;
+@property (nonatomic, strong) NSManagedObjectContext *managedContext;
+@property (nonatomic, strong) NSManagedObjectModel *managedModel;
+
+
+@property (nonatomic, strong) NSMutableArray *filteredContent;
 
 @end

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13A3017" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="FavouriteArticle" representedClassName="FavouriteArticle" syncable="YES">
-        <attribute name="contentId" attributeType="String" minValueString="1" indexed="YES" syncable="YES"/>
-        <attribute name="contentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    <entity name="DTArticle" representedClassName="DTArticle" syncable="YES">
+        <attribute name="contentId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="contentType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="favourite" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="htmlBody" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageBinary" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="linkString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="thumbnailURL" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <fetchRequest name="articleForIDFetch" entity="DTArticle" predicateString="contentId == $CONTENT_ID"/>
+    <fetchRequest name="contentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE" includePropertyValues="YES"/>
+    <fetchRequest name="favouriteContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE AND favourite == 1"/>
     <elements>
-        <element name="FavouriteArticle" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DTArticle" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

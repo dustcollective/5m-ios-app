@@ -14,7 +14,8 @@
 @interface DTSettingsViewController () {
     
     UIRefreshControl *_refreshControl;
-    NSArray *_territoriesModel;
+    
+    NSMutableDictionary *_territoryFileDict;
 }
 
 @end
@@ -26,10 +27,6 @@
     [super viewDidLoad];
 	    
     self.title = NSLocalizedString(@"SETTINGS_TITLE", @"Title of settings controller");
-    
-    _refreshControl = [[UIRefreshControl alloc] initWithFrame: CGRectZero];
-    [_refreshControl addTarget: self action: @selector(reload:) forControlEvents: UIControlEventValueChanged];
-    [self.tableView addSubview: _refreshControl];
 }
 
 
@@ -37,22 +34,39 @@
     
     [super viewDidAppear: animated];
 
-    if(!_territoriesModel) {
+    if(!_territoryFileDict) {
         
         [self reload: nil];
     }
 }
 
+
 - (void) reload: (id) sender {
     
-    [DTArticleModel articleListWithBlock: ^(DTArticleModel *articleModel, NSError *error) {
+    
+    NSString *territoryPath = [documentPath() stringByAppendingPathComponent: @"territories.plist"];
+ 
+    // Check if the database has already been created in the users filesystem
+    if (![[NSFileManager defaultManager] fileExistsAtPath: territoryPath]) {
         
-        _territoriesModel = articleModel.territories;
-        [self.tableView reloadData];
-        [_refreshControl endRefreshing];
-    }];
+        NSString *file = [[NSBundle mainBundle] pathForResource: @"territories.plist" ofType: nil];
+        
+        NSError *error = nil;
+        
+        [[NSFileManager defaultManager] copyItemAtPath: file toPath: territoryPath error: &error];
+    }
+    
+    _territoryFileDict = [NSMutableDictionary dictionaryWithContentsOfFile: territoryPath];
+    
+    
+    
+    [self.tableView reloadData];
+    [_refreshControl endRefreshing];
 }
 
+
+
+#pragma mark -
 #pragma mark - Table View
      
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
@@ -61,35 +75,47 @@
 }
 
 
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection: (NSInteger) section {
     
     if(section == 0) {
+        
         return 1;
     }
     else {
-        return _territoriesModel.count;
+        
+        NSArray *terArray = _territoryFileDict[@"territories"];
+        return terArray.count;
     }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    BOOL allEnabled = [_territoryFileDict[@"all"] boolValue];
+    
+    DTSettingsCell *cell = [tableView dequeueReusableCellWithIdentifier: @"territoryCell"];
+    
     if(indexPath.section == 0) {
         
-        DTSettingsCell *cell = [tableView dequeueReusableCellWithIdentifier: @"territoryCell"];
-        cell.countryLabel.text = @"All of them";
+        cell.countryLabel.text = @"All Enabled";
         
-        return cell;
+        ((UISwitch *)cell.accessoryView).on = allEnabled;
+        cell.accessoryView.tag = 999;
+        
     }
     else {
         
-        NSString *territoryName = _territoriesModel[indexPath.row];
+        NSArray *terArray = _territoryFileDict[@"territories"];
         
-        DTSettingsCell *cell = [tableView dequeueReusableCellWithIdentifier: @"territoryCell"];
+        NSString *territoryName = terArray[indexPath.row][@"name"];
+        bool selected = allEnabled ? NO : [terArray[indexPath.row][@"selected"] boolValue];
+        
         cell.countryLabel.text = [territoryName stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        
-        return cell;
+        ((UISwitch *)cell.accessoryView).on = selected;
+        cell.accessoryView.tag = indexPath.row;
+
     }
+    return cell;
+    
 }
 
 
@@ -98,5 +124,50 @@
     return 8.0f;
 }
 
+
+- (IBAction) switchPressed: (id) sender {
+    
+    NSLog(@"%@", sender);
+    
+    UISwitch *toggleSwitch = sender;
+    
+    BOOL newStatus = toggleSwitch.on;
+    
+    NSArray *terArray = _territoryFileDict[@"territories"];
+    
+    if(toggleSwitch.tag == 999) {
+        
+        _territoryFileDict[@"all"] = [NSNumber numberWithBool: newStatus];
+        
+        
+        if(newStatus) {
+            
+            for(NSMutableDictionary *territory in terArray) {
+                
+                territory[@"selected"] =  [NSNumber numberWithBool: NO];
+            }
+        }
+        
+        
+    }
+    else {
+        
+        NSMutableDictionary *territory = terArray[toggleSwitch.tag];
+        territory[@"selected"] =  [NSNumber numberWithBool: newStatus];
+        
+        _territoryFileDict[@"all"] = [NSNumber numberWithBool: NO];
+        
+        
+        
+        
+    }
+    
+    NSString *territoryPath = [documentPath() stringByAppendingPathComponent: @"territories.plist"];
+    
+    [_territoryFileDict writeToFile: territoryPath atomically: YES];
+    
+    [self.tableView reloadData];
+    
+}
 
 @end

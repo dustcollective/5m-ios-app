@@ -12,4 +12,8 @@
 
 @interface DTMacros : NSObject
 
+void loadImage(UIImageView *imageView, NSURL *imageURL, NSString *placeholderURLString);
+
+NSString * documentPath();
+
 @end

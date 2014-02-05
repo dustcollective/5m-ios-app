@@ -9,12 +9,15 @@
 #import "DTArticleModel.h"
 #import "DTArticleCell.h"
 
-@interface DTArticleListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface DTArticleListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) IBOutlet UISegmentedControl *segmentControl;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @property (nonatomic, strong) DTArticleModel *model;
+
+@property (nonatomic, strong) NSArray *filteredArticles;
 
 @end

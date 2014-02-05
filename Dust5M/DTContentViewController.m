@@ -9,11 +9,11 @@
 #import "DTContentViewController.h"
 #import "DTSafariActivity.h"
 #import "DTAppDelegate.h"
-#import "FavouriteArticle.h"
 
 @interface DTContentViewController ()
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
 
 @end
 
@@ -45,22 +45,12 @@
     
     DTAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     self.managedObjectContext = appDelegate.managedObjectContext;
+    self.managedObjectModel = appDelegate.managedObjectModel;
 }
 
 - (void) viewDidAppear: (BOOL) animated {
     
     [super viewDidAppear: animated];
-    
-    /*
-    NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask , YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: @"app.css"];
-    NSString *destinationPath = [documentsDirectory stringByAppendingPathComponent: @"app.css"];
-
-    NSError *error = nil;
-    
-    [[NSFileManager defaultManager] copyItemAtPath:sourcePath toPath: destinationPath error: &error];
-     */
     
     if(self.article) {
         
@@ -113,36 +103,16 @@
 
 - (void) favourite: (UIBarButtonItem *) button {
     
+    self.article.favourite = @1;
+    
+    NSError *error = nil;
+    [self.managedObjectContext save: &error];
     
     
-    NSError * error;
-    NSFetchRequest * checkExistance = [[NSFetchRequest alloc] init];
-    [checkExistance setEntity: [NSEntityDescription entityForName:@"FavouriteArticle" inManagedObjectContext:self.managedObjectContext]];
-    [checkExistance setFetchLimit:1];
-    [checkExistance setPredicate:[NSPredicate predicateWithFormat:@"contentId == %@", self.article.contentId]];
-    FavouriteArticle *checkedArticle = [[self.managedObjectContext executeFetchRequest:checkExistance error:&error] lastObject];
-    
-    
-    
-    
-    if(checkedArticle == nil) {
-        FavouriteArticle *favouriteArticle = [NSEntityDescription insertNewObjectForEntityForName: @"FavouriteArticle"
-                                                                           inManagedObjectContext: self.managedObjectContext];
-        
-        favouriteArticle.contentId = self.article.contentId;
-        favouriteArticle.contentType = [NSNumber numberWithInt: self.article.contentType];
-        favouriteArticle.countryCode = self.article.countryCode;
-        favouriteArticle.date = self.article.date;
-        favouriteArticle.headline = self.article.headline;
-        favouriteArticle.htmlBody = self.article.htmlBody;
-        favouriteArticle.linkString = self.article.linkString;
-        favouriteArticle.thumbnailURL = self.article.thumbnailURL;
-        
-        
-        if (![self.managedObjectContext save: &error]) {
-            NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
-        }
+    if(error) {
+        NSLog(@"Error setting favourite");
     }
+
     
 }
 

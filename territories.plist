@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>territories</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Norteamérica</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Latinoamérica</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Europa</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>África</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Asia - Central, Occidental</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Asia - Oriental (inc China)&quot;</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Asia - Sur (inc India)&quot;</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Asia - Sureste</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Oceanía, Pacífico</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Medio Oriente</string>
+			<key>selected</key>
+			<false/>
+		</dict>
+	</array>
+	<key>all</key>
+	<true/>
+</dict>
+</plist>
