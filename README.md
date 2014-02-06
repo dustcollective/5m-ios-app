@@ -3,5 +3,5 @@
 
 native Appliation for 5m Publishing.
 
-Contansbuild targets for 8 different applications.
+Contains build targets for 8 different applications.
 
