@@ -11,6 +11,9 @@
 
 @interface DTArticleListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
 
+@property (nonatomic, strong) IBOutlet UILabel *logoLabel;
+
+
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, strong) IBOutlet UISegmentedControl *segmentControl;

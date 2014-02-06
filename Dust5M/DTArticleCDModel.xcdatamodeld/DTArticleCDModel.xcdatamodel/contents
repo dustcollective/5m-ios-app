@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B3116" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DTArticle" representedClassName="DTArticle" syncable="YES">
+        <attribute name="contentId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="contentType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="favourite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="htmlBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageBinary" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="linkString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <fetchRequest name="articleForIDFetch" entity="DTArticle" predicateString="contentId == $CONTENT_ID" fetchLimit="60"/>
+    <fetchRequest name="contentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE" fetchLimit="60" includePropertyValues="YES"/>
+    <fetchRequest name="favouriteContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE AND favourite == 1" fetchLimit="60"/>
+    <elements>
+        <element name="DTArticle" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

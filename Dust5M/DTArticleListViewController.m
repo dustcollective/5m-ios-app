@@ -24,7 +24,11 @@
     
     [super viewDidLoad];
     
-    self.title = NSLocalizedString(@"MAIN_LIST_TITLE", @"List title for the main page");
+    
+    self.logoLabel.font = [UIFont fontWithName: @"BetonEF-Light" size: 52];
+    self.logoLabel.text = NSLocalizedString(@"Appname", @"Name of Application");
+    
+   
     
     UINib *nib = [UINib nibWithNibName: @"DTArticleCell" bundle: nil];
     [self.tableView registerNib: nib forCellReuseIdentifier: @"ArticleCell"];
@@ -38,6 +42,7 @@
     [self.tableView addSubview: self.refreshControl];
     
     
+    /*
     self.segmentControl = [[UISegmentedControl alloc] initWithItems: @[@"Inicio", @"Noticias", @"Eventos"]];
     
     [self.segmentControl addTarget: self
@@ -45,7 +50,7 @@
                   forControlEvents: UIControlEventValueChanged];
     
     self.segmentControl.backgroundColor = [UIColor whiteColor];
-    self.segmentControl.frame = CGRectMake(10, 10, 300, 30);
+    self.segmentControl.frame = CGRectMake(10, 10, 300, 30);*/
 }
 
 - (void) didReceiveMemoryWarning {
@@ -57,6 +62,8 @@
 - (void) viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear: animated];
+    
+    [self.navigationController setNavigationBarHidden: YES animated: YES];
     
     [self.tableView deselectRowAtIndexPath: self.tableView.indexPathForSelectedRow animated: YES];
 }
@@ -99,7 +106,7 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 80.0f;
+    return 75.0f;
 }
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
@@ -134,7 +141,7 @@
         
         return 0.0f;
     }
-    return 50.0f;
+    return 0.0f;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -150,7 +157,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSDateFormatter  *formatter = [[NSDateFormatter alloc] init] ;
-    [formatter setDateFormat:@"dd MMMM"];
+    [formatter setDateFormat:@"EEE, dd MMM YYYY"];
     
     if([self.model.content[indexPath.row] isKindOfClass: [NSNumber class]]) {
         
@@ -164,7 +171,7 @@
             adCell = [[DTAdvertCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:@"AdCell"];
         }
         [adCell.imageView setImageWithURL: [NSURL URLWithString: advert[@"inline"]]
-                         placeholderImage: [UIImage imageNamed: @"adplaceholder.png"]];
+                         placeholderImage: [UIImage imageNamed: @"AdPlaceholder"]];
         
         return adCell;
     }
@@ -180,15 +187,15 @@
     
     // use border rather than background color.  In selected state background colors are hidden by the system
     
-    cell.colorBarView.layer.borderWidth = 5.0f;
+    cell.colorBarView.layer.borderWidth = 2.0f;
     
     cell.descriptionLabel.text = article.headline;
     cell.dateLabel.text = [formatter stringFromDate: article.date];
     
     if([article.contentType isEqualToString: @"news"]) {
         
-        cell.colorBarView.layer.borderColor = RGB(93, 176, 226).CGColor;
-        
+        cell.colorBarView.layer.borderColor = RGB(0, 173, 239).CGColor;
+                
         loadImage(cell.thumbnailView, [NSURL URLWithString: article.thumbnailURL], @"defaultnews.png");
     }
     else if ([article.contentType isEqualToString: @"event" ]) {
@@ -197,10 +204,6 @@
         
         loadImage(cell.thumbnailView, [NSURL URLWithString: article.thumbnailURL], @"defaultevent.png");
     }
-    
-    NSString *flagLink = [NSString stringWithFormat:@"http://app.5mpublishing.com/feed/flag/mono/%@.png", article.countryCode.lowercaseString];
-    
-    [cell.flagView setImageWithURL: [NSURL URLWithString: flagLink] placeholderImage: [UIImage imageNamed: @"defaultnews.png"]];
     
     return cell;
 }

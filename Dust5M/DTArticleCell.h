@@ -12,7 +12,6 @@
 
 @property (nonatomic, strong) IBOutlet UIView *colorBarView;
 @property (nonatomic, strong) IBOutlet UIImageView *thumbnailView;
-@property (nonatomic, strong) IBOutlet UIImageView *flagView;
 @property (nonatomic, strong) IBOutlet UILabel *descriptionLabel;
 @property (nonatomic, strong) IBOutlet UILabel *dateLabel;
 

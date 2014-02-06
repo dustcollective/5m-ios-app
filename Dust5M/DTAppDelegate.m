@@ -16,6 +16,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName: @"Main" bundle: nil];
+    
+    UIViewController *menuController = [storyboard instantiateViewControllerWithIdentifier: @"MenuController"];
+    
+    UINavigationController *startNavController = [storyboard instantiateViewControllerWithIdentifier: @"StartController"];
+    
+    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController: startNavController
+                                                            leftDrawerViewController: menuController];
+    
+    self.drawerController.showsShadow = NO;
+    self.drawerController.shouldStretchDrawer = NO;
+    self.drawerController.maximumRightDrawerWidth = 1.0;
+    self.drawerController.maximumLeftDrawerWidth = 140.0f;
+    
+    self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+   
+    [self.drawerController setDrawerVisualStateBlock:[MMDrawerVisualState slideVisualStateBlock]];
+    
+    self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    self.window.rootViewController = self.drawerController;
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -18,5 +18,9 @@
     #import <CoreData/CoreData.h>
     #import "AFNetworking.h"
     #import "UIKit+AFNetworking.h"
+
+    #import "MMDrawerController.h"
+    #import "UIViewController+MMDrawerController.h"
+    #import "MMDrawerVisualState.h"
     #import "DTMacros.h"
 #endif
