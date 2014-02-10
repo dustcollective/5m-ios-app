@@ -10,6 +10,8 @@
 
 @interface DTSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) IBOutlet UILabel *logoLabel;
+
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end

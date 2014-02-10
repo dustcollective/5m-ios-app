@@ -8,6 +8,7 @@
 
 #import "DTSettingsViewController.h"
 #import "DTSettingsCell.h"
+
 // Article model also contains a list of territories
 #import "DTArticleModel.h"
 
@@ -18,15 +19,22 @@
     NSMutableDictionary *_territoryFileDict;
 }
 
+
 @end
 
+
 @implementation DTSettingsViewController
+
 
 - (void) viewDidLoad {
     
     [super viewDidLoad];
-	    
-    self.title = NSLocalizedString(@"SETTINGS_TITLE", @"Title of settings controller");
+    
+    self.logoLabel.font = [UIFont fontWithName: @"BetonEF-Light" size: 52];
+    self.logoLabel.text = NSLocalizedString(@"Appname", @"Name of Application");
+    
+    
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
 }
 
 
@@ -43,7 +51,6 @@
 
 - (void) reload: (id) sender {
     
-    
     NSString *territoryPath = [documentPath() stringByAppendingPathComponent: @"territories.plist"];
  
     // Check if the database has already been created in the users filesystem
@@ -58,24 +65,21 @@
     
     _territoryFileDict = [NSMutableDictionary dictionaryWithContentsOfFile: territoryPath];
     
-    
-    
     [self.tableView reloadData];
     [_refreshControl endRefreshing];
 }
 
 
-
 #pragma mark -
 #pragma mark - Table View
      
-- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger) numberOfSectionsInTableView: (UITableView *) tableView {
     
     return 2;
 }
 
 
-- (NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection: (NSInteger) section {
+- (NSInteger) tableView: (UITableView *) tableView numberOfRowsInSection: (NSInteger) section {
     
     if(section == 0) {
         
@@ -84,9 +88,11 @@
     else {
         
         NSArray *terArray = _territoryFileDict[@"territories"];
+        
         return terArray.count;
     }
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -96,7 +102,7 @@
     
     if(indexPath.section == 0) {
         
-        cell.countryLabel.text = @"All Enabled";
+        cell.countryLabel.text = NSLocalizedString(@"ALL_ENABLED", @"All enabled country switch");
         
         ((UISwitch *)cell.accessoryView).on = allEnabled;
         cell.accessoryView.tag = 999;
@@ -119,15 +125,13 @@
 }
 
 
-- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+- (CGFloat) tableView: (UITableView *) tableView heightForHeaderInSection: (NSInteger) section {
     
     return 8.0f;
 }
 
 
 - (IBAction) switchPressed: (id) sender {
-    
-    NSLog(@"%@", sender);
     
     UISwitch *toggleSwitch = sender;
     
@@ -139,7 +143,6 @@
         
         _territoryFileDict[@"all"] = [NSNumber numberWithBool: newStatus];
         
-        
         if(newStatus) {
             
             for(NSMutableDictionary *territory in terArray) {
@@ -147,8 +150,6 @@
                 territory[@"selected"] =  [NSNumber numberWithBool: NO];
             }
         }
-        
-        
     }
     else {
         
@@ -156,10 +157,6 @@
         territory[@"selected"] =  [NSNumber numberWithBool: newStatus];
         
         _territoryFileDict[@"all"] = [NSNumber numberWithBool: NO];
-        
-        
-        
-        
     }
     
     NSString *territoryPath = [documentPath() stringByAppendingPathComponent: @"territories.plist"];
@@ -167,7 +164,7 @@
     [_territoryFileDict writeToFile: territoryPath atomically: YES];
     
     [self.tableView reloadData];
-    
 }
+
 
 @end

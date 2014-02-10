@@ -17,7 +17,9 @@
 
 @end
 
+
 @implementation DTContentViewController
+
 
 - (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil {
     
@@ -71,11 +73,6 @@
     }
 }
 
-- (void) didReceiveMemoryWarning {
-    
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (void) webViewDidFinishLoad: (UIWebView *) webView {
     
@@ -98,6 +95,7 @@
     }
 }
 
+
 - (void) share: (UIBarButtonItem *) button {
     
     NSURL *URL = [NSURL URLWithString: self.article.linkString];
@@ -110,6 +108,7 @@
     [self presentViewController: activityController animated: YES completion: nil];
 }
 
+
 - (void) favourite: (UIBarButtonItem *) button {
     
     self.article.favourite = @1;
@@ -117,12 +116,11 @@
     NSError *error = nil;
     [self.managedObjectContext save: &error];
     
-    
     if(error) {
+        
         NSLog(@"Error setting favourite");
     }
-
-    
 }
+
 
 @end

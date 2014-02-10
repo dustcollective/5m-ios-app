@@ -10,6 +10,8 @@
 
 @interface DTWebViewController : UIViewController <UIWebViewDelegate>
 
+@property (nonatomic, strong) IBOutlet UILabel *logoLabel;
+
 @property (nonatomic, strong) IBOutlet UIWebView *webView;
 
 @end

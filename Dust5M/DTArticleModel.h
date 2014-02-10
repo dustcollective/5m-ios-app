@@ -16,8 +16,8 @@
 
 - (void) setWithAttributes: (NSDictionary *) attributes;
 
-- (void) fetchContentForContentType:(NSString *) contentType withRegion: (NSString *) region;
-- (void) fetchFavouriteContentForContentType:(NSString *) contentType;
+- (void) fetchContentForContentType: (NSString *) contentType withRegion: (NSString *) region;
+- (void) fetchFavouriteContentForContentType: (NSString *) contentType;
 
 @property (nonatomic, strong) NSArray *content;
 @property (nonatomic, strong) NSArray *adverts;

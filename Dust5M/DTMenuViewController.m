@@ -8,41 +8,108 @@
 
 #import "DTMenuViewController.h"
 
+
 @interface DTMenuViewController ()
 
 @end
+
 
 @implementation DTMenuViewController
 
 
 - (void) viewDidLoad {
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
+    
+    self.tableView.scrollsToTop = NO;
 }
 
+#pragma mark -
 #pragma mark - Table View
 
-- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger) numberOfSectionsInTableView: (UITableView *) tableView {
     
     return 1;
 }
 
 
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger) tableView: (UITableView *) tableView numberOfRowsInSection: (NSInteger) section {
     
-    return 3;
+    return 4;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+- (UITableViewCell *)tableView: (UITableView *) tableView cellForRowAtIndexPath: (NSIndexPath *) indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"MenuCell" forIndexPath: indexPath];
     
-    cell.textLabel.text = NSLocalizedString(@"FAVOURITES", @"Menu Favourites");
+    UIImage *icon = nil;
+    NSString *rowTitle = nil;
+    
+    switch (indexPath.row) {
+            
+        case 0:
+            icon = [UIImage imageNamed: @""];
+            rowTitle = NSLocalizedString(@"MAIN_PAGE", @"Main View Menu item");
+            break;
+            
+        case 1:
+            icon = [UIImage imageNamed: @""];
+            rowTitle = NSLocalizedString(@"FAVOURITES", @"Favourites Menu Item");
+            break;
+            
+        case 2:
+            icon = [UIImage imageNamed: @""];
+            rowTitle = NSLocalizedString(@"OUR_APPS", @"Our Apps Menu Item");
+            break;
+            
+        case 3:
+            icon = [UIImage imageNamed: @""];
+            rowTitle = NSLocalizedString(@"SETTINGS", @"Settings Menu Item");
+            break;
+            
+        default:
+            break;
+    }
+    
+    cell.textLabel.text = rowTitle;
     
     return cell;
 }
 
+
+- (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
+    
+    UIViewController *controllerToSwitch = nil;
+    
+    switch (indexPath.row) {
+            
+        case 0:
+            controllerToSwitch = [self.storyboard instantiateViewControllerWithIdentifier: @"StartController"];
+            break;
+            
+        case 1:
+            controllerToSwitch = [self.storyboard instantiateViewControllerWithIdentifier: @"FavouritesController"];
+            break;
+            
+        case 2:
+            
+            controllerToSwitch = [self.storyboard instantiateViewControllerWithIdentifier: @"WebController"];
+            break;
+        case 3:
+            
+            controllerToSwitch = [self.storyboard instantiateViewControllerWithIdentifier: @"SettingsController"];
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self.mm_drawerController setCenterViewController: controllerToSwitch withCloseAnimation: YES completion: ^(BOOL finished) {  
+    }];
+}
 
 
 @end

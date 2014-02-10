@@ -28,8 +28,11 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>BetonEF-DemiBold.otf</string>
+		<string>BetonEF-Light.otf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -44,11 +47,6 @@
 			<false/>
 		</dict>
 	</dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>BetonEF-DemiBold.otf</string>
-		<string>BetonEF-Light.otf</string>
-	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

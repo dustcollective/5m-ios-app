@@ -11,12 +11,6 @@
 @implementation DTMenuTableViewCell
 
 
-- (void) setSelected: (BOOL) selected animated: (BOOL) animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 - (void) willMoveToSuperview:(UIView *)newSuperview {
     
     self.textLabel.textColor = RGB(88, 88, 91);

@@ -16,7 +16,9 @@
 
 @end
 
+
 @implementation DTFavouritesViewController
+
 
 - (void) viewDidLoad {
     
@@ -26,6 +28,7 @@
     DTAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     self.managedObjectContext = appDelegate.managedObjectContext;
 }
+
 
 - (void) loadData {
     
@@ -40,32 +43,14 @@
             
             self.model = articleModel;
             
-            self.segmentControl.selectedSegmentIndex = 0;
-            [self segmentAction: self.segmentControl];
+            [self.model fetchFavouriteContentForContentType: @"*"]; // news, event, *
+            
+            [self.tableView reloadData];
             
             [self.refreshControl endRefreshing];
         }];
     }
 }
 
-- (void) segmentAction: (UISegmentedControl *) control {
-    
-    switch (control.selectedSegmentIndex) {
-        case 0:
-            [self.model fetchFavouriteContentForContentType: @"*"];
-            break;
-        case 1:
-            [self.model fetchFavouriteContentForContentType: @"news"];
-            break;
-        case 2:
-            [self.model fetchFavouriteContentForContentType: @"event"];
-            break;
-            
-        default:
-            break;
-    }
-    
-    [self.tableView reloadData];
-}
 
 @end

@@ -35,6 +35,7 @@
     return self;
 }
 
+
 - (void) setWithAttributes: (NSDictionary *) attributes {
     
     [self syncContentFromFeed: attributes[@"contents"]];
@@ -44,12 +45,14 @@
     [self syncAds: attributes[@"adverts"]];
 }
 
+
 - (void) syncAds: (NSDictionary *) adAttributes {
     
     _inlineFrequency = [adAttributes[@"inline_frequency"] intValue];
     
     self.adverts = adAttributes[@"inline"];
 }
+
 
 - (void) syncTerritories: (NSArray *) territories {
     
@@ -64,6 +67,7 @@
     
     self.territories = processedTerritories;
 }
+
 
 - (void) syncContentFromFeed: (NSArray *) contents {
     
@@ -94,9 +98,11 @@
     [self.managedContext save: &error];
     
     if(error) {
+        
         NSLog(@"Error syncing content %@", error);
     }
 }
+
 
 - (void) fetchContentForContentType:(NSString *) contentType withRegion: (NSString *) region {
     
@@ -118,6 +124,7 @@
     [self insertAdverts];
 }
 
+
 - (void) fetchFavouriteContentForContentType:(NSString *) contentType {
     
     NSFetchRequest *fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"favouriteContentFetch"
@@ -129,9 +136,8 @@
     NSArray *fetchedEvents = [self.managedContext executeFetchRequest: fetchRequest error: nil];
 
     self.content = fetchedEvents;
-    
-    NSLog(@"Fetched Favourite %lu objects", (unsigned long)self.content.count);
 }
+
 
 - (void) insertAdverts {
     
@@ -147,14 +153,15 @@
             position = position + _inlineFrequency + 1;
         }
         else {
+            
             break;
         }
         i++;
-        
     }
     
     self.content = mutableContent;
 }
+
 
 + (AFHTTPRequestOperation *) articleListWithBlock: (void (^)(DTArticleModel *articleModel, NSError *error)) block {
     
@@ -172,7 +179,7 @@
                                          }
                                          failure: ^(AFHTTPRequestOperation *__unused task, NSError *error) {
                                              
-                                             // If there's an error we create the model and perhaps jsut use
+                                             // If there's an error we create the model and perhaps use
                                              // unsynced data
                                              DTArticleModel *articleModel = [[DTArticleModel alloc] init];
                                              
@@ -182,5 +189,6 @@
                                              }
                                          }];
 }
+
 
 @end

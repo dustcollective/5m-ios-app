@@ -151,7 +151,6 @@
 		0A14B11E18A13F5E001EBC22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620A18312558001C484E /* UIKit.framework */; };
 		0A14B11F18A13F5E001EBC22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620618312558001C484E /* Foundation.framework */; };
 		0A14B14D18A13F5E001EBC22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A37620F18312558001C484E /* InfoPlist.strings */; };
-		0A31FE0D18A3EB8400344822 /* poultry-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A37620E18312558001C484E /* poultry-Info.plist */; };
 		0A31FE3518A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
 		0A31FE3618A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
 		0A31FE3718A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
@@ -494,22 +493,43 @@
 		0A9BCAE018A13E5400AC8F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620A18312558001C484E /* UIKit.framework */; };
 		0A9BCAE118A13E5400AC8F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620618312558001C484E /* Foundation.framework */; };
 		0A9BCB0F18A13E5400AC8F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A37620F18312558001C484E /* InfoPlist.strings */; };
+		0AA4D64918A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA4D64A18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA4D64B18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA4D64C18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA4D64D18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA4D64E18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA4D64F18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA4D65018A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA4D65118A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
+		0AA6B92D18A4E3E40019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B92E18A4E3E70019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B92F18A4E3E70019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B93018A4E3E70019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B93118A4E3E80019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B93218A4E3E80019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B93318A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B93418A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B93518A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
+		0AA6B94D18A4EA630019CE5B /* elsitio-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94018A4EA630019CE5B /* elsitio-Info.plist */; };
+		0AA6B95218A4EA6D0019CE5B /* beef-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B93818A4EA620019CE5B /* beef-Info.plist */; };
+		0AA6B95318A4EA700019CE5B /* cattle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B93A18A4EA620019CE5B /* cattle-Info.plist */; };
+		0AA6B95418A4EA730019CE5B /* crop-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B93C18A4EA620019CE5B /* crop-Info.plist */; };
+		0AA6B95518A4EA760019CE5B /* dairy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B93E18A4EA620019CE5B /* dairy-Info.plist */; };
+		0AA6B95618A4EA7B0019CE5B /* fish-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94218A4EA630019CE5B /* fish-Info.plist */; };
+		0AA6B95718A4EA7E0019CE5B /* meat-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94418A4EA630019CE5B /* meat-Info.plist */; };
+		0AA6B95818A4EA810019CE5B /* pig-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94618A4EA630019CE5B /* pig-Info.plist */; };
+		0AA6B95918A4EA850019CE5B /* poultry-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94818A4EA630019CE5B /* poultry-Info.plist */; };
 		0AEC342B1850B032001F924E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEC342A1850B032001F924E /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A14AF4818A13F32001EBC22 /* crop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14AF4918A13F33001EBC22 /* cattle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "cattle-Info.plist"; path = "/Users/kemal/Dropbox/Apps/Dust5M/cattle-Info.plist"; sourceTree = "<absolute>"; };
 		0A14AFB318A13F3D001EBC22 /* dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dairy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14AFB418A13F3D001EBC22 /* crop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "crop-Info.plist"; path = "/Users/kemal/Dropbox/Apps/Dust5M/crop-Info.plist"; sourceTree = "<absolute>"; };
 		0A14B01E18A13F45001EBC22 /* fish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fish.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14B01F18A13F45001EBC22 /* dairy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dairy-Info.plist"; path = "/Users/kemal/Dropbox/Apps/Dust5M/dairy-Info.plist"; sourceTree = "<absolute>"; };
 		0A14B08918A13F4D001EBC22 /* meat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14B08A18A13F4E001EBC22 /* fish-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "fish-Info.plist"; path = "/Users/kemal/Dropbox/Apps/Dust5M/fish-Info.plist"; sourceTree = "<absolute>"; };
 		0A14B0F418A13F54001EBC22 /* pig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pig.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14B0F518A13F54001EBC22 /* meat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "meat-Info.plist"; path = "/Users/kemal/Dropbox/Apps/Dust5M/meat-Info.plist"; sourceTree = "<absolute>"; };
 		0A14B15F18A13F5E001EBC22 /* poultry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poultry.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14B16018A13F5E001EBC22 /* pig-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "pig-Info.plist"; path = "/Users/kemal/Dropbox/Apps/Dust5M/pig-Info.plist"; sourceTree = "<absolute>"; };
 		0A31FE0E18A3EC9B00344822 /* DTAdvertCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAdvertCell.h; sourceTree = "<group>"; };
 		0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAdvertCell.m; sourceTree = "<group>"; };
 		0A31FE1018A3EC9B00344822 /* DTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAPIClient.h; sourceTree = "<group>"; };
@@ -542,14 +562,12 @@
 		0A31FE2C18A3EC9B00344822 /* DTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSettingsViewController.m; sourceTree = "<group>"; };
 		0A31FE2D18A3EC9B00344822 /* DTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWebViewController.h; sourceTree = "<group>"; };
 		0A31FE2E18A3EC9B00344822 /* DTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWebViewController.m; sourceTree = "<group>"; };
-		0A31FE2F18A3EC9B00344822 /* Dust5M-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Dust5M-Prefix.pch"; sourceTree = "<group>"; };
 		0A31FE3218A3EC9B00344822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		0A31FE3418A3EC9C00344822 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0A37620318312558001C484E /* elsitio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elsitio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A37620618312558001C484E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A37620818312558001C484E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0A37620A18312558001C484E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0A37620E18312558001C484E /* poultry-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "poultry-Info.plist"; sourceTree = "<group>"; };
 		0A37621018312558001C484E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A37621218312558001C484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A37621418312558001C484E /* Dust5M-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dust5M-Prefix.pch"; sourceTree = "<group>"; };
@@ -623,9 +641,19 @@
 		0A45ED5418A400B9009C9890 /* DTMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMenuTableViewCell.h; sourceTree = "<group>"; };
 		0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMenuTableViewCell.m; sourceTree = "<group>"; };
 		0A9BCAB618A13E4C00AC8F34 /* beef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beef.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A9BCAB718A13E4C00AC8F34 /* elsitio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "elsitio-Info.plist"; path = "/Users/kemal/Dropbox/Apps/Dust5M/elsitio-Info.plist"; sourceTree = "<absolute>"; };
 		0A9BCB2118A13E5400AC8F34 /* cattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A9BCB2218A13E5500AC8F34 /* beef-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "beef-Info.plist"; path = "/Users/kemal/Dropbox/Apps/Dust5M/beef-Info.plist"; sourceTree = "<absolute>"; };
+		0AA4D64718A7F82C008A0C20 /* DTAdvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAdvertViewController.h; sourceTree = "<group>"; };
+		0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAdvertViewController.m; sourceTree = "<group>"; };
+		0AA6B92C18A4E3E40019CE5B /* territories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = territories.plist; sourceTree = "<group>"; };
+		0AA6B93818A4EA620019CE5B /* beef-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "beef-Info.plist"; sourceTree = "<group>"; };
+		0AA6B93A18A4EA620019CE5B /* cattle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cattle-Info.plist"; sourceTree = "<group>"; };
+		0AA6B93C18A4EA620019CE5B /* crop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crop-Info.plist"; sourceTree = "<group>"; };
+		0AA6B93E18A4EA620019CE5B /* dairy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "dairy-Info.plist"; sourceTree = "<group>"; };
+		0AA6B94018A4EA630019CE5B /* elsitio-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "elsitio-Info.plist"; sourceTree = "<group>"; };
+		0AA6B94218A4EA630019CE5B /* fish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fish-Info.plist"; sourceTree = "<group>"; };
+		0AA6B94418A4EA630019CE5B /* meat-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "meat-Info.plist"; sourceTree = "<group>"; };
+		0AA6B94618A4EA630019CE5B /* pig-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pig-Info.plist"; sourceTree = "<group>"; };
+		0AA6B94818A4EA630019CE5B /* poultry-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "poultry-Info.plist"; sourceTree = "<group>"; };
 		0AEC342A1850B032001F924E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -761,20 +789,12 @@
 		0A3761FA18312558001C484E = {
 			isa = PBXGroup;
 			children = (
+				0AA6B93618A4EA620019CE5B /* configs */,
 				0A45EB8E18A3EDED009C9890 /* resources */,
 				0A37620C18312558001C484E /* Dust5M */,
 				0A37622E18312558001C484E /* Dust5MTests */,
 				0A37620518312558001C484E /* Frameworks */,
 				0A37620418312558001C484E /* Products */,
-				0A9BCAB718A13E4C00AC8F34 /* elsitio-Info.plist */,
-				0A9BCB2218A13E5500AC8F34 /* beef-Info.plist */,
-				0A14AF4918A13F33001EBC22 /* cattle-Info.plist */,
-				0A14AFB418A13F3D001EBC22 /* crop-Info.plist */,
-				0A14B01F18A13F45001EBC22 /* dairy-Info.plist */,
-				0A14B08A18A13F4E001EBC22 /* fish-Info.plist */,
-				0A14B0F518A13F54001EBC22 /* meat-Info.plist */,
-				0A14B16018A13F5E001EBC22 /* pig-Info.plist */,
-				0A37620E18312558001C484E /* poultry-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -815,23 +835,23 @@
 				0A31FE3418A3EC9C00344822 /* Main.storyboard */,
 				0A31FE0E18A3EC9B00344822 /* DTAdvertCell.h */,
 				0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */,
+				0A31FE1818A3EC9B00344822 /* DTArticleCell.h */,
+				0A31FE1918A3EC9B00344822 /* DTArticleCell.m */,
+				0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */,
 				0A31FE1018A3EC9B00344822 /* DTAPIClient.h */,
 				0A31FE1118A3EC9B00344822 /* DTAPIClient.m */,
 				0A31FE1218A3EC9B00344822 /* DTAppDelegate.h */,
 				0A31FE1318A3EC9B00344822 /* DTAppDelegate.m */,
 				0A31FE1418A3EC9B00344822 /* DTArticle.h */,
 				0A31FE1518A3EC9B00344822 /* DTArticle.m */,
-				0A31FE1818A3EC9B00344822 /* DTArticleCell.h */,
-				0A31FE1918A3EC9B00344822 /* DTArticleCell.m */,
-				0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */,
 				0A31FE1B18A3EC9B00344822 /* DTArticleListViewController.h */,
 				0A31FE1C18A3EC9B00344822 /* DTArticleListViewController.m */,
+				0A31FE2118A3EC9B00344822 /* DTFavouritesViewController.h */,
+				0A31FE2218A3EC9B00344822 /* DTFavouritesViewController.m */,
 				0A31FE1D18A3EC9B00344822 /* DTArticleModel.h */,
 				0A31FE1E18A3EC9B00344822 /* DTArticleModel.m */,
 				0A31FE1F18A3EC9B00344822 /* DTContentViewController.h */,
 				0A31FE2018A3EC9B00344822 /* DTContentViewController.m */,
-				0A31FE2118A3EC9B00344822 /* DTFavouritesViewController.h */,
-				0A31FE2218A3EC9B00344822 /* DTFavouritesViewController.m */,
 				0A31FE2318A3EC9B00344822 /* DTMacros.h */,
 				0A31FE2418A3EC9B00344822 /* DTMacros.m */,
 				0A31FE2518A3EC9B00344822 /* DTModelSyncManager.h */,
@@ -848,12 +868,13 @@
 				0A45ED4A18A3FFCB009C9890 /* DTMenuViewController.m */,
 				0A45ED5418A400B9009C9890 /* DTMenuTableViewCell.h */,
 				0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */,
-				0A31FE2F18A3EC9B00344822 /* Dust5M-Prefix.pch */,
 				0A31FE3018A3EC9B00344822 /* en.lproj */,
 				0A37620D18312558001C484E /* Supporting Files */,
 				0A37623E183125C2001C484E /* AFNetworking */,
 				0A376252183125C2001C484E /* UIKit+AFNetworking */,
 				0A45EBEA18A3F9AE009C9890 /* MMDrawerController */,
+				0AA4D64718A7F82C008A0C20 /* DTAdvertViewController.h */,
+				0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */,
 			);
 			path = Dust5M;
 			sourceTree = "<group>";
@@ -937,7 +958,6 @@
 		0A45EB8E18A3EDED009C9890 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				0A45EB9018A3EDED009C9890 /* app.css */,
 				0A45EB9718A3EDED009C9890 /* fonts */,
 				0A45EB9118A3EDED009C9890 /* beef.xcassets */,
 				0A45EB9218A3EDED009C9890 /* cattle.xcassets */,
@@ -949,6 +969,8 @@
 				0A45EB9D18A3EDED009C9890 /* meat.xcassets */,
 				0A45EB9E18A3EDED009C9890 /* pig.xcassets */,
 				0A45EB9F18A3EDED009C9890 /* poultry.xcassets */,
+				0AA6B92C18A4E3E40019CE5B /* territories.plist */,
+				0A45EB9018A3EDED009C9890 /* app.css */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -987,6 +1009,94 @@
 				0A45EC2318A3F9AE009C9890 /* UIViewController+MMDrawerController.m */,
 			);
 			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		0AA6B93618A4EA620019CE5B /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B93718A4EA620019CE5B /* beef */,
+				0AA6B93918A4EA620019CE5B /* cattle */,
+				0AA6B93B18A4EA620019CE5B /* crop */,
+				0AA6B93D18A4EA620019CE5B /* dairy */,
+				0AA6B93F18A4EA630019CE5B /* elsitio */,
+				0AA6B94118A4EA630019CE5B /* fish */,
+				0AA6B94318A4EA630019CE5B /* meat */,
+				0AA6B94518A4EA630019CE5B /* pig */,
+				0AA6B94718A4EA630019CE5B /* poultry */,
+			);
+			path = configs;
+			sourceTree = "<group>";
+		};
+		0AA6B93718A4EA620019CE5B /* beef */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B93818A4EA620019CE5B /* beef-Info.plist */,
+			);
+			path = beef;
+			sourceTree = "<group>";
+		};
+		0AA6B93918A4EA620019CE5B /* cattle */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B93A18A4EA620019CE5B /* cattle-Info.plist */,
+			);
+			path = cattle;
+			sourceTree = "<group>";
+		};
+		0AA6B93B18A4EA620019CE5B /* crop */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B93C18A4EA620019CE5B /* crop-Info.plist */,
+			);
+			path = crop;
+			sourceTree = "<group>";
+		};
+		0AA6B93D18A4EA620019CE5B /* dairy */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B93E18A4EA620019CE5B /* dairy-Info.plist */,
+			);
+			path = dairy;
+			sourceTree = "<group>";
+		};
+		0AA6B93F18A4EA630019CE5B /* elsitio */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B94018A4EA630019CE5B /* elsitio-Info.plist */,
+			);
+			path = elsitio;
+			sourceTree = "<group>";
+		};
+		0AA6B94118A4EA630019CE5B /* fish */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B94218A4EA630019CE5B /* fish-Info.plist */,
+			);
+			path = fish;
+			sourceTree = "<group>";
+		};
+		0AA6B94318A4EA630019CE5B /* meat */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B94418A4EA630019CE5B /* meat-Info.plist */,
+			);
+			path = meat;
+			sourceTree = "<group>";
+		};
+		0AA6B94518A4EA630019CE5B /* pig */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B94618A4EA630019CE5B /* pig-Info.plist */,
+			);
+			path = pig;
+			sourceTree = "<group>";
+		};
+		0AA6B94718A4EA630019CE5B /* poultry */ = {
+			isa = PBXGroup;
+			children = (
+				0AA6B94818A4EA630019CE5B /* poultry-Info.plist */,
+			);
+			path = poultry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1188,7 +1298,9 @@
 			files = (
 				0A45EBB218A3EDF6009C9890 /* general.xcassets in Resources */,
 				0A14AF3618A13F32001EBC22 /* InfoPlist.strings in Resources */,
+				0AA6B95418A4EA730019CE5B /* crop-Info.plist in Resources */,
 				0A45EBC418A3EE30009C9890 /* app.css in Resources */,
+				0AA6B93018A4E3E70019CE5B /* territories.plist in Resources */,
 				0A31FE6E18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
 				0A45EBD418A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBBB18A3EE06009C9890 /* crop.xcassets in Resources */,
@@ -1205,6 +1317,8 @@
 				0A45EBB318A3EDF6009C9890 /* general.xcassets in Resources */,
 				0A14AFA118A13F3D001EBC22 /* InfoPlist.strings in Resources */,
 				0A45EBC518A3EE30009C9890 /* app.css in Resources */,
+				0AA6B95518A4EA760019CE5B /* dairy-Info.plist in Resources */,
+				0AA6B93118A4E3E80019CE5B /* territories.plist in Resources */,
 				0A31FE6F18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
 				0A45EBD818A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FEE418A3EC9C00344822 /* Main.storyboard in Resources */,
@@ -1221,8 +1335,10 @@
 				0A45EBB418A3EDF7009C9890 /* general.xcassets in Resources */,
 				0A14B00C18A13F45001EBC22 /* InfoPlist.strings in Resources */,
 				0A45EBC618A3EE31009C9890 /* app.css in Resources */,
+				0AA6B93218A4E3E80019CE5B /* territories.plist in Resources */,
 				0A31FE7018A3EC9C00344822 /* DTArticleCell.xib in Resources */,
 				0A45EBDC18A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0AA6B95618A4EA7B0019CE5B /* fish-Info.plist in Resources */,
 				0A31FEE518A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FED318A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A45EBBD18A3EE11009C9890 /* fish.xcassets in Resources */,
@@ -1236,7 +1352,9 @@
 			files = (
 				0A45EBB518A3EDF7009C9890 /* general.xcassets in Resources */,
 				0A14B07718A13F4D001EBC22 /* InfoPlist.strings in Resources */,
+				0AA6B95718A4EA7E0019CE5B /* meat-Info.plist in Resources */,
 				0A45EBC718A3EE31009C9890 /* app.css in Resources */,
+				0AA6B93318A4E3E90019CE5B /* territories.plist in Resources */,
 				0A31FE7118A3EC9C00344822 /* DTArticleCell.xib in Resources */,
 				0A45EBE018A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FEE618A3EC9C00344822 /* Main.storyboard in Resources */,
@@ -1251,8 +1369,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A45EBB618A3EDF7009C9890 /* general.xcassets in Resources */,
+				0AA6B95818A4EA810019CE5B /* pig-Info.plist in Resources */,
 				0A14B0E218A13F54001EBC22 /* InfoPlist.strings in Resources */,
 				0A45EBC818A3EE32009C9890 /* app.css in Resources */,
+				0AA6B93418A4E3E90019CE5B /* territories.plist in Resources */,
 				0A45EBC018A3EE1C009C9890 /* pig.xcassets in Resources */,
 				0A45EBE418A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FE7218A3EC9C00344822 /* DTArticleCell.xib in Resources */,
@@ -1267,12 +1387,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A31FEE818A3EC9C00344822 /* Main.storyboard in Resources */,
-				0A31FE0D18A3EB8400344822 /* poultry-Info.plist in Resources */,
 				0A45EBB718A3EDF8009C9890 /* general.xcassets in Resources */,
 				0A31FED618A3EC9C00344822 /* InfoPlist.strings in Resources */,
+				0AA6B93518A4E3E90019CE5B /* territories.plist in Resources */,
 				0A45EBE918A3EE62009C9890 /* BetonEF-Light.otf in Resources */,
 				0A31FE7318A3EC9C00344822 /* DTArticleCell.xib in Resources */,
 				0A45EBC118A3EE1F009C9890 /* poultry.xcassets in Resources */,
+				0AA6B95918A4EA850019CE5B /* poultry-Info.plist in Resources */,
 				0A14B14D18A13F5E001EBC22 /* InfoPlist.strings in Resources */,
 				0A45EBE818A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBC918A3EE32009C9890 /* app.css in Resources */,
@@ -1287,11 +1408,13 @@
 				0A45EBAC18A3EDED009C9890 /* general.xcassets in Resources */,
 				0A37621118312558001C484E /* InfoPlist.strings in Resources */,
 				0A45ED3D18A3F9AE009C9890 /* README.md in Resources */,
+				0AA6B92D18A4E3E40019CE5B /* territories.plist in Resources */,
 				0A45EBAA18A3EDED009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBBE18A3EE14009C9890 /* elsitio.xcassets in Resources */,
 				0A31FE6B18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
 				0A45EBA118A3EDED009C9890 /* app.css in Resources */,
 				0A31FEE018A3EC9C00344822 /* Main.storyboard in Resources */,
+				0AA6B94D18A4EA630019CE5B /* elsitio-Info.plist in Resources */,
 				0A31FECE18A3EC9C00344822 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1303,11 +1426,13 @@
 				0A45EBB018A3EDF5009C9890 /* general.xcassets in Resources */,
 				0A45EBB918A3EDFD009C9890 /* beef.xcassets in Resources */,
 				0A45EBC218A3EE2F009C9890 /* app.css in Resources */,
+				0AA6B92E18A4E3E70019CE5B /* territories.plist in Resources */,
 				0A9BCAA418A13E4C00AC8F34 /* InfoPlist.strings in Resources */,
 				0A45EBCC18A3EE60009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FE6C18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
 				0A31FEE118A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FECF18A3EC9C00344822 /* InfoPlist.strings in Resources */,
+				0AA6B95218A4EA6D0019CE5B /* beef-Info.plist in Resources */,
 				0A45EBCD18A3EE60009C9890 /* BetonEF-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1319,12 +1444,14 @@
 				0A45EBB118A3EDF6009C9890 /* general.xcassets in Resources */,
 				0A9BCB0F18A13E5400AC8F34 /* InfoPlist.strings in Resources */,
 				0A45EBC318A3EE30009C9890 /* app.css in Resources */,
+				0AA6B92F18A4E3E70019CE5B /* territories.plist in Resources */,
 				0A45EBBA18A3EE01009C9890 /* cattle.xcassets in Resources */,
 				0A45EBD018A3EE60009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FE6D18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
 				0A31FEE218A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FED018A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A45EBD118A3EE60009C9890 /* BetonEF-Light.otf in Resources */,
+				0AA6B95318A4EA700019CE5B /* cattle-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1335,6 +1462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D64C18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1318A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9B18A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8918A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1381,6 +1509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D64D18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1418A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9C18A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8A18A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1427,6 +1556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D64E18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1518A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9D18A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8B18A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1473,6 +1603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D64F18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1618A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9E18A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8C18A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1519,6 +1650,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D65018A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1718A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9F18A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8D18A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1565,6 +1697,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D65118A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1818A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FEA018A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8E18A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1611,6 +1744,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D64918A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1018A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9818A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8618A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1657,6 +1791,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D64A18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1118A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9918A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8718A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1703,6 +1838,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4D64B18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1218A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9A18A3EC9C00344822 /* DTMacros.m in Sources */,
 				0A31FE8818A3EC9C00344822 /* DTContentViewController.m in Sources */,
@@ -1783,7 +1919,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "cattle-Info.plist";
+				INFOPLIST_FILE = "configs/crop/crop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = crop;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1799,7 +1935,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "cattle-Info.plist";
+				INFOPLIST_FILE = "configs/crop/crop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = crop;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1815,7 +1951,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "dairy-Info.plist";
+				INFOPLIST_FILE = "configs/dairy/dairy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = dairy;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1831,7 +1967,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "dairy-Info.plist";
+				INFOPLIST_FILE = "configs/dairy/dairy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = dairy;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1847,7 +1983,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "fish-Info.plist";
+				INFOPLIST_FILE = "configs/fish/fish-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = fish;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1863,7 +1999,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "fish-Info.plist";
+				INFOPLIST_FILE = "configs/fish/fish-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = fish;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1879,7 +2015,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "meat-Info.plist";
+				INFOPLIST_FILE = "configs/meat/meat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = meat;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1895,7 +2031,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "meat-Info.plist";
+				INFOPLIST_FILE = "configs/meat/meat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = meat;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1911,7 +2047,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "pig-Info.plist";
+				INFOPLIST_FILE = "configs/pig/pig-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = pig;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1927,7 +2063,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "pig-Info.plist";
+				INFOPLIST_FILE = "configs/pig/pig-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = pig;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1943,7 +2079,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Dust5M/poultry-Info.plist";
+				INFOPLIST_FILE = "configs/poultry/poultry-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = poultry;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -1959,7 +2095,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Dust5M/poultry-Info.plist";
+				INFOPLIST_FILE = "configs/poultry/poultry-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = poultry;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -2047,7 +2183,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "elsitio-Info.plist";
+				INFOPLIST_FILE = "configs/elsitio/elsitio-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -2063,7 +2199,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "elsitio-Info.plist";
+				INFOPLIST_FILE = "configs/elsitio/elsitio-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -2079,7 +2215,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "beef-Info.plist";
+				INFOPLIST_FILE = "configs/beef/beef-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = beef;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -2095,7 +2231,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "beef-Info.plist";
+				INFOPLIST_FILE = "configs/beef/beef-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = beef;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -2111,7 +2247,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "cattle-Info.plist";
+				INFOPLIST_FILE = "configs/cattle/cattle-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = cattle;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
@@ -2127,7 +2263,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "cattle-Info.plist";
+				INFOPLIST_FILE = "configs/cattle/cattle-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = cattle;
 				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";

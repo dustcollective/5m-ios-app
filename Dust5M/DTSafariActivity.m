@@ -13,20 +13,24 @@
     NSURL *_URL;
 }
 
+
 - (NSString *)activityType {
     
     return NSStringFromClass([self class]);
 }
+
 
 - (NSString *)activityTitle {
     
     return NSLocalizedStringFromTable(@"OPEN_SAFARI", @"Open in Safari action", nil);
 }
 
+
 - (UIImage *)activityImage {
     
     return [UIImage imageNamed: @"Safari.png"];
 }
+
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     
@@ -41,6 +45,7 @@
     return NO;
 }
 
+
 - (void)prepareWithActivityItems:(NSArray *)activityItems {
     
     for (id activityItem in activityItems) {
@@ -51,6 +56,7 @@
         }
     }
 }
+
 
 - (void) performActivity {
     

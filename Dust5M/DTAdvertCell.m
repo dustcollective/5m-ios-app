@@ -10,25 +10,17 @@
 
 @implementation DTAdvertCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (id) initWithStyle: (UITableViewCellStyle) style reuseIdentifier: (NSString *) reuseIdentifier {
+    
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    
     if (self) {
-        // Initialization code
         
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        //self.imageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-        //self.imageView.layer.borderWidth = 1.0f;
     }
     return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 - (void) layoutSubviews {
     

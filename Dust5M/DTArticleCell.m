@@ -10,17 +10,8 @@
 
 @implementation DTArticleCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
 
-
-- (void) willMoveToSuperview:(UIView *)newSuperview {
+- (void) willMoveToSuperview: (UIView *) newSuperview {
     
     [super willMoveToSuperview: newSuperview];
     
@@ -29,26 +20,6 @@
     
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    
-    if(selected) {
-        
-        self.colorBarView.backgroundColor = [UIColor whiteColor];
-    }
-   // [super setSelected: selected animated: animated];
-
-    // Configure the view for the selected state
-}
-
-- (void) setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
-    
-    if(highlighted) {
-        self.colorBarView.backgroundColor = [UIColor whiteColor];
-        
-    }
-    
-    [super setHighlighted: highlighted animated: animated];
-}
 
 - (void) layoutSubviews {
     
@@ -56,10 +27,10 @@
     
     CGRect frame = self.thumbnailView.frame;
     
-    frame.size = CGSizeMake(55, 55);
+    frame.size = CGSizeMake(55.0f, 55.0f);
     
     self.thumbnailView.frame = frame;
-
 }
+
 
 @end

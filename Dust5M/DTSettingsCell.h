@@ -10,6 +10,6 @@
 
 @interface DTSettingsCell : UITableViewCell
 
-//@property (nonatomic, strong) IBOutlet UISwitch *selectionSwitch;
 @property (nonatomic, strong) IBOutlet UILabel *countryLabel;
+
 @end
