@@ -11,7 +11,7 @@
 
 #import "DTArticleListViewController.h"
 #import "DTAdvertCell.h"
-#import "DTArticleCell.h"
+#import "DTBaseArticleCell.h"
 
 @interface DTArticleListViewController () {
     
@@ -28,12 +28,16 @@
     [super viewDidLoad];
     
     self.logoLabel.font = [UIFont fontWithName: @"BetonEF-Light" size: 52];
-    self.logoLabel.text = NSLocalizedString(@"Appname", @"Name of Application");
+    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
     
-
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
-    UINib *nib = [UINib nibWithNibName: @"DTArticleCell" bundle: nil];
-    [self.tableView registerNib: nib forCellReuseIdentifier: @"ArticleCell"];
+    
+    UINib *mainCellNib = [UINib nibWithNibName: @"DTMainArticleCell" bundle: nil];
+    [self.tableView registerNib: mainCellNib forCellReuseIdentifier: @"MainArticleCell"];
+    
+    UINib *nib = [UINib nibWithNibName: @"DTStandardArticleCell" bundle: nil];
+    [self.tableView registerNib: nib forCellReuseIdentifier: @"StandardArticleCell"];
+    
     [self.searchDisplayController.searchResultsTableView registerNib: nib forCellReuseIdentifier: @"ArticleCell"];
     
     self.refreshControl = [[UIRefreshControl alloc] initWithFrame: CGRectZero];
@@ -44,9 +48,9 @@
     [self.tableView addSubview: self.refreshControl];
     
     /*
-    NSLocalizedString(@"Inicio", @"");
-    NSLocalizedString(@"Noticias", @"");
-    NSLocalizedString(@"Eventos", @"");*/
+    NSLocalizedString(@"INICIO", @"");
+    NSLocalizedString(@"NOTICIAS", @"");
+    NSLocalizedString(@"EVENTOS", @"");*/
 }
 
 
@@ -59,12 +63,6 @@
     [self.tableView deselectRowAtIndexPath: self.tableView.indexPathForSelectedRow animated: YES];
     
     [self loadData];
-}
-
-
-- (void) viewDidAppear: (BOOL) animated {
-    
-    [super viewDidAppear: animated];
 }
 
 
@@ -83,7 +81,7 @@
             
             if(error) {
                 
-                NSLog(@"Network error.");
+                NSLog(@"Network error");
             }
             
             self.model = articleModel;
@@ -104,23 +102,20 @@
 
 - (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath {
     
-    return 75.0f;
+    if(indexPath.row == 0) {
+        
+        return 226.0f;
+    }
+    else {
+        
+        return 75.0f;
+    }
 }
 
 
 - (NSInteger) numberOfSectionsInTableView: (UITableView *) tableView {
     
     return 1;
-}
-
-
-- (CGFloat) tableView: (UITableView *) tableView heightForHeaderInSection: (NSInteger) section {
-    
-    if(tableView == self.searchDisplayController.searchResultsTableView) {
-        
-        return 0.0f;
-    }
-    return 0.0f;
 }
 
 
@@ -167,7 +162,18 @@
         
         article = self.model.content[indexPath.row];
     }
-    DTArticleCell *cell = [tableView dequeueReusableCellWithIdentifier: @"ArticleCell" forIndexPath: indexPath];
+    
+    DTBaseArticleCell *cell = nil;
+    
+    if(indexPath.row == 0) {
+        
+        cell = [tableView dequeueReusableCellWithIdentifier: @"MainArticleCell" forIndexPath: indexPath];
+    }
+    else {
+        
+        cell = [tableView dequeueReusableCellWithIdentifier: @"StandardArticleCell" forIndexPath: indexPath];
+    }
+    
     
     // use border rather than background color.  In selected state background colors are hidden by the system
     
@@ -175,17 +181,24 @@
     cell.descriptionLabel.text = article.headline;
     cell.dateLabel.text = [formatter stringFromDate: article.date];
     
-    if([article.contentType isEqualToString: @"news"]) {
+    NSString *link = [article.thumbnailURL stringByAddingPercentEscapesUsingEncoding: NSStringEncodingConversionExternalRepresentation];
+    
+    if(indexPath.row == 0) {
+        
+        cell.colorBarView.layer.borderColor = [UIColor whiteColor].CGColor;
+        loadImage(cell.thumbnailView, [NSURL URLWithString: link] , @"placeholder.png");
+    }
+    else if([article.contentType isEqualToString: @"news"]) {
         
         cell.colorBarView.layer.borderColor = RGB(0, 173, 239).CGColor;
                 
-        loadImage(cell.thumbnailView, [NSURL URLWithString: article.thumbnailURL], @"defaultnews.png");
+        loadImage(cell.thumbnailView, [NSURL URLWithString: link], @"defaultnews.png");
     }
     else if ([article.contentType isEqualToString: @"event" ]) {
         
         cell.colorBarView.layer.borderColor = RGB(0, 176, 0).CGColor;
         
-        loadImage(cell.thumbnailView, [NSURL URLWithString: article.thumbnailURL], @"defaultevent.png");
+        loadImage(cell.thumbnailView, [NSURL URLWithString: link], @"defaultevent.png");
     }
     
     return cell;
@@ -199,18 +212,10 @@
         NSNumber *advertIndex = self.model.content[indexPath.row];
         NSDictionary *advert = self.model.adverts[advertIndex.intValue];
         
-        
-        
         [self performSegueWithIdentifier: @"advertSegue" sender: advert];
         
-        
-        
-        
         NSLog(@"Advert Selected %@", advert[@"fullscreen"]);
-        
-        
     }
-    
     
     DTArticle *article = nil;
     if(tableView == self.searchDisplayController.searchResultsTableView) {
@@ -249,7 +254,6 @@
         
         ((DTAdvertViewController *)segue.destinationViewController).advertURL = adURLString;
     }
-    
 }
 
 
@@ -281,15 +285,15 @@
     
     NSMutableArray *resultArray = [NSMutableArray arrayWithArray: self.model.content];
     
-    [resultArray filterUsingPredicate: [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+    [resultArray filterUsingPredicate: [NSPredicate predicateWithBlock: ^BOOL(id evaluatedObject, NSDictionary *bindings) {
         
         if([evaluatedObject isKindOfClass:[DTArticle class]]) {
             
             return checkmatch(((DTArticle *)evaluatedObject).headline, searchText) ||
             checkmatch(((DTArticle *)evaluatedObject).htmlBody, searchText);
-            
         }
         else {
+            
             return NO;
         }
     }]];
@@ -302,7 +306,7 @@
 
 BOOL checkmatch(NSString *item, NSString *matchphrase) {
     
-    matchphrase = [matchphrase stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    matchphrase = [matchphrase stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     NSArray *searchTermns = [matchphrase componentsSeparatedByCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
     
@@ -312,10 +316,10 @@ BOOL checkmatch(NSString *item, NSString *matchphrase) {
         
         BOOL termMatch = NO;
         
-        NSPredicate *containPred = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@", term];
+        NSPredicate *containPred = [NSPredicate predicateWithFormat: @"SELF contains[cd] %@", term];
         termMatch = termMatch | [containPred evaluateWithObject: item];
         
-        NSPredicate *matchPred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", term];
+        NSPredicate *matchPred = [NSPredicate predicateWithFormat: @"SELF MATCHES %@", term];
         termMatch = termMatch | [matchPred evaluateWithObject: item];
         
         match = match & termMatch;

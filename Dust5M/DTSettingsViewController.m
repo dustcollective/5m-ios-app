@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     self.logoLabel.font = [UIFont fontWithName: @"BetonEF-Light" size: 52];
-    self.logoLabel.text = NSLocalizedString(@"Appname", @"Name of Application");
+    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
     
     
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];

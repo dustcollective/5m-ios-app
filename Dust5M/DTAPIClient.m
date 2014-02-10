@@ -8,8 +8,7 @@
 
 #import "DTAPIClient.h"
 
-static NSString * const MINSternBaseURLString = @"http://avicola.ios-app-feed.5m-app.dust.screenformat.com/";
-
+// Base URL is defined in config for each target.
 
 @implementation DTAPIClient
 

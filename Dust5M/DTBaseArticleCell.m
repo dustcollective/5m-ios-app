@@ -1,15 +1,14 @@
 //
-//  DTArticleCell.m
+//  DTBaseArticleCell.m
 //  Dust5M
 //
-//  Created by Kemal Enver on 12/11/2013.
-//  Copyright (c) 2013 dust. All rights reserved.
+//  Created by Kemal Enver on 10/02/2014.
+//  Copyright (c) 2014 dust. All rights reserved.
 //
 
-#import "DTArticleCell.h"
+#import "DTBaseArticleCell.h"
 
-@implementation DTArticleCell
-
+@implementation DTBaseArticleCell
 
 - (void) willMoveToSuperview: (UIView *) newSuperview {
     
@@ -31,6 +30,5 @@
     
     self.thumbnailView.frame = frame;
 }
-
 
 @end

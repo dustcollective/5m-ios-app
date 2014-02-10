@@ -7,7 +7,7 @@
 //
 
 #import "DTArticleModel.h"
-#import "DTArticleCell.h"
+#import "DTStandardArticleCell.h"
 
 @interface DTArticleListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
 

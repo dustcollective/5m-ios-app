@@ -26,9 +26,9 @@
                                                             leftDrawerViewController: menuController];
     
     self.drawerController.showsShadow = NO;
-    self.drawerController.shouldStretchDrawer = NO;
-    self.drawerController.maximumRightDrawerWidth = 1.0;
     self.drawerController.maximumLeftDrawerWidth = 140.0f;
+    self.drawerController.rightDrawerViewController = nil;
+    //self.drawerController.centerHiddenInteractionMode = MMDrawerOpenCenterInteractionModeFull;
     
     self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
     self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;

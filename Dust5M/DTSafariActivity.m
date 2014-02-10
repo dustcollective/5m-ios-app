@@ -22,7 +22,7 @@
 
 - (NSString *)activityTitle {
     
-    return NSLocalizedStringFromTable(@"OPEN_SAFARI", @"Open in Safari action", nil);
+    return NSLocalizedString(@"OPEN_SAFARI", @"Open in Safari action");
 }
 
 

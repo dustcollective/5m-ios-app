@@ -31,6 +31,7 @@ void loadImage(UIImageView *imageView, NSURL *imageURL, NSString *placeholderURL
                                                         duration: 0.2f
                                                          options: UIViewAnimationOptionTransitionCrossDissolve
                                                       animations: ^{
+                                                          
                                                           weakImageView.image = image;
                                                       }
                                                       completion: nil];
@@ -38,7 +39,6 @@ void loadImage(UIImageView *imageView, NSURL *imageURL, NSString *placeholderURL
                                   
                               } failure: ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
                                   
-
                               }];
 }
 

@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     self.logoLabel.font = [UIFont fontWithName: @"BetonEF-Light" size: 52];
-    self.logoLabel.text = NSLocalizedString(@"Appname", @"Name of Application");
+    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
     
     self.webView.delegate = self;
     
@@ -38,5 +38,12 @@
     [self.webView loadRequest: request];
 }
 
+- (void) webViewDidFinishLoad: (UIWebView *) webView {
+    
+    // Webpage seems to be too wide.  Force it to the width of the screen so that the
+    // drawer gesture is recognised instead of the webview scroll recogniser.
+    webView.scrollView.contentSize = CGSizeMake(webView.frame.size.width, webView.scrollView.contentSize.height);
+    
+}
 
 @end

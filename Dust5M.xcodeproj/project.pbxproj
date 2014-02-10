@@ -151,6 +151,24 @@
 		0A14B11E18A13F5E001EBC22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620A18312558001C484E /* UIKit.framework */; };
 		0A14B11F18A13F5E001EBC22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620618312558001C484E /* Foundation.framework */; };
 		0A14B14D18A13F5E001EBC22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A37620F18312558001C484E /* InfoPlist.strings */; };
+		0A1CE26118A8D46A003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE24B18A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE26B18A8D476003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE23F18A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE26D18A8D479003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE24218A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE26F18A8D47C003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE24518A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE27118A8D480003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE24818A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE27318A8D487003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE24E18A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE27418A8D48B003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE25018A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE27618A8D48E003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE25318A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE27818A8D492003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE25618A8D46A003285D9 /* Localizable.strings */; };
+		0A1CE27C18A8D630003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE27B18A8D630003285D9 /* DTConfig.m */; };
+		0A1CE29118A8D6A5003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE29018A8D6A5003285D9 /* DTConfig.m */; };
+		0A1CE29418A8D6AD003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE29318A8D6AD003285D9 /* DTConfig.m */; };
+		0A1CE29718A8D6B2003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE27E18A8D679003285D9 /* DTConfig.m */; };
+		0A1CE29A18A8D6B6003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28118A8D67F003285D9 /* DTConfig.m */; };
+		0A1CE29D18A8D6BB003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28418A8D686003285D9 /* DTConfig.m */; };
+		0A1CE2A018A8D6C0003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28718A8D692003285D9 /* DTConfig.m */; };
+		0A1CE2A318A8D6CE003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28A18A8D698003285D9 /* DTConfig.m */; };
+		0A1CE2A618A8D6D3003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28D18A8D69E003285D9 /* DTConfig.m */; };
 		0A31FE3518A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
 		0A31FE3618A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
 		0A31FE3718A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
@@ -196,24 +214,24 @@
 		0A31FE5F18A3EC9C00344822 /* DTArticleCDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1618A3EC9B00344822 /* DTArticleCDModel.xcdatamodeld */; };
 		0A31FE6018A3EC9C00344822 /* DTArticleCDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1618A3EC9B00344822 /* DTArticleCDModel.xcdatamodeld */; };
 		0A31FE6118A3EC9C00344822 /* DTArticleCDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1618A3EC9B00344822 /* DTArticleCDModel.xcdatamodeld */; };
-		0A31FE6218A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6318A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6418A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6518A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6618A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6718A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6818A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6918A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6A18A3EC9C00344822 /* DTArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTArticleCell.m */; };
-		0A31FE6B18A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
-		0A31FE6C18A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
-		0A31FE6D18A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
-		0A31FE6E18A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
-		0A31FE6F18A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
-		0A31FE7018A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
-		0A31FE7118A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
-		0A31FE7218A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
-		0A31FE7318A3EC9C00344822 /* DTArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */; };
+		0A31FE6218A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6318A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6418A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6518A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6618A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6718A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6818A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6918A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6A18A3EC9C00344822 /* DTStandardArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */; };
+		0A31FE6B18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
+		0A31FE6C18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
+		0A31FE6D18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
+		0A31FE6E18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
+		0A31FE6F18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
+		0A31FE7018A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
+		0A31FE7118A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
+		0A31FE7218A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
+		0A31FE7318A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */; };
 		0A31FE7418A3EC9C00344822 /* DTArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1C18A3EC9B00344822 /* DTArticleListViewController.m */; };
 		0A31FE7518A3EC9C00344822 /* DTArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1C18A3EC9B00344822 /* DTArticleListViewController.m */; };
 		0A31FE7618A3EC9C00344822 /* DTArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE1C18A3EC9B00344822 /* DTArticleListViewController.m */; };
@@ -445,6 +463,24 @@
 		0A45ED5C18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
 		0A45ED5D18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
 		0A45ED5E18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
+		0A981BDE18A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BDF18A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BE018A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BE118A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BE218A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BE318A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BE418A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BE518A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BE618A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
+		0A981BE918A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A981BEA18A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A981BEB18A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A981BEC18A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A981BED18A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A981BEE18A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A981BEF18A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A981BF018A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A981BF118A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
 		0A9BCA4F18A13E4C00AC8F34 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A37625F183125C2001C484E /* UIProgressView+AFNetworking.m */; };
 		0A9BCA5318A13E4C00AC8F34 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A37625A183125C2001C484E /* UIButton+AFNetworking.m */; };
 		0A9BCA5418A13E4C00AC8F34 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A376258183125C2001C484E /* UIAlertView+AFNetworking.m */; };
@@ -511,15 +547,24 @@
 		0AA6B93318A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
 		0AA6B93418A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
 		0AA6B93518A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B94D18A4EA630019CE5B /* elsitio-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94018A4EA630019CE5B /* elsitio-Info.plist */; };
-		0AA6B95218A4EA6D0019CE5B /* beef-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B93818A4EA620019CE5B /* beef-Info.plist */; };
-		0AA6B95318A4EA700019CE5B /* cattle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B93A18A4EA620019CE5B /* cattle-Info.plist */; };
-		0AA6B95418A4EA730019CE5B /* crop-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B93C18A4EA620019CE5B /* crop-Info.plist */; };
-		0AA6B95518A4EA760019CE5B /* dairy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B93E18A4EA620019CE5B /* dairy-Info.plist */; };
-		0AA6B95618A4EA7B0019CE5B /* fish-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94218A4EA630019CE5B /* fish-Info.plist */; };
-		0AA6B95718A4EA7E0019CE5B /* meat-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94418A4EA630019CE5B /* meat-Info.plist */; };
-		0AA6B95818A4EA810019CE5B /* pig-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94618A4EA630019CE5B /* pig-Info.plist */; };
-		0AA6B95918A4EA850019CE5B /* poultry-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B94818A4EA630019CE5B /* poultry-Info.plist */; };
+		0AAA934218A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934318A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934418A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934518A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934618A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934718A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934818A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934918A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934A18A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AAA934C18A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
+		0AAA934D18A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
+		0AAA934E18A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
+		0AAA934F18A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
+		0AAA935018A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
+		0AAA935118A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
+		0AAA935218A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
+		0AAA935318A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
+		0AAA935418A97A1D00EE3E26 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */; };
 		0AEC342B1850B032001F924E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEC342A1850B032001F924E /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
@@ -530,6 +575,34 @@
 		0A14B08918A13F4D001EBC22 /* meat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A14B0F418A13F54001EBC22 /* pig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A14B15F18A13F5E001EBC22 /* poultry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poultry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1CE23E18A8D46A003285D9 /* beef-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "beef-Info.plist"; sourceTree = "<group>"; };
+		0A1CE23F18A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE24118A8D46A003285D9 /* cattle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cattle-Info.plist"; sourceTree = "<group>"; };
+		0A1CE24218A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE24418A8D46A003285D9 /* crop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crop-Info.plist"; sourceTree = "<group>"; };
+		0A1CE24518A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE24718A8D46A003285D9 /* dairy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "dairy-Info.plist"; sourceTree = "<group>"; };
+		0A1CE24818A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE24A18A8D46A003285D9 /* elsitio-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "elsitio-Info.plist"; sourceTree = "<group>"; };
+		0A1CE24B18A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE24D18A8D46A003285D9 /* fish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fish-Info.plist"; sourceTree = "<group>"; };
+		0A1CE24E18A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE25018A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE25118A8D46A003285D9 /* meat-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "meat-Info.plist"; sourceTree = "<group>"; };
+		0A1CE25318A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE25418A8D46A003285D9 /* pig-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pig-Info.plist"; sourceTree = "<group>"; };
+		0A1CE25618A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0A1CE25718A8D46A003285D9 /* poultry-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "poultry-Info.plist"; sourceTree = "<group>"; };
+		0A1CE27B18A8D630003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE27E18A8D679003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE28118A8D67F003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE28418A8D686003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE28718A8D692003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE28A18A8D698003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE28D18A8D69E003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE29018A8D6A5003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE29318A8D6AD003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
+		0A1CE2A718A8D9CA003285D9 /* DTConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTConfig.h; sourceTree = "<group>"; };
 		0A31FE0E18A3EC9B00344822 /* DTAdvertCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAdvertCell.h; sourceTree = "<group>"; };
 		0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAdvertCell.m; sourceTree = "<group>"; };
 		0A31FE1018A3EC9B00344822 /* DTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAPIClient.h; sourceTree = "<group>"; };
@@ -539,9 +612,9 @@
 		0A31FE1418A3EC9B00344822 /* DTArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTArticle.h; sourceTree = "<group>"; };
 		0A31FE1518A3EC9B00344822 /* DTArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTArticle.m; sourceTree = "<group>"; };
 		0A31FE1718A3EC9B00344822 /* DTArticleCDModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DTArticleCDModel.xcdatamodel; sourceTree = "<group>"; };
-		0A31FE1818A3EC9B00344822 /* DTArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTArticleCell.h; sourceTree = "<group>"; };
-		0A31FE1918A3EC9B00344822 /* DTArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTArticleCell.m; sourceTree = "<group>"; };
-		0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTArticleCell.xib; sourceTree = "<group>"; };
+		0A31FE1818A3EC9B00344822 /* DTStandardArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStandardArticleCell.h; sourceTree = "<group>"; };
+		0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStandardArticleCell.m; sourceTree = "<group>"; };
+		0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTStandardArticleCell.xib; sourceTree = "<group>"; };
 		0A31FE1B18A3EC9B00344822 /* DTArticleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTArticleListViewController.h; sourceTree = "<group>"; };
 		0A31FE1C18A3EC9B00344822 /* DTArticleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTArticleListViewController.m; sourceTree = "<group>"; };
 		0A31FE1D18A3EC9B00344822 /* DTArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTArticleModel.h; sourceTree = "<group>"; };
@@ -640,20 +713,17 @@
 		0A45ED4A18A3FFCB009C9890 /* DTMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMenuViewController.m; sourceTree = "<group>"; };
 		0A45ED5418A400B9009C9890 /* DTMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMenuTableViewCell.h; sourceTree = "<group>"; };
 		0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMenuTableViewCell.m; sourceTree = "<group>"; };
+		0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTMainArticleCell.xib; sourceTree = "<group>"; };
+		0A981BE718A93E22003F1753 /* DTMainArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMainArticleCell.h; sourceTree = "<group>"; };
+		0A981BE818A93E22003F1753 /* DTMainArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMainArticleCell.m; sourceTree = "<group>"; };
 		0A9BCAB618A13E4C00AC8F34 /* beef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9BCB2118A13E5400AC8F34 /* cattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA4D64718A7F82C008A0C20 /* DTAdvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAdvertViewController.h; sourceTree = "<group>"; };
 		0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAdvertViewController.m; sourceTree = "<group>"; };
 		0AA6B92C18A4E3E40019CE5B /* territories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = territories.plist; sourceTree = "<group>"; };
-		0AA6B93818A4EA620019CE5B /* beef-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "beef-Info.plist"; sourceTree = "<group>"; };
-		0AA6B93A18A4EA620019CE5B /* cattle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cattle-Info.plist"; sourceTree = "<group>"; };
-		0AA6B93C18A4EA620019CE5B /* crop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crop-Info.plist"; sourceTree = "<group>"; };
-		0AA6B93E18A4EA620019CE5B /* dairy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "dairy-Info.plist"; sourceTree = "<group>"; };
-		0AA6B94018A4EA630019CE5B /* elsitio-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "elsitio-Info.plist"; sourceTree = "<group>"; };
-		0AA6B94218A4EA630019CE5B /* fish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fish-Info.plist"; sourceTree = "<group>"; };
-		0AA6B94418A4EA630019CE5B /* meat-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "meat-Info.plist"; sourceTree = "<group>"; };
-		0AA6B94618A4EA630019CE5B /* pig-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pig-Info.plist"; sourceTree = "<group>"; };
-		0AA6B94818A4EA630019CE5B /* poultry-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "poultry-Info.plist"; sourceTree = "<group>"; };
+		0AAA934018A9709900EE3E26 /* DTBaseArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseArticleCell.h; sourceTree = "<group>"; };
+		0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseArticleCell.m; sourceTree = "<group>"; };
+		0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
 		0AEC342A1850B032001F924E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -778,6 +848,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1CE23C18A8D46A003285D9 /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE2A718A8D9CA003285D9 /* DTConfig.h */,
+				0A1CE23D18A8D46A003285D9 /* beef */,
+				0A1CE24018A8D46A003285D9 /* cattle */,
+				0A1CE24318A8D46A003285D9 /* crop */,
+				0A1CE24618A8D46A003285D9 /* dairy */,
+				0A1CE24918A8D46A003285D9 /* elsitio */,
+				0A1CE24C18A8D46A003285D9 /* fish */,
+				0A1CE24F18A8D46A003285D9 /* meat */,
+				0A1CE25218A8D46A003285D9 /* pig */,
+				0A1CE25518A8D46A003285D9 /* poultry */,
+			);
+			path = configs;
+			sourceTree = "<group>";
+		};
+		0A1CE23D18A8D46A003285D9 /* beef */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE27E18A8D679003285D9 /* DTConfig.m */,
+				0A1CE23E18A8D46A003285D9 /* beef-Info.plist */,
+				0A1CE23F18A8D46A003285D9 /* Localizable.strings */,
+			);
+			path = beef;
+			sourceTree = "<group>";
+		};
+		0A1CE24018A8D46A003285D9 /* cattle */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE28118A8D67F003285D9 /* DTConfig.m */,
+				0A1CE24118A8D46A003285D9 /* cattle-Info.plist */,
+				0A1CE24218A8D46A003285D9 /* Localizable.strings */,
+			);
+			path = cattle;
+			sourceTree = "<group>";
+		};
+		0A1CE24318A8D46A003285D9 /* crop */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE28418A8D686003285D9 /* DTConfig.m */,
+				0A1CE24418A8D46A003285D9 /* crop-Info.plist */,
+				0A1CE24518A8D46A003285D9 /* Localizable.strings */,
+			);
+			path = crop;
+			sourceTree = "<group>";
+		};
+		0A1CE24618A8D46A003285D9 /* dairy */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE28718A8D692003285D9 /* DTConfig.m */,
+				0A1CE24718A8D46A003285D9 /* dairy-Info.plist */,
+				0A1CE24818A8D46A003285D9 /* Localizable.strings */,
+			);
+			path = dairy;
+			sourceTree = "<group>";
+		};
+		0A1CE24918A8D46A003285D9 /* elsitio */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE24A18A8D46A003285D9 /* elsitio-Info.plist */,
+				0A1CE24B18A8D46A003285D9 /* Localizable.strings */,
+				0A1CE27B18A8D630003285D9 /* DTConfig.m */,
+			);
+			path = elsitio;
+			sourceTree = "<group>";
+		};
+		0A1CE24C18A8D46A003285D9 /* fish */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE28A18A8D698003285D9 /* DTConfig.m */,
+				0A1CE24D18A8D46A003285D9 /* fish-Info.plist */,
+				0A1CE24E18A8D46A003285D9 /* Localizable.strings */,
+			);
+			path = fish;
+			sourceTree = "<group>";
+		};
+		0A1CE24F18A8D46A003285D9 /* meat */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE28D18A8D69E003285D9 /* DTConfig.m */,
+				0A1CE25018A8D46A003285D9 /* Localizable.strings */,
+				0A1CE25118A8D46A003285D9 /* meat-Info.plist */,
+			);
+			path = meat;
+			sourceTree = "<group>";
+		};
+		0A1CE25218A8D46A003285D9 /* pig */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE29018A8D6A5003285D9 /* DTConfig.m */,
+				0A1CE25318A8D46A003285D9 /* Localizable.strings */,
+				0A1CE25418A8D46A003285D9 /* pig-Info.plist */,
+			);
+			path = pig;
+			sourceTree = "<group>";
+		};
+		0A1CE25518A8D46A003285D9 /* poultry */ = {
+			isa = PBXGroup;
+			children = (
+				0A1CE29318A8D6AD003285D9 /* DTConfig.m */,
+				0A1CE25618A8D46A003285D9 /* Localizable.strings */,
+				0A1CE25718A8D46A003285D9 /* poultry-Info.plist */,
+			);
+			path = poultry;
+			sourceTree = "<group>";
+		};
 		0A31FE3018A3EC9B00344822 /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
@@ -789,7 +966,7 @@
 		0A3761FA18312558001C484E = {
 			isa = PBXGroup;
 			children = (
-				0AA6B93618A4EA620019CE5B /* configs */,
+				0A1CE23C18A8D46A003285D9 /* configs */,
 				0A45EB8E18A3EDED009C9890 /* resources */,
 				0A37620C18312558001C484E /* Dust5M */,
 				0A37622E18312558001C484E /* Dust5MTests */,
@@ -833,11 +1010,16 @@
 			children = (
 				0A31FE1618A3EC9B00344822 /* DTArticleCDModel.xcdatamodeld */,
 				0A31FE3418A3EC9C00344822 /* Main.storyboard */,
+				0A31FE1A18A3EC9B00344822 /* DTStandardArticleCell.xib */,
+				0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */,
+				0AAA934018A9709900EE3E26 /* DTBaseArticleCell.h */,
+				0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */,
+				0A981BE718A93E22003F1753 /* DTMainArticleCell.h */,
+				0A981BE818A93E22003F1753 /* DTMainArticleCell.m */,
+				0A31FE1818A3EC9B00344822 /* DTStandardArticleCell.h */,
+				0A31FE1918A3EC9B00344822 /* DTStandardArticleCell.m */,
 				0A31FE0E18A3EC9B00344822 /* DTAdvertCell.h */,
 				0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */,
-				0A31FE1818A3EC9B00344822 /* DTArticleCell.h */,
-				0A31FE1918A3EC9B00344822 /* DTArticleCell.m */,
-				0A31FE1A18A3EC9B00344822 /* DTArticleCell.xib */,
 				0A31FE1018A3EC9B00344822 /* DTAPIClient.h */,
 				0A31FE1118A3EC9B00344822 /* DTAPIClient.m */,
 				0A31FE1218A3EC9B00344822 /* DTAppDelegate.h */,
@@ -868,13 +1050,13 @@
 				0A45ED4A18A3FFCB009C9890 /* DTMenuViewController.m */,
 				0A45ED5418A400B9009C9890 /* DTMenuTableViewCell.h */,
 				0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */,
+				0AA4D64718A7F82C008A0C20 /* DTAdvertViewController.h */,
+				0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */,
 				0A31FE3018A3EC9B00344822 /* en.lproj */,
 				0A37620D18312558001C484E /* Supporting Files */,
 				0A37623E183125C2001C484E /* AFNetworking */,
 				0A376252183125C2001C484E /* UIKit+AFNetworking */,
 				0A45EBEA18A3F9AE009C9890 /* MMDrawerController */,
-				0AA4D64718A7F82C008A0C20 /* DTAdvertViewController.h */,
-				0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */,
 			);
 			path = Dust5M;
 			sourceTree = "<group>";
@@ -958,6 +1140,7 @@
 		0A45EB8E18A3EDED009C9890 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				0AAA934B18A97A1D00EE3E26 /* placeholder@2x.png */,
 				0A45EB9718A3EDED009C9890 /* fonts */,
 				0A45EB9118A3EDED009C9890 /* beef.xcassets */,
 				0A45EB9218A3EDED009C9890 /* cattle.xcassets */,
@@ -1009,94 +1192,6 @@
 				0A45EC2318A3F9AE009C9890 /* UIViewController+MMDrawerController.m */,
 			);
 			path = MMDrawerController;
-			sourceTree = "<group>";
-		};
-		0AA6B93618A4EA620019CE5B /* configs */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B93718A4EA620019CE5B /* beef */,
-				0AA6B93918A4EA620019CE5B /* cattle */,
-				0AA6B93B18A4EA620019CE5B /* crop */,
-				0AA6B93D18A4EA620019CE5B /* dairy */,
-				0AA6B93F18A4EA630019CE5B /* elsitio */,
-				0AA6B94118A4EA630019CE5B /* fish */,
-				0AA6B94318A4EA630019CE5B /* meat */,
-				0AA6B94518A4EA630019CE5B /* pig */,
-				0AA6B94718A4EA630019CE5B /* poultry */,
-			);
-			path = configs;
-			sourceTree = "<group>";
-		};
-		0AA6B93718A4EA620019CE5B /* beef */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B93818A4EA620019CE5B /* beef-Info.plist */,
-			);
-			path = beef;
-			sourceTree = "<group>";
-		};
-		0AA6B93918A4EA620019CE5B /* cattle */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B93A18A4EA620019CE5B /* cattle-Info.plist */,
-			);
-			path = cattle;
-			sourceTree = "<group>";
-		};
-		0AA6B93B18A4EA620019CE5B /* crop */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B93C18A4EA620019CE5B /* crop-Info.plist */,
-			);
-			path = crop;
-			sourceTree = "<group>";
-		};
-		0AA6B93D18A4EA620019CE5B /* dairy */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B93E18A4EA620019CE5B /* dairy-Info.plist */,
-			);
-			path = dairy;
-			sourceTree = "<group>";
-		};
-		0AA6B93F18A4EA630019CE5B /* elsitio */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B94018A4EA630019CE5B /* elsitio-Info.plist */,
-			);
-			path = elsitio;
-			sourceTree = "<group>";
-		};
-		0AA6B94118A4EA630019CE5B /* fish */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B94218A4EA630019CE5B /* fish-Info.plist */,
-			);
-			path = fish;
-			sourceTree = "<group>";
-		};
-		0AA6B94318A4EA630019CE5B /* meat */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B94418A4EA630019CE5B /* meat-Info.plist */,
-			);
-			path = meat;
-			sourceTree = "<group>";
-		};
-		0AA6B94518A4EA630019CE5B /* pig */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B94618A4EA630019CE5B /* pig-Info.plist */,
-			);
-			path = pig;
-			sourceTree = "<group>";
-		};
-		0AA6B94718A4EA630019CE5B /* poultry */ = {
-			isa = PBXGroup;
-			children = (
-				0AA6B94818A4EA630019CE5B /* poultry-Info.plist */,
-			);
-			path = poultry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1297,14 +1392,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A45EBB218A3EDF6009C9890 /* general.xcassets in Resources */,
+				0A1CE26F18A8D47C003285D9 /* Localizable.strings in Resources */,
 				0A14AF3618A13F32001EBC22 /* InfoPlist.strings in Resources */,
-				0AA6B95418A4EA730019CE5B /* crop-Info.plist in Resources */,
 				0A45EBC418A3EE30009C9890 /* app.css in Resources */,
 				0AA6B93018A4E3E70019CE5B /* territories.plist in Resources */,
-				0A31FE6E18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0A31FE6E18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBD418A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0AAA934F18A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
 				0A45EBBB18A3EE06009C9890 /* crop.xcassets in Resources */,
 				0A31FEE318A3EC9C00344822 /* Main.storyboard in Resources */,
+				0A981BE118A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A31FED118A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A45EBD518A3EE61009C9890 /* BetonEF-Light.otf in Resources */,
 			);
@@ -1315,14 +1412,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A45EBB318A3EDF6009C9890 /* general.xcassets in Resources */,
+				0A1CE27118A8D480003285D9 /* Localizable.strings in Resources */,
 				0A14AFA118A13F3D001EBC22 /* InfoPlist.strings in Resources */,
 				0A45EBC518A3EE30009C9890 /* app.css in Resources */,
-				0AA6B95518A4EA760019CE5B /* dairy-Info.plist in Resources */,
 				0AA6B93118A4E3E80019CE5B /* territories.plist in Resources */,
-				0A31FE6F18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0A31FE6F18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBD818A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0AAA935018A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
 				0A31FEE418A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FED218A3EC9C00344822 /* InfoPlist.strings in Resources */,
+				0A981BE218A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBBC18A3EE09009C9890 /* dairy.xcassets in Resources */,
 				0A45EBD918A3EE61009C9890 /* BetonEF-Light.otf in Resources */,
 			);
@@ -1333,14 +1432,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A45EBB418A3EDF7009C9890 /* general.xcassets in Resources */,
+				0A1CE27318A8D487003285D9 /* Localizable.strings in Resources */,
 				0A14B00C18A13F45001EBC22 /* InfoPlist.strings in Resources */,
 				0A45EBC618A3EE31009C9890 /* app.css in Resources */,
 				0AA6B93218A4E3E80019CE5B /* territories.plist in Resources */,
-				0A31FE7018A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0A31FE7018A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBDC18A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
-				0AA6B95618A4EA7B0019CE5B /* fish-Info.plist in Resources */,
+				0AAA935118A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
 				0A31FEE518A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FED318A3EC9C00344822 /* InfoPlist.strings in Resources */,
+				0A981BE318A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBBD18A3EE11009C9890 /* fish.xcassets in Resources */,
 				0A45EBDD18A3EE61009C9890 /* BetonEF-Light.otf in Resources */,
 			);
@@ -1352,13 +1453,15 @@
 			files = (
 				0A45EBB518A3EDF7009C9890 /* general.xcassets in Resources */,
 				0A14B07718A13F4D001EBC22 /* InfoPlist.strings in Resources */,
-				0AA6B95718A4EA7E0019CE5B /* meat-Info.plist in Resources */,
+				0A1CE27418A8D48B003285D9 /* Localizable.strings in Resources */,
 				0A45EBC718A3EE31009C9890 /* app.css in Resources */,
 				0AA6B93318A4E3E90019CE5B /* territories.plist in Resources */,
-				0A31FE7118A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0A31FE7118A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBE018A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0AAA935218A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
 				0A31FEE618A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A45EBBF18A3EE19009C9890 /* meat.xcassets in Resources */,
+				0A981BE418A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A31FED418A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A45EBE118A3EE62009C9890 /* BetonEF-Light.otf in Resources */,
 			);
@@ -1369,14 +1472,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A45EBB618A3EDF7009C9890 /* general.xcassets in Resources */,
-				0AA6B95818A4EA810019CE5B /* pig-Info.plist in Resources */,
 				0A14B0E218A13F54001EBC22 /* InfoPlist.strings in Resources */,
+				0A1CE27618A8D48E003285D9 /* Localizable.strings in Resources */,
 				0A45EBC818A3EE32009C9890 /* app.css in Resources */,
 				0AA6B93418A4E3E90019CE5B /* territories.plist in Resources */,
 				0A45EBC018A3EE1C009C9890 /* pig.xcassets in Resources */,
 				0A45EBE418A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
-				0A31FE7218A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0AAA935318A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
+				0A31FE7218A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A31FEE718A3EC9C00344822 /* Main.storyboard in Resources */,
+				0A981BE518A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A31FED518A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A45EBE518A3EE62009C9890 /* BetonEF-Light.otf in Resources */,
 			);
@@ -1388,13 +1493,15 @@
 			files = (
 				0A31FEE818A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A45EBB718A3EDF8009C9890 /* general.xcassets in Resources */,
+				0A1CE27818A8D492003285D9 /* Localizable.strings in Resources */,
 				0A31FED618A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0AA6B93518A4E3E90019CE5B /* territories.plist in Resources */,
 				0A45EBE918A3EE62009C9890 /* BetonEF-Light.otf in Resources */,
-				0A31FE7318A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0A31FE7318A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBC118A3EE1F009C9890 /* poultry.xcassets in Resources */,
-				0AA6B95918A4EA850019CE5B /* poultry-Info.plist in Resources */,
+				0AAA935418A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
 				0A14B14D18A13F5E001EBC22 /* InfoPlist.strings in Resources */,
+				0A981BE618A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBE818A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBC918A3EE32009C9890 /* app.css in Resources */,
 			);
@@ -1409,12 +1516,14 @@
 				0A37621118312558001C484E /* InfoPlist.strings in Resources */,
 				0A45ED3D18A3F9AE009C9890 /* README.md in Resources */,
 				0AA6B92D18A4E3E40019CE5B /* territories.plist in Resources */,
+				0AAA934C18A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
+				0A1CE26118A8D46A003285D9 /* Localizable.strings in Resources */,
 				0A45EBAA18A3EDED009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBBE18A3EE14009C9890 /* elsitio.xcassets in Resources */,
-				0A31FE6B18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0A31FE6B18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
+				0A981BDE18A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBA118A3EDED009C9890 /* app.css in Resources */,
 				0A31FEE018A3EC9C00344822 /* Main.storyboard in Resources */,
-				0AA6B94D18A4EA630019CE5B /* elsitio-Info.plist in Resources */,
 				0A31FECE18A3EC9C00344822 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1424,15 +1533,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A45EBB018A3EDF5009C9890 /* general.xcassets in Resources */,
+				0A1CE26B18A8D476003285D9 /* Localizable.strings in Resources */,
 				0A45EBB918A3EDFD009C9890 /* beef.xcassets in Resources */,
 				0A45EBC218A3EE2F009C9890 /* app.css in Resources */,
 				0AA6B92E18A4E3E70019CE5B /* territories.plist in Resources */,
 				0A9BCAA418A13E4C00AC8F34 /* InfoPlist.strings in Resources */,
 				0A45EBCC18A3EE60009C9890 /* BetonEF-DemiBold.otf in Resources */,
-				0A31FE6C18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0A31FE6C18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
+				0AAA934D18A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
 				0A31FEE118A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FECF18A3EC9C00344822 /* InfoPlist.strings in Resources */,
-				0AA6B95218A4EA6D0019CE5B /* beef-Info.plist in Resources */,
+				0A981BDF18A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBCD18A3EE60009C9890 /* BetonEF-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1442,16 +1553,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A45EBB118A3EDF6009C9890 /* general.xcassets in Resources */,
+				0A1CE26D18A8D479003285D9 /* Localizable.strings in Resources */,
 				0A9BCB0F18A13E5400AC8F34 /* InfoPlist.strings in Resources */,
 				0A45EBC318A3EE30009C9890 /* app.css in Resources */,
 				0AA6B92F18A4E3E70019CE5B /* territories.plist in Resources */,
 				0A45EBBA18A3EE01009C9890 /* cattle.xcassets in Resources */,
 				0A45EBD018A3EE60009C9890 /* BetonEF-DemiBold.otf in Resources */,
-				0A31FE6D18A3EC9C00344822 /* DTArticleCell.xib in Resources */,
+				0A31FE6D18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
+				0AAA934E18A97A1D00EE3E26 /* placeholder@2x.png in Resources */,
 				0A31FEE218A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FED018A3EC9C00344822 /* InfoPlist.strings in Resources */,
+				0A981BE018A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBD118A3EE60009C9890 /* BetonEF-Light.otf in Resources */,
-				0AA6B95318A4EA700019CE5B /* cattle-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1465,6 +1578,7 @@
 				0AA4D64C18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1318A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9B18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BEC18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8918A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14AEE118A13F32001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FEC818A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1474,7 +1588,8 @@
 				0A31FEBF18A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE8018A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A14AEE818A13F32001EBC22 /* AFSecurityPolicy.m in Sources */,
-				0A31FE6518A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6518A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934518A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7718A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE4118A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2518A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1487,6 +1602,7 @@
 				0A31FEAD18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14AEF018A13F32001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5918A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE29D18A8D6BB003285D9 /* DTConfig.m in Sources */,
 				0A14AEF418A13F32001EBC22 /* main.m in Sources */,
 				0A31FEB618A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9218A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1512,6 +1628,7 @@
 				0AA4D64D18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1418A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9C18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BED18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8A18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14AF4C18A13F3D001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FEC918A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1521,7 +1638,8 @@
 				0A31FEC018A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE8118A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A14AF5318A13F3D001EBC22 /* AFSecurityPolicy.m in Sources */,
-				0A31FE6618A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6618A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934618A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7818A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE4218A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2618A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1534,6 +1652,7 @@
 				0A31FEAE18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14AF5B18A13F3D001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5A18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE2A018A8D6C0003285D9 /* DTConfig.m in Sources */,
 				0A14AF5F18A13F3D001EBC22 /* main.m in Sources */,
 				0A31FEB718A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9318A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1559,6 +1678,7 @@
 				0AA4D64E18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1518A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9D18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BEE18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8B18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14AFB718A13F45001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FECA18A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1568,7 +1688,8 @@
 				0A31FEC118A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE8218A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A14AFBE18A13F45001EBC22 /* AFSecurityPolicy.m in Sources */,
-				0A31FE6718A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6718A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934718A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7918A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE4318A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2718A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1581,6 +1702,7 @@
 				0A31FEAF18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14AFC618A13F45001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5B18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE2A318A8D6CE003285D9 /* DTConfig.m in Sources */,
 				0A14AFCA18A13F45001EBC22 /* main.m in Sources */,
 				0A31FEB818A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9418A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1606,6 +1728,7 @@
 				0AA4D64F18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1618A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9E18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BEF18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8C18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14B02218A13F4D001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FECB18A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1615,7 +1738,8 @@
 				0A31FEC218A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE8318A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A14B02918A13F4D001EBC22 /* AFSecurityPolicy.m in Sources */,
-				0A31FE6818A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6818A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934818A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7A18A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE4418A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2818A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1628,6 +1752,7 @@
 				0A31FEB018A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14B03118A13F4D001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5C18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE2A618A8D6D3003285D9 /* DTConfig.m in Sources */,
 				0A14B03518A13F4D001EBC22 /* main.m in Sources */,
 				0A31FEB918A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9518A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1653,6 +1778,7 @@
 				0AA4D65018A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1718A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9F18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BF018A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8D18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14B08D18A13F54001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FECC18A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1662,7 +1788,8 @@
 				0A31FEC318A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE8418A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A14B09418A13F54001EBC22 /* AFSecurityPolicy.m in Sources */,
-				0A31FE6918A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6918A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934918A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7B18A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE4518A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2918A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1675,6 +1802,7 @@
 				0A31FEB118A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14B09C18A13F54001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5D18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE29118A8D6A5003285D9 /* DTConfig.m in Sources */,
 				0A14B0A018A13F54001EBC22 /* main.m in Sources */,
 				0A31FEBA18A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9618A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1700,6 +1828,7 @@
 				0AA4D65118A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1818A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FEA018A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BF118A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8E18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14B0F818A13F5E001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FECD18A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1709,7 +1838,8 @@
 				0A31FEC418A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE8518A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A14B0FF18A13F5E001EBC22 /* AFSecurityPolicy.m in Sources */,
-				0A31FE6A18A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6A18A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934A18A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7C18A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE4618A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2A18A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1722,6 +1852,7 @@
 				0A31FEB218A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14B10718A13F5E001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5E18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE29418A8D6AD003285D9 /* DTConfig.m in Sources */,
 				0A14B10B18A13F5E001EBC22 /* main.m in Sources */,
 				0A31FEBB18A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9718A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1747,6 +1878,7 @@
 				0AA4D64918A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1018A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9818A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BE918A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8618A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A376270183125C2001C484E /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FEC518A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1756,7 +1888,8 @@
 				0A31FEBC18A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE7D18A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A376266183125C2001C484E /* AFSecurityPolicy.m in Sources */,
-				0A31FE6218A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6218A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934218A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7418A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE3E18A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2218A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1769,6 +1902,7 @@
 				0A31FEAA18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A37626C183125C2001C484E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5618A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE27C18A8D630003285D9 /* DTConfig.m in Sources */,
 				0A37621318312558001C484E /* main.m in Sources */,
 				0A31FEB318A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE8F18A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1794,6 +1928,7 @@
 				0AA4D64A18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1118A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9918A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BEA18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8718A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A9BCA4F18A13E4C00AC8F34 /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FEC618A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1803,7 +1938,8 @@
 				0A31FEBD18A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE7E18A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A9BCA5618A13E4C00AC8F34 /* AFSecurityPolicy.m in Sources */,
-				0A31FE6318A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6318A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934318A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7518A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE3F18A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2318A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1816,6 +1952,7 @@
 				0A31FEAB18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A9BCA5E18A13E4C00AC8F34 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5718A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE29718A8D6B2003285D9 /* DTConfig.m in Sources */,
 				0A9BCA6218A13E4C00AC8F34 /* main.m in Sources */,
 				0A31FEB418A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9018A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1841,6 +1978,7 @@
 				0AA4D64B18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1218A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
 				0A31FE9A18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A981BEB18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8818A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A9BCABA18A13E5400AC8F34 /* UIProgressView+AFNetworking.m in Sources */,
 				0A31FEC718A3EC9C00344822 /* DTWebViewController.m in Sources */,
@@ -1850,7 +1988,8 @@
 				0A31FEBE18A3EC9C00344822 /* DTSettingsViewController.m in Sources */,
 				0A31FE7F18A3EC9C00344822 /* DTArticleModel.m in Sources */,
 				0A9BCAC118A13E5400AC8F34 /* AFSecurityPolicy.m in Sources */,
-				0A31FE6418A3EC9C00344822 /* DTArticleCell.m in Sources */,
+				0A31FE6418A3EC9C00344822 /* DTStandardArticleCell.m in Sources */,
+				0AAA934418A9709900EE3E26 /* DTBaseArticleCell.m in Sources */,
 				0A31FE7618A3EC9C00344822 /* DTArticleListViewController.m in Sources */,
 				0A31FE4018A3EC9C00344822 /* DTAPIClient.m in Sources */,
 				0A45ED2418A3F9AE009C9890 /* MMDrawerVisualState.m in Sources */,
@@ -1863,6 +2002,7 @@
 				0A31FEAC18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A9BCAC918A13E5400AC8F34 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5818A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
+				0A1CE29A18A8D6B6003285D9 /* DTConfig.m in Sources */,
 				0A9BCACD18A13E5400AC8F34 /* main.m in Sources */,
 				0A31FEB518A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9118A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
