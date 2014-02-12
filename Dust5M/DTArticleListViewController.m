@@ -27,9 +27,6 @@
     
     [super viewDidLoad];
     
-    self.logoLabel.font = [UIFont fontWithName: @"BetonEF-Light" size: 52];
-    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
-    
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
     
     UINib *mainCellNib = [UINib nibWithNibName: @"DTMainArticleCell" bundle: nil];
@@ -145,10 +142,11 @@
         if(!adCell) {
             
             adCell = [[DTAdvertCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:@"AdCell"];
+            
+            adCell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
-        [adCell.imageView setImageWithURL: [NSURL URLWithString: advert[@"inline"]]
-                         placeholderImage: [UIImage imageNamed: @"AdPlaceholder"]];
+        loadImage(adCell.imageView, [NSURL URLWithString: advert[@"inline"]], @"AdvertPH");
         
         return adCell;
     }
@@ -186,19 +184,19 @@
     if(indexPath.row == 0) {
         
         cell.colorBarView.layer.borderColor = [UIColor whiteColor].CGColor;
-        loadImage(cell.thumbnailView, [NSURL URLWithString: link] , @"placeholder.png");
+        loadImage(cell.thumbnailView, [NSURL URLWithString: link] , @"NewsLargePH");
     }
     else if([article.contentType isEqualToString: @"news"]) {
         
         cell.colorBarView.layer.borderColor = RGB(0, 173, 239).CGColor;
                 
-        loadImage(cell.thumbnailView, [NSURL URLWithString: link], @"defaultnews.png");
+        loadImage(cell.thumbnailView, [NSURL URLWithString: link], @"NewsPH");
     }
     else if ([article.contentType isEqualToString: @"event" ]) {
         
         cell.colorBarView.layer.borderColor = RGB(0, 176, 0).CGColor;
         
-        loadImage(cell.thumbnailView, [NSURL URLWithString: link], @"defaultevent.png");
+        loadImage(cell.thumbnailView, [NSURL URLWithString: link], @"NewsPH");
     }
     
     return cell;
@@ -213,8 +211,6 @@
         NSDictionary *advert = self.model.adverts[advertIndex.intValue];
         
         [self performSegueWithIdentifier: @"advertSegue" sender: advert];
-        
-        NSLog(@"Advert Selected %@", advert[@"fullscreen"]);
     }
     
     DTArticle *article = nil;
@@ -257,26 +253,30 @@
 }
 
 
-- (void) segmentAction: (UISegmentedControl *) control {
+- (IBAction) filterToEverythig: (id) sender {
+ 
+    [self filterArticleModelTo: @"*"];
+}
+
+
+- (IBAction) filterToNews: (id) sender {
     
-    switch (control.selectedSegmentIndex) {
-            
-        case 0:
-            [self.model fetchContentForContentType: @"*" withRegion: @"*"];
-            break;
-            
-        case 1:
-             [self.model fetchContentForContentType: @"news" withRegion: @"*"];
-            break;
-            
-        case 2:
-            [self.model fetchContentForContentType: @"event" withRegion: @"*"];
-            break;
-            
-        default:
-            break;
-    }
+    [self filterArticleModelTo: @"news"];
+}
+
+
+- (IBAction) filterToEvents: (id) sender {
     
+    [self filterArticleModelTo: @"event"];
+}
+
+
+- (void) filterArticleModelTo: (NSString *) filterString {
+    
+    self.tableView.contentOffset = CGPointMake(0, 0);
+    
+    [self.model fetchContentForContentType: filterString withRegion: @"*"];
+            
     [self.tableView reloadData];
 }
 

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+#import "DTBaseViewController.h"
 
-@property (nonatomic, strong) IBOutlet UILabel *logoLabel;
+@interface DTSettingsViewController : DTBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 

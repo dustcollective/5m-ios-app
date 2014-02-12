@@ -10,5 +10,17 @@
 
 @implementation DTStandardArticleCell
 
+- (void) layoutSubviews {
+    
+    [super layoutSubviews];
+    
+    CGRect frame = self.thumbnailView.frame;
+    
+    frame.size = CGSizeMake(55.0f, 55.0f);
+    
+    self.thumbnailView.frame = frame;
+    
+    [self.descriptionLabel sizeToFit];
+}
 
 @end

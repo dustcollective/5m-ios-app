@@ -10,4 +10,6 @@
 
 @interface DTFavouritesViewController : DTArticleListViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *messageLabel;
+
 @end

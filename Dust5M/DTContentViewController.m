@@ -34,9 +34,15 @@
 - (void) viewDidLoad {
     
     [super viewDidLoad];
-
+    
     self.webView.delegate = self;
     
+    self.webView.scrollView.scrollEnabled = NO;
+    
+    self.titleLabel.font = [UIFont fontWithName: @"BetonEF-DemiBold" size: 14.0f];
+    
+    [self.titleLabel sizeToFit];
+
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAction target: self action:@selector(share:)];
     
     UIBarButtonItem *favouriteButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self action:@selector(favourite:)];
@@ -55,7 +61,24 @@
     
     [super viewWillAppear: animated];
     
-    [self.navigationController setNavigationBarHidden: NO animated: YES];
+    [self.navigationController setNavigationBarHidden: YES animated: NO];
+    
+    NSDateFormatter  *formatter = [[NSDateFormatter alloc] init] ;
+    [formatter setDateFormat: @"EEE, dd MMM YYYY"];
+    
+    NSString *link = [self.article.thumbnailURL stringByAddingPercentEscapesUsingEncoding: NSStringEncodingConversionExternalRepresentation];
+    
+    loadImage(self.imageView, [NSURL URLWithString: link] , @"NewsLargePH");
+    self.titleLabel.text = self.article.headline;
+    self.dateLabel.text = [formatter stringFromDate: self.article.date];
+    
+    self.imageView.frame = CGRectMake(0, 0, 320, 226);
+    
+    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: @"res"];
+    
+    NSURL *baseURL = [NSURL fileURLWithPath: path];
+    
+    [self.webView loadHTMLString: self.article.htmlBody baseURL: baseURL];
 }
 
 
@@ -63,21 +86,20 @@
     
     [super viewDidAppear: animated];
     
-    if(self.article) {
-        
-        NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: @"res"];
-        
-        NSURL *baseURL = [NSURL fileURLWithPath: path];
-        
-        [self.webView loadHTMLString: self.article.htmlBody baseURL: baseURL];
-    }
 }
 
 
 - (void) webViewDidFinishLoad: (UIWebView *) webView {
     
+    
+    self.webView.frame = CGRectMake(0, 226, 320, self.webView.scrollView.contentSize.height);
+    
+    self.scrollView.contentSize = CGSizeMake(320, self.webView.scrollView.contentSize.height + 226);
+    
     if(self.article) {
         
+        
+        /*
         if(self.article.thumbnailURL) {
             
             NSString *javaScript = [NSString stringWithFormat: @"var img = document.createElement('img'); img.src = '%@'; document.body.insertBefore(img,document.body.childNodes[0]);", self.article.thumbnailURL];
@@ -89,9 +111,12 @@
         
         [self.webView stringByEvaluatingJavaScriptFromString: javaScript1];
         
-        NSString *javaScript2 = [NSString stringWithFormat: @"var fileref = document.createElement('link'); fileref.setAttribute('rel', 'stylesheet'); fileref.setAttribute('type', 'text/css'); fileref.setAttribute('href', 'app.css'); document.getElementsByTagName('head')[0].appendChild(fileref)"];
+         NSString *javaScript2 = [NSString stringWithFormat: @"var fileref = document.createElement('link'); fileref.setAttribute('rel', 'stylesheet'); fileref.setAttribute('type', 'text/css'); fileref.setAttribute('href', 'app.css'); document.getElementsByTagName('head')[0].appendChild(fileref)"];
+         
+         [self.webView stringByEvaluatingJavaScriptFromString: javaScript2];*/
+
         
-        [self.webView stringByEvaluatingJavaScriptFromString: javaScript2];
+        
     }
 }
 

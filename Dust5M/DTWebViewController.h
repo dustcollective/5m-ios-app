@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTWebViewController : UIViewController <UIWebViewDelegate>
+#import "DTBaseViewController.h"
 
-@property (nonatomic, strong) IBOutlet UILabel *logoLabel;
+@interface DTWebViewController : DTBaseViewController <UIWebViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UIWebView *webView;
 

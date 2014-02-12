@@ -82,10 +82,12 @@
             NSUInteger count = [self.managedContext countForFetchRequest: articleForIDFetch error: &countError];
             
             if(countError) {
+                
                 NSLog(@"Count error %@", countError);
             }
             
             if(count == 0) {
+                
                 DTArticle *tempContent = [NSEntityDescription insertNewObjectForEntityForName: @"DTArticle" inManagedObjectContext: self.managedContext];
                 
                 [tempContent setAttributes: article];

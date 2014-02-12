@@ -51,22 +51,22 @@
     switch (indexPath.row) {
             
         case 0:
-            icon = [UIImage imageNamed: @""];
+            icon = [UIImage imageNamed: @"FavouritesIcon"];
             rowTitle = NSLocalizedString(@"MAIN_PAGE", @"Main View Menu item");
             break;
             
         case 1:
-            icon = [UIImage imageNamed: @""];
+            icon = [UIImage imageNamed: @"FavouritesIcon"];
             rowTitle = NSLocalizedString(@"FAVOURITES", @"Favourites Menu Item");
             break;
             
         case 2:
-            icon = [UIImage imageNamed: @""];
+            icon = [UIImage imageNamed: @"MobileIcon"];
             rowTitle = NSLocalizedString(@"OUR_APPS", @"Our Apps Menu Item");
             break;
             
         case 3:
-            icon = [UIImage imageNamed: @""];
+            icon = [UIImage imageNamed: @"SettingsIcon"];
             rowTitle = NSLocalizedString(@"SETTINGS", @"Settings Menu Item");
             break;
             
@@ -75,6 +75,7 @@
     }
     
     cell.textLabel.text = rowTitle;
+    cell.imageView.image = icon;
     
     return cell;
 }
@@ -109,6 +110,11 @@
     
     [self.mm_drawerController setCenterViewController: controllerToSwitch withCloseAnimation: YES completion: ^(BOOL finished) {  
     }];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 60.0f;
 }
 
 

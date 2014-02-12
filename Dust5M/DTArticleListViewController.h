@@ -9,9 +9,10 @@
 #import "DTArticleModel.h"
 #import "DTStandardArticleCell.h"
 
-@interface DTArticleListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
+#import "DTBaseViewController.h"
 
-@property (nonatomic, strong) IBOutlet UILabel *logoLabel;
+@interface DTArticleListViewController : DTBaseViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
+
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;

@@ -18,4 +18,17 @@
     self.textLabel.textAlignment = NSTextAlignmentLeft;
 }
 
+- (void) layoutSubviews {
+    
+    [super layoutSubviews];
+    
+    self.imageView.frame = CGRectMake(10, 10, 40, 40);
+    
+    CGRect frame = self.textLabel.frame;
+    frame.origin.x = 56;
+    frame.origin.y +=2;
+    
+    self.textLabel.frame = frame;
+}
+
 @end

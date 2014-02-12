@@ -28,15 +28,13 @@
     
     [super viewDidLoad];
     
-    self.logoLabel.font = [UIFont fontWithName: @"BetonEF-Light" size: 52];
-    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
-    
     self.webView.delegate = self;
     
     NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://app.5mpublishing.com/apps_es.php"]];
     
     [self.webView loadRequest: request];
 }
+
 
 - (void) webViewDidFinishLoad: (UIWebView *) webView {
     

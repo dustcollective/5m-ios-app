@@ -18,6 +18,8 @@
     CGRect frame = CGRectMake(0, 0, 320, 226.0f);
     
     self.thumbnailView.frame = frame;
+    
+    [self.descriptionLabel sizeToFit];
 }
 
 

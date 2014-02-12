@@ -25,6 +25,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.messageLabel.text = NSLocalizedString(@"NO_FAVOURITES",  @"No Favourites");
+    
     DTAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     self.managedObjectContext = appDelegate.managedObjectContext;
 }
@@ -38,18 +40,29 @@
             
             if(error) {
             
-                NSLog(@"Netowrk error in favourites...Kinda dumb");
+                NSLog(@"Network error in favourites...Kinda dumb");
             }
             
             self.model = articleModel;
             
-            [self.model fetchFavouriteContentForContentType: @"*"]; // news, event, *
+            [self filterArticleModelTo: @"*"];
             
             [self.tableView reloadData];
             
             [self.refreshControl endRefreshing];
         }];
     }
+}
+
+- (void) filterArticleModelTo: (NSString *) filterString {
+    
+    self.tableView.contentOffset = CGPointMake(0, 0);
+    
+    [self.model fetchFavouriteContentForContentType: filterString];
+    
+    [self.tableView reloadData];
+    
+    self.messageLabel.hidden = self.model.content.count != 0;
 }
 
 
