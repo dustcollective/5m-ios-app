@@ -86,10 +86,6 @@
     
     [super viewWillAppear: animated];
     
-    
-    
-    
-    
     [self.navigationController setNavigationBarHidden: YES animated: YES];
     
     [self.tableView deselectRowAtIndexPath: self.tableView.indexPathForSelectedRow animated: YES];

@@ -82,41 +82,16 @@
 }
 
 
-- (void) viewDidAppear: (BOOL) animated {
-    
-    [super viewDidAppear: animated];
-    
-}
-
-
 - (void) webViewDidFinishLoad: (UIWebView *) webView {
-    
-    
-   
     
     if(self.article) {
         
+        NSString *javaScript2 = [NSString stringWithFormat: @"var fileref = document.createElement('link'); fileref.setAttribute('rel', 'stylesheet'); fileref.setAttribute('type', 'text/css'); fileref.setAttribute('href', 'app.css'); document.getElementsByTagName('head')[0].appendChild(fileref)"];
         
-        /*
-        if(self.article.thumbnailURL) {
-            
-            NSString *javaScript = [NSString stringWithFormat: @"var img = document.createElement('img'); img.src = '%@'; document.body.insertBefore(img,document.body.childNodes[0]);", self.article.thumbnailURL];
-            
-            [self.webView stringByEvaluatingJavaScriptFromString: javaScript];
-        }
+        [self.webView stringByEvaluatingJavaScriptFromString: javaScript2];
         
-        NSString *javaScript1 = [NSString stringWithFormat: @"var h1 = document.createElement('h1'); var content = document.createTextNode('%@'); h1.appendChild(content); document.body.insertBefore(h1,document.body.childNodes[0]);;", self.article.headline];
-        
-        [self.webView stringByEvaluatingJavaScriptFromString: javaScript1];
-        */
-         NSString *javaScript2 = [NSString stringWithFormat: @"var fileref = document.createElement('link'); fileref.setAttribute('rel', 'stylesheet'); fileref.setAttribute('type', 'text/css'); fileref.setAttribute('href', 'app.css'); document.getElementsByTagName('head')[0].appendChild(fileref)"];
-         
-         [self.webView stringByEvaluatingJavaScriptFromString: javaScript2];
 
-        
-       
-        
-        double delayInSeconds = 0.5;
+        double delayInSeconds = 0.5f;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
             
@@ -128,7 +103,7 @@
 }
 
 
-- (void) share: (UIBarButtonItem *) button {
+- (IBAction) share: (id) button {
     
     NSURL *URL = [NSURL URLWithString: self.article.linkString];
     NSArray *activityItems = @[self.article.headline, URL];
@@ -141,7 +116,7 @@
 }
 
 
-- (void) favourite: (UIBarButtonItem *) button {
+- (IBAction) favourite: (id) button {
     
     self.article.favourite = @1;
     
@@ -154,11 +129,16 @@
     }
 }
 
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+- (BOOL) webView: (UIWebView *) webView shouldStartLoadWithRequest: (NSURLRequest *) request
+  navigationType: (UIWebViewNavigationType) navigationType {
     
     if(navigationType == UIWebViewNavigationTypeLinkClicked) {
+        
+        // Maybe open in a browser on top?
+        
         return  NO;
     }
+    
     return YES;
 }
 
