@@ -1,7 +1,9 @@
 5m-ios-app
 ==========
 
-native Appliation for 5m Publishing.
+Native Appliation for 5m Publishing.
 
-Contains build targets for 8 different applications.
+Contains build targets for 9 different applications.
+
+v0.3
 
