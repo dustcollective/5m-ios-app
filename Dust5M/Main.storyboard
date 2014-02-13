@@ -129,6 +129,24 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" id="L79-Od-rzt" userLabel="Overlay">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bHl-No-Oyj">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v6.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jPk-qm-e4A">
+                                        <rect key="frame" x="10" y="534" width="68" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -136,7 +154,10 @@
                     <navigationItem key="navigationItem" id="g10-JQ-Pny"/>
                     <connections>
                         <outlet property="logoLabel" destination="klx-fm-MIb" id="rrr-Ve-7NQ"/>
+                        <outlet property="overlayView" destination="L79-Od-rzt" id="DgP-UR-m0S"/>
+                        <outlet property="splashScreenImageView" destination="bHl-No-Oyj" id="mam-4j-Vjc"/>
                         <outlet property="tableView" destination="mLL-gJ-YKr" id="rcE-gw-adA"/>
+                        <outlet property="versionLabel" destination="jPk-qm-e4A" id="K71-dm-Ww9"/>
                         <segue destination="ZlS-fV-fga" kind="push" identifier="contentSegue" id="ihT-l5-s9e"/>
                         <segue destination="g55-Th-SBj" kind="modal" identifier="advertSegue" modalTransitionStyle="flipHorizontal" id="Qj2-oJ-wnD"/>
                     </connections>
@@ -641,7 +662,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="226"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bW2-8X-0pV">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bW2-8X-0pV">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>

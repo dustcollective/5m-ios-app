@@ -92,9 +92,7 @@
 - (void) webViewDidFinishLoad: (UIWebView *) webView {
     
     
-    self.webView.frame = CGRectMake(0, 226, 320, self.webView.scrollView.contentSize.height);
-    
-    self.scrollView.contentSize = CGSizeMake(320, self.webView.scrollView.contentSize.height + 226);
+   
     
     if(self.article) {
         
@@ -110,12 +108,21 @@
         NSString *javaScript1 = [NSString stringWithFormat: @"var h1 = document.createElement('h1'); var content = document.createTextNode('%@'); h1.appendChild(content); document.body.insertBefore(h1,document.body.childNodes[0]);;", self.article.headline];
         
         [self.webView stringByEvaluatingJavaScriptFromString: javaScript1];
-        
+        */
          NSString *javaScript2 = [NSString stringWithFormat: @"var fileref = document.createElement('link'); fileref.setAttribute('rel', 'stylesheet'); fileref.setAttribute('type', 'text/css'); fileref.setAttribute('href', 'app.css'); document.getElementsByTagName('head')[0].appendChild(fileref)"];
          
-         [self.webView stringByEvaluatingJavaScriptFromString: javaScript2];*/
+         [self.webView stringByEvaluatingJavaScriptFromString: javaScript2];
 
         
+       
+        
+        double delayInSeconds = 0.5;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            
+            self.webView.frame = CGRectMake(0, 226, 320, self.webView.scrollView.contentSize.height);
+            self.scrollView.contentSize = CGSizeMake(320, self.webView.scrollView.contentSize.height + 226);
+        });
         
     }
 }
@@ -145,6 +152,14 @@
         
         NSLog(@"Error setting favourite");
     }
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    if(navigationType == UIWebViewNavigationTypeLinkClicked) {
+        return  NO;
+    }
+    return YES;
 }
 
 

@@ -8,6 +8,8 @@
 
 #import "DTAppDelegate.h"
 
+BOOL splashShown = NO;
+
 @implementation DTAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -38,7 +40,7 @@
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
     self.window.rootViewController = self.drawerController;
     [self.window makeKeyAndVisible];
-    
+        
     return YES;
 }
 

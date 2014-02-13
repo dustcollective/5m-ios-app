@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 dust. All rights reserved.
 //
 
+#import "DTAppDelegate.h"
+
 #import "DTContentViewController.h"
 #import "DTAdvertViewController.h"
 
@@ -44,16 +46,49 @@
     
     [self.tableView addSubview: self.refreshControl];
     
-    /*
-    NSLocalizedString(@"INICIO", @"");
-    NSLocalizedString(@"NOTICIAS", @"");
-    NSLocalizedString(@"EVENTOS", @"");*/
+    if(!splashShown) {
+        
+        splashShown = YES;
+        
+        self.mm_drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeNone;
+        
+        NSString *splashImageName = self.view.bounds.size.height > 480 ? @"TallLaunchImage" : @"LaunchImage";
+        
+        self.splashScreenImageView.image = [UIImage imageNamed: splashImageName];
+        
+        NSString *versionString = [NSString stringWithFormat: @"v %@",
+                                    [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey]];
+        
+        self.versionLabel.text = versionString;
+        
+        [NSTimer scheduledTimerWithTimeInterval: 2
+                                         target: self
+                                       selector: @selector(hideSplash:)
+                                       userInfo: nil
+                                        repeats: NO];
+    }
+    else {
+        
+        [self hideSplash: nil];
+    }
+}
+
+// Called after X seconds.  Hides splash screen and enables gestures.
+
+- (void) hideSplash: (NSTimer *) timer {
+    
+    [self.overlayView removeFromSuperview];
+    self.mm_drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
 }
 
 
 - (void) viewWillAppear: (BOOL) animated {
     
     [super viewWillAppear: animated];
+    
+    
+    
+    
     
     [self.navigationController setNavigationBarHidden: YES animated: YES];
     

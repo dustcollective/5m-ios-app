@@ -20,6 +20,12 @@
     
     self.thumbnailView.frame = frame;
     
+    // Reset width so that the sizeTOFit works on the full width available.
+    CGRect labelFrame = self.descriptionLabel.frame;
+    labelFrame.size.width = 182.0f;
+    
+    self.descriptionLabel.frame = labelFrame;
+    
     [self.descriptionLabel sizeToFit];
 }
 

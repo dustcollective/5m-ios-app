@@ -22,4 +22,9 @@
 
 @property (nonatomic, strong) NSArray *filteredArticles;
 
+@property (nonatomic, strong) IBOutlet UIView *overlayView;
+@property (nonatomic, strong) IBOutlet UIImageView *splashScreenImageView;
+@property (nonatomic, strong) IBOutlet UILabel *versionLabel;
+
+
 @end
