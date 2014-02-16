@@ -21,6 +21,18 @@
     
     CGSize limitedWidthSize = CGSizeMake(self.view.frame.size.width, self.webView.scrollView.contentSize.height);
     self.webView.scrollView.contentSize = limitedWidthSize;
+    
+    
+    if(self.htmlString) {
+        
+        [self.webView loadHTMLString: self.htmlString baseURL: nil];
+    }
+    else {
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://app.5mpublishing.com/apps_es.php"]];
+        
+        [self.webView loadRequest: request];
+    }
 }
 
 
@@ -30,9 +42,7 @@
     
     self.webView.delegate = self;
     
-    NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://app.5mpublishing.com/apps_es.php"]];
     
-    [self.webView loadRequest: request];
 }
 
 

@@ -75,8 +75,10 @@
         
         if(![article[@"type"] isEqualToString: @"help"]) {
             
+            NSString *articleid = article[@"id"] ? article[@"id"] : @"999";
+            
             NSFetchRequest *articleForIDFetch = [self.managedModel fetchRequestFromTemplateWithName: @"articleForIDFetch"
-                                                                              substitutionVariables: @{@"CONTENT_ID" : article[@"id"]}];
+                                                                              substitutionVariables: @{@"CONTENT_ID" : articleid}];
             
             NSError *countError = nil;
             NSUInteger count = [self.managedContext countForFetchRequest: articleForIDFetch error: &countError];
@@ -93,7 +95,6 @@
                 [tempContent setAttributes: article];
             }
         }
-        
     }
     
     NSError *error = nil;
@@ -103,6 +104,15 @@
         
         NSLog(@"Error syncing content %@", error);
     }
+}
+
+
+- (NSArray *) fetchHelp {
+    
+    NSFetchRequest *fetchRequest = [self.managedModel fetchRequestTemplateForName: @"helpFetch"
+                                                                 ] ;
+    
+    return [self.managedContext executeFetchRequest: fetchRequest error: nil];
 }
 
 

@@ -129,6 +129,7 @@
     }
 }
 
+
 - (BOOL) webView: (UIWebView *) webView shouldStartLoadWithRequest: (NSURLRequest *) request
   navigationType: (UIWebViewNavigationType) navigationType {
     
@@ -140,6 +141,12 @@
     }
     
     return YES;
+}
+
+
+- (IBAction) toggleDrawer: (id) sender {
+    
+    [self.navigationController popViewControllerAnimated: YES];
 }
 
 

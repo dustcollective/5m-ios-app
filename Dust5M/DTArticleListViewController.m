@@ -15,6 +15,8 @@
 #import "DTAdvertCell.h"
 #import "DTBaseArticleCell.h"
 
+#import "DTWebViewController.h"
+
 @interface DTArticleListViewController () {
     
     BOOL _searchMode;
@@ -37,7 +39,7 @@
     UINib *nib = [UINib nibWithNibName: @"DTStandardArticleCell" bundle: nil];
     [self.tableView registerNib: nib forCellReuseIdentifier: @"StandardArticleCell"];
     
-    [self.searchDisplayController.searchResultsTableView registerNib: nib forCellReuseIdentifier: @"ArticleCell"];
+    [self.searchDisplayController.searchResultsTableView registerNib: nib forCellReuseIdentifier: @"StandardArticleCell"];
     
     self.refreshControl = [[UIRefreshControl alloc] initWithFrame: CGRectZero];
     [self.refreshControl addTarget: self
@@ -70,7 +72,7 @@
     else {
         
         [self hideSplash: nil];
-    }
+    }    
 }
 
 // Called after X seconds.  Hides splash screen and enables gestures.
@@ -129,6 +131,11 @@
 
 
 - (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath {
+    
+    if(tableView == self.searchDisplayController.searchResultsTableView) {
+        
+        return  75.0f;
+    }
     
     if(indexPath.row == 0) {
         
@@ -194,7 +201,7 @@
     
     DTBaseArticleCell *cell = nil;
     
-    if(indexPath.row == 0) {
+    if(indexPath.row == 0 && tableView != self.searchDisplayController.searchResultsTableView) {
         
         cell = [tableView dequeueReusableCellWithIdentifier: @"MainArticleCell" forIndexPath: indexPath];
     }
@@ -335,6 +342,35 @@
 }
 
 
+- (IBAction) openSearch: (id) sender {
+    
+    CGRect searchFrame = self.searchDisplayController.searchBar.frame;
+    
+    searchFrame.origin.y = (searchFrame.origin.y < 120.0f) ? searchFrame.origin.y + 44 : searchFrame.origin.y - 44;
+    
+    if(self.searchDisplayController.active) {
+        
+        [self.searchDisplayController setActive: NO animated: NO];
+    }
+    
+    [UIView animateWithDuration: 0.3f animations: ^{
+       
+        
+        self.searchDisplayController.searchBar.frame = searchFrame;
+        
+    }completion:^(BOOL finished) {
+        
+        
+        if (!(searchFrame.origin.y < 120.0f)) {
+            
+            [self.searchDisplayController setActive: YES animated: YES];
+            [self.searchDisplayController.searchBar becomeFirstResponder];
+        }
+        
+    }];
+}
+
+
 BOOL checkmatch(NSString *item, NSString *matchphrase) {
     
     matchphrase = [matchphrase stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -357,6 +393,12 @@ BOOL checkmatch(NSString *item, NSString *matchphrase) {
     }
     
     return match;
+}
+
+
+- (void) searchBarCancelButtonClicked: (UISearchBar *) searchBar {
+    
+    [self openSearch: nil];
 }
 
 

@@ -31,6 +31,7 @@
     [super viewDidLoad];
     
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
+    self.tableView.backgroundColor = [UIColor whiteColor];
 }
 
 

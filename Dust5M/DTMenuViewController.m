@@ -8,6 +8,7 @@
 
 #import "DTMenuViewController.h"
 
+#import "DTArticleModel.h"
 
 @interface DTMenuViewController ()
 
@@ -26,8 +27,10 @@
     self.tableView.scrollsToTop = NO;
 }
 
+
 #pragma mark -
 #pragma mark - Table View
+
 
 - (NSInteger) numberOfSectionsInTableView: (UITableView *) tableView {
     
@@ -37,7 +40,7 @@
 
 - (NSInteger) tableView: (UITableView *) tableView numberOfRowsInSection: (NSInteger) section {
     
-    return 4;
+    return 5;
 }
 
 
@@ -69,6 +72,11 @@
             icon = [UIImage imageNamed: @"SettingsIcon"];
             rowTitle = NSLocalizedString(@"SETTINGS", @"Settings Menu Item");
             break;
+        
+        case 4:
+            icon = [UIImage imageNamed: @"SettingsIcon"];
+            rowTitle = NSLocalizedString(@"HELP_PAGE", @"Settings Help Item");
+            break;
             
         default:
             break;
@@ -82,6 +90,7 @@
 
 
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
+    
     
     UIViewController *controllerToSwitch = nil;
     
@@ -104,6 +113,11 @@
             controllerToSwitch = [self.storyboard instantiateViewControllerWithIdentifier: @"SettingsController"];
             break;
             
+        case 4:
+            
+            [self openHelp: nil];
+            return;
+            
         default:
             break;
     }
@@ -112,9 +126,25 @@
     }];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+- (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath: (NSIndexPath *) indexPath {
     
     return 60.0f;
+}
+
+
+- (IBAction) openHelp: (id) sender {
+    
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: NSLocalizedString(@"HELP_TITLE", @"Help Title")
+                                                    message: NSLocalizedString(@"HELP_MESSAGE", @"Help Message")
+                                                   delegate: nil
+                                          cancelButtonTitle: @"OK"
+                                          otherButtonTitles: nil];
+    
+    [alert show];
+    
+    
 }
 
 

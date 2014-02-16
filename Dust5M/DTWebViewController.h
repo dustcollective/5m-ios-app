@@ -14,4 +14,6 @@
 
 @property (nonatomic, strong) IBOutlet UIWebView *webView;
 
+@property (nonatomic, strong) NSString *htmlString;
+
 @end

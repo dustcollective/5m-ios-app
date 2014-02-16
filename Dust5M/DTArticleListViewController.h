@@ -16,15 +16,16 @@
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, strong) UIRefreshControl *refreshControl;
-
-@property (nonatomic, strong) DTArticleModel *model;
-
-@property (nonatomic, strong) NSArray *filteredArticles;
-
 @property (nonatomic, strong) IBOutlet UIView *overlayView;
 @property (nonatomic, strong) IBOutlet UIImageView *splashScreenImageView;
 @property (nonatomic, strong) IBOutlet UILabel *versionLabel;
+
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
+
+@property (nonatomic, strong) DTArticleModel *model;
+@property (nonatomic, strong) NSArray *filteredArticles;
+
+
 
 
 @end

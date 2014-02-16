@@ -24,8 +24,17 @@
 
 - (void) setAttributes: (NSDictionary *) attributes {
     
-    self.contentId = attributes[@"id"];
+    
     self.contentType = attributes[@"type"];
+    if([self.contentType isEqualToString: @"help"]) {
+        
+        self.contentId = @"999";
+    }
+    else {
+        
+        self.contentId = attributes[@"id"];
+    }
+    
     self.headline = attributes[@"headline"];
     self.thumbnailURL = attributes[@"thumbnail"];
     self.htmlBody = attributes[@"body"];
@@ -37,7 +46,6 @@
     NSTimeInterval timeInterval = [attributes[@"date"] intValue];
     self.date = [NSDate dateWithTimeIntervalSince1970: timeInterval];
 }
-
 
 
 @end

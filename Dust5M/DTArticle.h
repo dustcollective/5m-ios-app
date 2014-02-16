@@ -11,7 +11,7 @@
 
 @interface DTArticle : NSManagedObject
 
-@property (nonatomic, retain) NSNumber *contentId;
+@property (nonatomic, retain) NSString *contentId;
 @property (nonatomic, retain) NSString *contentType;
 @property (nonatomic, retain) NSString *countryCode;
 @property (nonatomic, retain) NSDate *date;

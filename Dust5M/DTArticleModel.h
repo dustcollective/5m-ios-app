@@ -16,6 +16,7 @@
 
 - (void) setWithAttributes: (NSDictionary *) attributes;
 
+- (NSArray *) fetchHelp;
 - (void) fetchContentForContentType: (NSString *) contentType withRegion: (NSString *) region;
 - (void) fetchFavouriteContentForContentType: (NSString *) contentType;
 

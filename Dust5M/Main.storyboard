@@ -40,6 +40,16 @@
                                     <outlet property="delegate" destination="0Ti-sj-bLu" id="Qna-U1-6Eh"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" id="bFJ-O8-mfJ">
+                                <rect key="frame" x="0.0" y="76" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0Ti-sj-bLu" id="mVc-tT-unP"/>
+                                </connections>
+                            </searchBar>
                             <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadow" id="Skv-e0-ehD" userLabel="Shadow">
                                 <rect key="frame" x="0.0" y="120" width="320" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -99,16 +109,6 @@
                                             <action selector="filterToEvents:" destination="0Ti-sj-bLu" eventType="touchUpInside" id="9uc-6m-5Z7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="usp-D6-eVR">
-                                        <rect key="frame" x="276" y="85" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="GraphIcon">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="openHelp:" destination="0Ti-sj-bLu" eventType="touchUpInside" id="Gq6-1l-yac"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="klx-fm-MIb">
                                         <rect key="frame" x="83" y="20" width="187" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -116,8 +116,8 @@
                                         <color key="textColor" red="1" green="0.15422919509999999" blue="0.17126961709999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tVA-S4-NEb">
-                                        <rect key="frame" x="276" y="27" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tVA-S4-NEb" userLabel="Search Bu">
+                                        <rect key="frame" x="276" y="85" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="SearchIcon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,6 +155,7 @@
                     <connections>
                         <outlet property="logoLabel" destination="klx-fm-MIb" id="rrr-Ve-7NQ"/>
                         <outlet property="overlayView" destination="L79-Od-rzt" id="DgP-UR-m0S"/>
+                        <outlet property="searchDisplayController" destination="EaO-Qw-kT8" id="3pA-EM-CGX"/>
                         <outlet property="splashScreenImageView" destination="bHl-No-Oyj" id="mam-4j-Vjc"/>
                         <outlet property="tableView" destination="mLL-gJ-YKr" id="rcE-gw-adA"/>
                         <outlet property="versionLabel" destination="jPk-qm-e4A" id="K71-dm-Ww9"/>
@@ -163,12 +164,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVN-BM-ad7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController searchResultsTitle="Results" id="zIc-F3-04V">
+                <searchDisplayController id="EaO-Qw-kT8">
                     <connections>
-                        <outlet property="delegate" destination="0Ti-sj-bLu" id="Uun-KX-hhX"/>
-                        <outlet property="searchContentsController" destination="0Ti-sj-bLu" id="ikd-iv-9th"/>
-                        <outlet property="searchResultsDataSource" destination="0Ti-sj-bLu" id="Wa8-W0-h1c"/>
-                        <outlet property="searchResultsDelegate" destination="0Ti-sj-bLu" id="BbF-KE-RUH"/>
+                        <outlet property="delegate" destination="0Ti-sj-bLu" id="mCn-Wr-8r7"/>
+                        <outlet property="searchBar" destination="bFJ-O8-mfJ" id="Y8i-7Q-cKN"/>
+                        <outlet property="searchContentsController" destination="0Ti-sj-bLu" id="qvm-LL-jOU"/>
+                        <outlet property="searchResultsDataSource" destination="0Ti-sj-bLu" id="c6p-8o-iq2"/>
+                        <outlet property="searchResultsDelegate" destination="0Ti-sj-bLu" id="G17-6N-ixF"/>
                     </connections>
                 </searchDisplayController>
             </objects>
@@ -243,16 +245,6 @@
                                         </state>
                                         <connections>
                                             <action selector="toggleDrawer:" destination="Fb9-nF-Beg" eventType="touchUpInside" id="n5d-GK-hAZ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yke-x0-Y3W">
-                                        <rect key="frame" x="276" y="85" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="GraphIcon">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="openHelp:" destination="Fb9-nF-Beg" eventType="touchUpInside" id="gYY-Se-Do0"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Cg-3r-sss">
@@ -382,13 +374,6 @@
                                             <action selector="toggleDrawer:" destination="8uj-iL-Aq7" eventType="touchUpInside" id="xHe-EC-L74"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OPQ-dv-UXM">
-                                        <rect key="frame" x="276" y="85" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="GraphIcon">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IIX-sf-SD7">
                                         <rect key="frame" x="83" y="20" width="187" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -504,13 +489,6 @@
                                         <connections>
                                             <action selector="toggleDrawer:" destination="ZlS-fV-fga" eventType="touchUpInside" id="dXC-vI-BX1"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dqS-5k-7Aa">
-                                        <rect key="frame" x="276" y="85" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="GraphIcon">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rcx-cW-jj4">
                                         <rect key="frame" x="83" y="20" width="187" height="60"/>
@@ -685,16 +663,6 @@
                                             <action selector="filterToEvents:" destination="OvU-xZ-UYZ" eventType="touchUpInside" id="S0y-dD-Qrh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w91-84-eec">
-                                        <rect key="frame" x="276" y="85" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="GraphIcon">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="openHelp:" destination="OvU-xZ-UYZ" eventType="touchUpInside" id="dPM-xc-hTS"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gug-eX-F0w">
                                         <rect key="frame" x="83" y="20" width="187" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -702,37 +670,16 @@
                                         <color key="textColor" red="1" green="0.15422919509999999" blue="0.17126961709999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Na-j7-dFJ">
-                                        <rect key="frame" x="276" y="27" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="SearchIcon">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="openSearch:" destination="OvU-xZ-UYZ" eventType="touchUpInside" id="wL4-Zn-vmR"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" id="1dH-dv-HSb" userLabel="Overlay">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Favourites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ws2-as-Oe9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ehm-ZT-ov8">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v6.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yha-Ys-jv2">
-                                        <rect key="frame" x="10" y="534" width="68" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -740,23 +687,13 @@
                     <navigationItem key="navigationItem" id="XMk-oA-yTn"/>
                     <connections>
                         <outlet property="logoLabel" destination="gug-eX-F0w" id="to5-Bd-LbM"/>
-                        <outlet property="overlayView" destination="1dH-dv-HSb" id="cJY-5F-h4M"/>
-                        <outlet property="splashScreenImageView" destination="ehm-ZT-ov8" id="FXd-xh-Ykc"/>
+                        <outlet property="messageLabel" destination="ws2-as-Oe9" id="6sv-IE-iMg"/>
                         <outlet property="tableView" destination="wgN-bo-7Y5" id="Ilc-M6-iGu"/>
-                        <outlet property="versionLabel" destination="Yha-Ys-jv2" id="Oxp-UX-6EM"/>
                         <segue destination="ZlS-fV-fga" kind="push" identifier="contentSegue" id="LHi-Vb-nwY"/>
                         <segue destination="g55-Th-SBj" kind="modal" identifier="advertSegue" id="3nA-vd-Kuv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUA-u0-lwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController searchResultsTitle="Results" id="ma9-RM-64G">
-                    <connections>
-                        <outlet property="delegate" destination="OvU-xZ-UYZ" id="5vb-vn-xla"/>
-                        <outlet property="searchContentsController" destination="OvU-xZ-UYZ" id="Ewe-Nq-gkn"/>
-                        <outlet property="searchResultsDataSource" destination="OvU-xZ-UYZ" id="hSH-72-3Jc"/>
-                        <outlet property="searchResultsDelegate" destination="OvU-xZ-UYZ" id="Fkr-fV-hSA"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-1223" y="-382"/>
         </scene>
@@ -764,7 +701,6 @@
     <resources>
         <image name="CloseIcon" width="30" height="30"/>
         <image name="FavouriteButtonIcon" width="30" height="30"/>
-        <image name="GraphIcon" width="30" height="30"/>
         <image name="Logo" width="60" height="60"/>
         <image name="MenuIcon" width="30" height="30"/>
         <image name="SearchIcon" width="30" height="30"/>
@@ -777,7 +713,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="LHi-Vb-nwY"/>
         <segue reference="3nA-vd-Kuv"/>
+        <segue reference="LHi-Vb-nwY"/>
     </inferredMetricsTieBreakers>
 </document>
