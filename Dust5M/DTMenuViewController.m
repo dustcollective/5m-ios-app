@@ -54,7 +54,7 @@
     switch (indexPath.row) {
             
         case 0:
-            icon = [UIImage imageNamed: @"FavouritesIcon"];
+            icon = [UIImage imageNamed: @"HomeIcon"];
             rowTitle = NSLocalizedString(@"MAIN_PAGE", @"Main View Menu item");
             break;
             
@@ -74,7 +74,7 @@
             break;
         
         case 4:
-            icon = [UIImage imageNamed: @"SettingsIcon"];
+            icon = [UIImage imageNamed: @"HelpIcon"];
             rowTitle = NSLocalizedString(@"HELP_PAGE", @"Settings Help Item");
             break;
             
@@ -142,9 +142,7 @@
                                           cancelButtonTitle: @"OK"
                                           otherButtonTitles: nil];
     
-    [alert show];
-    
-    
+    [alert show]; 
 }
 
 

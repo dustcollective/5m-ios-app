@@ -22,8 +22,11 @@
 
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 
+@property (nonatomic, strong) NSMutableDictionary *regionModel;
+
 @property (nonatomic, strong) DTArticleModel *model;
 @property (nonatomic, strong) NSArray *filteredArticles;
+
 
 
 

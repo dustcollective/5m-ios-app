@@ -114,15 +114,37 @@
                 NSLog(@"Network error");
             }
             
+            // We load territories after we have our model loaded so that we can do the filtering
+            
+            [self loadTerritoriesData];
+
             self.model = articleModel;
             
-            [self.model fetchContentForContentType: @"*" withRegion: @"*"]; // news, event, *
+            [self.model fetchContentForContentType: @"*" withRegionModel: self.regionModel]; // news, event, *
             
             [self.tableView reloadData];
             
             [self.refreshControl endRefreshing];
         }];
     }
+}
+
+
+- (void) loadTerritoriesData {
+    
+    NSString *territoryPath = [documentPath() stringByAppendingPathComponent: @"territories.plist"];
+    
+    // Check if the database has already been created in the users filesystem
+    if (![[NSFileManager defaultManager] fileExistsAtPath: territoryPath]) {
+        
+        NSString *file = [[NSBundle mainBundle] pathForResource: @"territories.plist" ofType: nil];
+        
+        NSError *error = nil;
+        
+        [[NSFileManager defaultManager] copyItemAtPath: file toPath: territoryPath error: &error];
+    }
+    
+    self.regionModel = [NSMutableDictionary dictionaryWithContentsOfFile: territoryPath];
 }
 
 
@@ -222,7 +244,17 @@
     if(indexPath.row == 0) {
         
         cell.colorBarView.layer.borderColor = [UIColor whiteColor].CGColor;
-        loadImage(cell.thumbnailView, [NSURL URLWithString: link] , @"NewsLargePH");
+        
+        if([article.contentType isEqualToString: @"event"]) {
+            
+            loadImage(cell.thumbnailView, [NSURL URLWithString: link] , @"EventLargePH");
+        }
+        else {
+            
+            loadImage(cell.thumbnailView, [NSURL URLWithString: link] , @"NewsLargePH");
+        }
+            
+        
     }
     else if([article.contentType isEqualToString: @"news"]) {
         
@@ -234,7 +266,7 @@
         
         cell.colorBarView.layer.borderColor = RGB(0, 176, 0).CGColor;
         
-        loadImage(cell.thumbnailView, [NSURL URLWithString: link], @"NewsPH");
+        loadImage(cell.thumbnailView, [NSURL URLWithString: link], @"EventPH");
     }
     
     return cell;
@@ -313,7 +345,7 @@
     
     self.tableView.contentOffset = CGPointMake(0, 0);
     
-    [self.model fetchContentForContentType: filterString withRegion: @"*"];
+    [self.model fetchContentForContentType: filterString withRegionModel: self.regionModel];
             
     [self.tableView reloadData];
 }

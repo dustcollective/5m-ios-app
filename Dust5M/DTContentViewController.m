@@ -68,9 +68,24 @@
     
     NSString *link = [self.article.thumbnailURL stringByAddingPercentEscapesUsingEncoding: NSStringEncodingConversionExternalRepresentation];
     
-    loadImage(self.imageView, [NSURL URLWithString: link] , @"NewsLargePH");
+    if([self.article.contentType isEqualToString: @"event"]) {
+        loadImage(self.imageView, [NSURL URLWithString: link] , @"EventLargePH");
+    }
+    else {
+        loadImage(self.imageView, [NSURL URLWithString: link] , @"NewsLargePH");
+    }
+    
     self.titleLabel.text = self.article.headline;
-    self.dateLabel.text = [formatter stringFromDate: self.article.date];
+    
+    if([self.article.contentType isEqualToString: @"event"]) {
+        
+        NSString *dateRange = [NSString stringWithFormat: @"%@ - %@", [formatter stringFromDate: self.article.startDate], [formatter stringFromDate: self.article.endDate]];
+        self.dateLabel.text = dateRange;
+    }
+    
+    else {
+        self.dateLabel.text = [formatter stringFromDate: self.article.date];
+    }
     
     self.imageView.frame = CGRectMake(0, 0, 320, 226);
     
@@ -86,9 +101,17 @@
     
     if(self.article) {
         
-        NSString *javaScript2 = [NSString stringWithFormat: @"var fileref = document.createElement('link'); fileref.setAttribute('rel', 'stylesheet'); fileref.setAttribute('type', 'text/css'); fileref.setAttribute('href', 'app.css'); document.getElementsByTagName('head')[0].appendChild(fileref)"];
+        if([self.article.contentType isEqualToString: @"event"]) {
+            NSString *insertLocation = [NSString stringWithFormat: @"var locationDiv=document.createElement('h2'); locationDiv.appendChild(document.createTextNode('%@')); var childNode=document.getElementsByTagName('body')[0].firstChild; document.getElementsByTagName('body')[0].insertBefore(locationDiv,childNode)", self.article.location];
+            
+            [self.webView stringByEvaluatingJavaScriptFromString: insertLocation];
+        }
         
-        [self.webView stringByEvaluatingJavaScriptFromString: javaScript2];
+        
+        NSString *javaScript1 = @"var fileref = document.createElement('link'); fileref.setAttribute('rel', 'stylesheet'); fileref.setAttribute('type', 'text/css'); fileref.setAttribute('href', 'app.css'); document.getElementsByTagName('head')[0].appendChild(fileref)";
+        
+        [self.webView stringByEvaluatingJavaScriptFromString: javaScript1];
+        
         
 
         double delayInSeconds = 0.5f;
@@ -118,7 +141,12 @@
 
 - (IBAction) favourite: (id) button {
     
-    self.article.favourite = @1;
+    if(self.article.favourite == 0) {
+        self.article.favourite = @1;
+    }
+    else {
+        self.article.favourite = @0;
+    }
     
     NSError *error = nil;
     [self.managedObjectContext save: &error];

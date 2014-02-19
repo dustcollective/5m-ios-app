@@ -20,10 +20,14 @@
 @dynamic imageBinary;
 @dynamic linkString;
 @dynamic thumbnailURL;
+@dynamic territory;
 @dynamic favourite;
 
+@dynamic startDate;
+@dynamic endDate;
+@dynamic location;
+
 - (void) setAttributes: (NSDictionary *) attributes {
-    
     
     self.contentType = attributes[@"type"];
     if([self.contentType isEqualToString: @"help"]) {
@@ -40,11 +44,29 @@
     self.htmlBody = attributes[@"body"];
     self.countryCode = attributes[@"country"];
     self.linkString = attributes[@"link"];
+    self.territory = trimString(attributes[@"territory"]);
     
     self.favourite = 0;
     
     NSTimeInterval timeInterval = [attributes[@"date"] intValue];
     self.date = [NSDate dateWithTimeIntervalSince1970: timeInterval];
+    
+    if(attributes[@"start"]) {
+        
+        NSTimeInterval startTimeInterval = [attributes[@"start"] intValue];
+        self.startDate = [NSDate dateWithTimeIntervalSince1970: startTimeInterval];
+    }
+    
+    if(attributes[@"end"]) {
+        
+        NSTimeInterval endTimeInterval = [attributes[@"end"] intValue];
+        self.endDate = [NSDate dateWithTimeIntervalSince1970: endTimeInterval];
+    }
+    
+    if(attributes[@"location"]) {
+        
+        self.location = attributes[@"location"];
+    }
 }
 
 

@@ -5,16 +5,21 @@
         <attribute name="contentType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="favourite" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="htmlBody" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageBinary" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="linkString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="territory" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="thumbnailURL" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <fetchRequest name="allRegionsContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE"/>
     <fetchRequest name="articleForIDFetch" entity="DTArticle" predicateString="contentId == $CONTENT_ID" fetchLimit="60"/>
-    <fetchRequest name="contentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE" fetchLimit="60" includePropertyValues="YES"/>
     <fetchRequest name="favouriteContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE AND favourite == 1" fetchLimit="60"/>
+    <fetchRequest name="filteredRegionsContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE AND $REGIONS CONTAINS[cd] territory" includePropertyValues="YES"/>
     <fetchRequest name="helpFetch" entity="DTArticle" predicateString="contentType == &quot;help&quot;" fetchLimit="1"/>
     <elements>
         <element name="DTArticle" positionX="0" positionY="0" width="0" height="0"/>

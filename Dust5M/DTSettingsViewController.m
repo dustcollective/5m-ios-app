@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 dust. All rights reserved.
 //
 
+#import <EventKit/EventKit.h>
+
 #import "DTSettingsViewController.h"
 #import "DTSettingsCell.h"
 
@@ -124,7 +126,16 @@
 
 - (CGFloat) tableView: (UITableView *) tableView heightForHeaderInSection: (NSInteger) section {
     
-    return 8.0f;
+    return 1.0f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    UIView *tempView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 1)];
+    
+    tempView.backgroundColor = [UIColor lightGrayColor];
+    
+    return  tempView;
 }
 
 
@@ -161,6 +172,91 @@
     [_territoryFileDict writeToFile: territoryPath atomically: YES];
     
     [self.tableView reloadData];
+}
+
+
+- (IBAction) addFavouriteEventsToCalendar: (id) sender {
+    
+    NSString *path = [documentPath() stringByAppendingPathComponent: @"storedevents"];
+    
+    [DTArticleModel articleListWithBlock: ^(DTArticleModel *articleModel, NSError *error) {
+            
+            EKEventStore *store = [[EKEventStore alloc] init];
+            
+            [store requestAccessToEntityType: EKEntityTypeEvent completion: ^(BOOL granted, NSError *error) {
+            
+                if (!granted) {
+                    
+                    return;
+                }
+                else {
+                    
+                    // Remove all the old events we stored so we don't get duplicates
+                    NSMutableArray *previousEventIDs = [NSMutableArray arrayWithContentsOfFile: path];
+                    if(previousEventIDs) {
+                        
+                        for(NSString *eventID in previousEventIDs) {
+                            
+                            EKEvent *eventToRemove = [store eventWithIdentifier: eventID];
+                            
+                            if (eventToRemove) {
+                                
+                                NSError* error = nil;
+                                
+                                [store removeEvent: eventToRemove span: EKSpanThisEvent commit: YES error: &error];
+                                
+                                if(error) {
+                                    
+                                    NSLog(@"Error! %@", error);
+                                }
+                            }
+                        }
+                    }
+                    
+                    // Add all the new events
+                    [articleModel fetchFavouriteContentForContentType: @"event"];
+                    
+                    NSMutableArray *storedEventIDs = [NSMutableArray arrayWithCapacity: articleModel.content.count];
+                    
+                    for(DTArticle *event in articleModel.content) {
+                        
+                        EKEvent *calendarEvent = [EKEvent eventWithEventStore:store];
+                        calendarEvent.title = event.headline;
+                        calendarEvent.location = event.location;
+                        calendarEvent.startDate = event.startDate;
+                        calendarEvent.endDate = event.endDate;
+                        calendarEvent.calendar = [store defaultCalendarForNewEvents];
+                        calendarEvent.allDay = YES;
+                        calendarEvent.URL = [NSURL URLWithString: event.linkString];
+                        calendarEvent.alarms = @[[EKAlarm alarmWithAbsoluteDate: calendarEvent.startDate]];
+                        
+                        error = nil;
+                        [store saveEvent: calendarEvent span: EKSpanThisEvent commit: YES error: &error];
+                        
+                        if(error) {
+                            
+                            NSLog(@"Error! %@", error);
+                        }
+                        
+                        [storedEventIDs addObject: calendarEvent.eventIdentifier];
+                        
+                    }
+                    
+                    [storedEventIDs writeToFile: path atomically: YES];
+                }
+            }];
+    }];
+}
+
+
+- (void) showEventErrorAlert: (NSString *) errorText {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Error adding events."
+                                                    message: errorText
+                                                   delegate: nil
+                                          cancelButtonTitle: @"OK"
+                                          otherButtonTitles: nil];
+    [alert show];
 }
 
 

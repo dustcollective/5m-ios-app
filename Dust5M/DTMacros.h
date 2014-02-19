@@ -14,6 +14,8 @@
 
 void loadImage(UIImageView *imageView, NSURL *imageURL, NSString *placeholderURLString);
 
+NSString * trimString (NSString *stringToTrim);
+
 NSString * documentPath();
 
 @end

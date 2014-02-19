@@ -116,16 +116,45 @@
 }
 
 
-- (void) fetchContentForContentType:(NSString *) contentType withRegion: (NSString *) region {
+- (void) fetchContentForContentType: (NSString *) contentType withRegionModel: (NSDictionary *) regionModel {
     
-    NSFetchRequest *fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"contentFetch"
-                                                                 substitutionVariables: @{@"CONTENT_TYPE" : contentType}] ;
+    NSFetchRequest *fetchRequest = nil;
+    
+    if(self.territories) {
+        
+        BOOL allEnabled = [regionModel[@"all"] boolValue];
+        
+        if(allEnabled) {
+            
+            fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"allRegionsContentFetch"
+                                                         substitutionVariables: @{@"CONTENT_TYPE" : contentType}];
+        }
+        else {
+            
+            NSMutableSet *regions = [NSMutableSet setWithCapacity: 1];
+            NSArray *terArray = regionModel[@"territories"];
+            
+            for(NSDictionary *territoryDictionary in terArray) {
+                
+                if([territoryDictionary[@"selected"] boolValue]) {
+                    
+                    [regions addObject: territoryDictionary[@"name"]];
+                }
+            }
+            
+            //Filter the array and get a list of territories we want.
+            
+            fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"filteredRegionsContentFetch"
+                                                         substitutionVariables: @{@"CONTENT_TYPE" : contentType,
+                                                                                  @"REGIONS" : regions}];
+            
+            
+        }
+    }
     
     
-    
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending: NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey: @"date" ascending: NO];
     fetchRequest.sortDescriptors= @[sortDescriptor];
-    
     
     NSArray *fetchedEvents = [self.managedContext executeFetchRequest: fetchRequest error: nil];
     
@@ -137,7 +166,7 @@
 }
 
 
-- (void) fetchFavouriteContentForContentType:(NSString *) contentType {
+- (void) fetchFavouriteContentForContentType: (NSString *) contentType {
     
     NSFetchRequest *fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"favouriteContentFetch"
                                                                  substitutionVariables: @{@"CONTENT_TYPE" : contentType}] ;

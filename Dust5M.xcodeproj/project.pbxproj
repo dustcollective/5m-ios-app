@@ -566,6 +566,7 @@
 		0AAA934918A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
 		0AAA934A18A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
 		0AEC342B1850B032001F924E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEC342A1850B032001F924E /* CoreData.framework */; };
+		0AF5873E18B4B4C60007A055 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -726,6 +727,7 @@
 		0AAA934018A9709900EE3E26 /* DTBaseArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseArticleCell.h; sourceTree = "<group>"; };
 		0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseArticleCell.m; sourceTree = "<group>"; };
 		0AEC342A1850B032001F924E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0AF5873D18B4B4C60007A055 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -811,6 +813,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF5873E18B4B4C60007A055 /* EventKit.framework in Frameworks */,
 				0AEC342B1850B032001F924E /* CoreData.framework in Frameworks */,
 				0A37627818312FF2001C484E /* SystemConfiguration.framework in Frameworks */,
 				0A37627618312EAC001C484E /* MobileCoreServices.framework in Frameworks */,
@@ -995,6 +998,7 @@
 		0A37620518312558001C484E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AF5873D18B4B4C60007A055 /* EventKit.framework */,
 				0AEC342A1850B032001F924E /* CoreData.framework */,
 				0A37627718312FF2001C484E /* SystemConfiguration.framework */,
 				0A37627518312EAC001C484E /* MobileCoreServices.framework */,

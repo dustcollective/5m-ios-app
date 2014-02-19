@@ -43,6 +43,17 @@ void loadImage(UIImageView *imageView, NSURL *imageURL, NSString *placeholderURL
 }
 
 
+NSString * trimString (NSString *stringToTrim) {
+    
+    if([stringToTrim isEqualToString: @"Africa"]) {
+        
+        NSLog(@"AFrica");
+    }
+    
+    return [stringToTrim stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
+}
+
+
 NSString * documentPath() {
     
     NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
