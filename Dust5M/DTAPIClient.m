@@ -18,7 +18,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        _sharedClient = [[DTAPIClient alloc] initWithBaseURL: [NSURL URLWithString: MINSternBaseURLString]];
+        _sharedClient = [[DTAPIClient alloc] initWithBaseURL: [NSURL URLWithString: NSLocalizedString(@"FEED_URL", @"Feed URL")]];
         [_sharedClient setSecurityPolicy: [AFSecurityPolicy policyWithPinningMode: AFSSLPinningModePublicKey]];
     });
     

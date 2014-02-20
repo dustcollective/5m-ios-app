@@ -160,7 +160,6 @@
 		0A14B11E18A13F5E001EBC22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620A18312558001C484E /* UIKit.framework */; };
 		0A14B11F18A13F5E001EBC22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620618312558001C484E /* Foundation.framework */; };
 		0A14B14D18A13F5E001EBC22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A37620F18312558001C484E /* InfoPlist.strings */; };
-		0A1CE26118A8D46A003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE24B18A8D46A003285D9 /* Localizable.strings */; };
 		0A1CE26B18A8D476003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE23F18A8D46A003285D9 /* Localizable.strings */; };
 		0A1CE26D18A8D479003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE24218A8D46A003285D9 /* Localizable.strings */; };
 		0A1CE26F18A8D47C003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE24518A8D46A003285D9 /* Localizable.strings */; };
@@ -169,15 +168,6 @@
 		0A1CE27418A8D48B003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE25018A8D46A003285D9 /* Localizable.strings */; };
 		0A1CE27618A8D48E003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE25318A8D46A003285D9 /* Localizable.strings */; };
 		0A1CE27818A8D492003285D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CE25618A8D46A003285D9 /* Localizable.strings */; };
-		0A1CE27C18A8D630003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE27B18A8D630003285D9 /* DTConfig.m */; };
-		0A1CE29118A8D6A5003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE29018A8D6A5003285D9 /* DTConfig.m */; };
-		0A1CE29418A8D6AD003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE29318A8D6AD003285D9 /* DTConfig.m */; };
-		0A1CE29718A8D6B2003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE27E18A8D679003285D9 /* DTConfig.m */; };
-		0A1CE29A18A8D6B6003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28118A8D67F003285D9 /* DTConfig.m */; };
-		0A1CE29D18A8D6BB003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28418A8D686003285D9 /* DTConfig.m */; };
-		0A1CE2A018A8D6C0003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28718A8D692003285D9 /* DTConfig.m */; };
-		0A1CE2A318A8D6CE003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28A18A8D698003285D9 /* DTConfig.m */; };
-		0A1CE2A618A8D6D3003285D9 /* DTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CE28D18A8D69E003285D9 /* DTConfig.m */; };
 		0A31FE3518A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
 		0A31FE3618A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
 		0A31FE3718A3EC9C00344822 /* DTAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */; };
@@ -277,15 +267,15 @@
 		0A31FE9518A3EC9C00344822 /* DTFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2218A3EC9B00344822 /* DTFavouritesViewController.m */; };
 		0A31FE9618A3EC9C00344822 /* DTFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2218A3EC9B00344822 /* DTFavouritesViewController.m */; };
 		0A31FE9718A3EC9C00344822 /* DTFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2218A3EC9B00344822 /* DTFavouritesViewController.m */; };
-		0A31FE9818A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
-		0A31FE9918A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
-		0A31FE9A18A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
-		0A31FE9B18A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
-		0A31FE9C18A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
-		0A31FE9D18A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
-		0A31FE9E18A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
-		0A31FE9F18A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
-		0A31FEA018A3EC9C00344822 /* DTMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTMacros.m */; };
+		0A31FE9818A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
+		0A31FE9918A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
+		0A31FE9A18A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
+		0A31FE9B18A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
+		0A31FE9C18A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
+		0A31FE9D18A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
+		0A31FE9E18A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
+		0A31FE9F18A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
+		0A31FEA018A3EC9C00344822 /* DTHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2418A3EC9B00344822 /* DTHelpers.m */; };
 		0A31FEA118A3EC9C00344822 /* DTModelSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2618A3EC9B00344822 /* DTModelSyncManager.m */; };
 		0A31FEA218A3EC9C00344822 /* DTModelSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2618A3EC9B00344822 /* DTModelSyncManager.m */; };
 		0A31FEA318A3EC9C00344822 /* DTModelSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FE2618A3EC9B00344822 /* DTModelSyncManager.m */; };
@@ -472,6 +462,8 @@
 		0A45ED5C18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
 		0A45ED5D18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
 		0A45ED5E18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
+		0A8FB1E518B60CD800D03A22 /* avicola-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A8FB1E218B60CD800D03A22 /* avicola-Info.plist */; };
+		0A8FB1E718B60CD800D03A22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A8FB1E418B60CD800D03A22 /* Localizable.strings */; };
 		0A981BDE18A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
 		0A981BDF18A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
 		0A981BE018A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
@@ -572,12 +564,12 @@
 /* Begin PBXFileReference section */
 		0A018A0F18AB7BF7000848E1 /* DTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseViewController.h; sourceTree = "<group>"; };
 		0A018A1018AB7BF7000848E1 /* DTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseViewController.m; sourceTree = "<group>"; };
-		0A14AF4818A13F32001EBC22 /* crop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14AFB318A13F3D001EBC22 /* dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dairy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14B01E18A13F45001EBC22 /* fish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fish.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14B08918A13F4D001EBC22 /* meat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14B0F418A13F54001EBC22 /* pig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pig.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A14B15F18A13F5E001EBC22 /* poultry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poultry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A14AF4818A13F32001EBC22 /* Crop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A14AFB318A13F3D001EBC22 /* Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dairy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A14B01E18A13F45001EBC22 /* Fish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A14B08918A13F4D001EBC22 /* Meat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A14B0F418A13F54001EBC22 /* Pig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A14B15F18A13F5E001EBC22 /* Poultry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poultry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1CE23E18A8D46A003285D9 /* beef-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "beef-Info.plist"; sourceTree = "<group>"; };
 		0A1CE23F18A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0A1CE24118A8D46A003285D9 /* cattle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cattle-Info.plist"; sourceTree = "<group>"; };
@@ -586,8 +578,6 @@
 		0A1CE24518A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0A1CE24718A8D46A003285D9 /* dairy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "dairy-Info.plist"; sourceTree = "<group>"; };
 		0A1CE24818A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		0A1CE24A18A8D46A003285D9 /* elsitio-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "elsitio-Info.plist"; sourceTree = "<group>"; };
-		0A1CE24B18A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0A1CE24D18A8D46A003285D9 /* fish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fish-Info.plist"; sourceTree = "<group>"; };
 		0A1CE24E18A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0A1CE25018A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -596,16 +586,6 @@
 		0A1CE25418A8D46A003285D9 /* pig-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pig-Info.plist"; sourceTree = "<group>"; };
 		0A1CE25618A8D46A003285D9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0A1CE25718A8D46A003285D9 /* poultry-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "poultry-Info.plist"; sourceTree = "<group>"; };
-		0A1CE27B18A8D630003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE27E18A8D679003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE28118A8D67F003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE28418A8D686003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE28718A8D692003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE28A18A8D698003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE28D18A8D69E003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE29018A8D6A5003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE29318A8D6AD003285D9 /* DTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConfig.m; sourceTree = "<group>"; };
-		0A1CE2A718A8D9CA003285D9 /* DTConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTConfig.h; sourceTree = "<group>"; };
 		0A31FE0E18A3EC9B00344822 /* DTAdvertCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAdvertCell.h; sourceTree = "<group>"; };
 		0A31FE0F18A3EC9B00344822 /* DTAdvertCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAdvertCell.m; sourceTree = "<group>"; };
 		0A31FE1018A3EC9B00344822 /* DTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAPIClient.h; sourceTree = "<group>"; };
@@ -626,8 +606,8 @@
 		0A31FE2018A3EC9B00344822 /* DTContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTContentViewController.m; sourceTree = "<group>"; };
 		0A31FE2118A3EC9B00344822 /* DTFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFavouritesViewController.h; sourceTree = "<group>"; };
 		0A31FE2218A3EC9B00344822 /* DTFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFavouritesViewController.m; sourceTree = "<group>"; };
-		0A31FE2318A3EC9B00344822 /* DTMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMacros.h; sourceTree = "<group>"; };
-		0A31FE2418A3EC9B00344822 /* DTMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMacros.m; sourceTree = "<group>"; };
+		0A31FE2318A3EC9B00344822 /* DTHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTHelpers.h; sourceTree = "<group>"; };
+		0A31FE2418A3EC9B00344822 /* DTHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTHelpers.m; sourceTree = "<group>"; };
 		0A31FE2518A3EC9B00344822 /* DTModelSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTModelSyncManager.h; sourceTree = "<group>"; };
 		0A31FE2618A3EC9B00344822 /* DTModelSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTModelSyncManager.m; sourceTree = "<group>"; };
 		0A31FE2718A3EC9B00344822 /* DTSafariActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSafariActivity.h; sourceTree = "<group>"; };
@@ -640,7 +620,7 @@
 		0A31FE2E18A3EC9B00344822 /* DTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWebViewController.m; sourceTree = "<group>"; };
 		0A31FE3218A3EC9B00344822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		0A31FE3418A3EC9C00344822 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		0A37620318312558001C484E /* elsitio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elsitio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A37620318312558001C484E /* Avicola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avicola.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A37620618312558001C484E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A37620818312558001C484E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0A37620A18312558001C484E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -716,11 +696,13 @@
 		0A45ED4A18A3FFCB009C9890 /* DTMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMenuViewController.m; sourceTree = "<group>"; };
 		0A45ED5418A400B9009C9890 /* DTMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMenuTableViewCell.h; sourceTree = "<group>"; };
 		0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMenuTableViewCell.m; sourceTree = "<group>"; };
+		0A8FB1E218B60CD800D03A22 /* avicola-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "avicola-Info.plist"; sourceTree = "<group>"; };
+		0A8FB1E418B60CD800D03A22 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTMainArticleCell.xib; sourceTree = "<group>"; };
 		0A981BE718A93E22003F1753 /* DTMainArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMainArticleCell.h; sourceTree = "<group>"; };
 		0A981BE818A93E22003F1753 /* DTMainArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMainArticleCell.m; sourceTree = "<group>"; };
-		0A9BCAB618A13E4C00AC8F34 /* beef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beef.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A9BCB2118A13E5400AC8F34 /* cattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9BCAB618A13E4C00AC8F34 /* Beef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beef.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9BCB2118A13E5400AC8F34 /* Cattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA4D64718A7F82C008A0C20 /* DTAdvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAdvertViewController.h; sourceTree = "<group>"; };
 		0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAdvertViewController.m; sourceTree = "<group>"; };
 		0AA6B92C18A4E3E40019CE5B /* territories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = territories.plist; sourceTree = "<group>"; };
@@ -855,12 +837,11 @@
 		0A1CE23C18A8D46A003285D9 /* configs */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE2A718A8D9CA003285D9 /* DTConfig.h */,
+				0A8FB1E118B60CD800D03A22 /* avicola */,
 				0A1CE23D18A8D46A003285D9 /* beef */,
 				0A1CE24018A8D46A003285D9 /* cattle */,
 				0A1CE24318A8D46A003285D9 /* crop */,
 				0A1CE24618A8D46A003285D9 /* dairy */,
-				0A1CE24918A8D46A003285D9 /* elsitio */,
 				0A1CE24C18A8D46A003285D9 /* fish */,
 				0A1CE24F18A8D46A003285D9 /* meat */,
 				0A1CE25218A8D46A003285D9 /* pig */,
@@ -872,7 +853,6 @@
 		0A1CE23D18A8D46A003285D9 /* beef */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE27E18A8D679003285D9 /* DTConfig.m */,
 				0A1CE23E18A8D46A003285D9 /* beef-Info.plist */,
 				0A1CE23F18A8D46A003285D9 /* Localizable.strings */,
 			);
@@ -882,7 +862,6 @@
 		0A1CE24018A8D46A003285D9 /* cattle */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE28118A8D67F003285D9 /* DTConfig.m */,
 				0A1CE24118A8D46A003285D9 /* cattle-Info.plist */,
 				0A1CE24218A8D46A003285D9 /* Localizable.strings */,
 			);
@@ -892,7 +871,6 @@
 		0A1CE24318A8D46A003285D9 /* crop */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE28418A8D686003285D9 /* DTConfig.m */,
 				0A1CE24418A8D46A003285D9 /* crop-Info.plist */,
 				0A1CE24518A8D46A003285D9 /* Localizable.strings */,
 			);
@@ -902,27 +880,15 @@
 		0A1CE24618A8D46A003285D9 /* dairy */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE28718A8D692003285D9 /* DTConfig.m */,
 				0A1CE24718A8D46A003285D9 /* dairy-Info.plist */,
 				0A1CE24818A8D46A003285D9 /* Localizable.strings */,
 			);
 			path = dairy;
 			sourceTree = "<group>";
 		};
-		0A1CE24918A8D46A003285D9 /* elsitio */ = {
-			isa = PBXGroup;
-			children = (
-				0A1CE24A18A8D46A003285D9 /* elsitio-Info.plist */,
-				0A1CE27B18A8D630003285D9 /* DTConfig.m */,
-				0A1CE24B18A8D46A003285D9 /* Localizable.strings */,
-			);
-			path = elsitio;
-			sourceTree = "<group>";
-		};
 		0A1CE24C18A8D46A003285D9 /* fish */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE28A18A8D698003285D9 /* DTConfig.m */,
 				0A1CE24D18A8D46A003285D9 /* fish-Info.plist */,
 				0A1CE24E18A8D46A003285D9 /* Localizable.strings */,
 			);
@@ -932,7 +898,6 @@
 		0A1CE24F18A8D46A003285D9 /* meat */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE28D18A8D69E003285D9 /* DTConfig.m */,
 				0A1CE25118A8D46A003285D9 /* meat-Info.plist */,
 				0A1CE25018A8D46A003285D9 /* Localizable.strings */,
 			);
@@ -942,7 +907,6 @@
 		0A1CE25218A8D46A003285D9 /* pig */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE29018A8D6A5003285D9 /* DTConfig.m */,
 				0A1CE25418A8D46A003285D9 /* pig-Info.plist */,
 				0A1CE25318A8D46A003285D9 /* Localizable.strings */,
 			);
@@ -952,7 +916,6 @@
 		0A1CE25518A8D46A003285D9 /* poultry */ = {
 			isa = PBXGroup;
 			children = (
-				0A1CE29318A8D6AD003285D9 /* DTConfig.m */,
 				0A1CE25718A8D46A003285D9 /* poultry-Info.plist */,
 				0A1CE25618A8D46A003285D9 /* Localizable.strings */,
 			);
@@ -982,15 +945,15 @@
 		0A37620418312558001C484E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A37620318312558001C484E /* elsitio.app */,
-				0A9BCAB618A13E4C00AC8F34 /* beef.app */,
-				0A9BCB2118A13E5400AC8F34 /* cattle.app */,
-				0A14AF4818A13F32001EBC22 /* crop.app */,
-				0A14AFB318A13F3D001EBC22 /* dairy.app */,
-				0A14B01E18A13F45001EBC22 /* fish.app */,
-				0A14B08918A13F4D001EBC22 /* meat.app */,
-				0A14B0F418A13F54001EBC22 /* pig.app */,
-				0A14B15F18A13F5E001EBC22 /* poultry.app */,
+				0A37620318312558001C484E /* Avicola.app */,
+				0A9BCAB618A13E4C00AC8F34 /* Beef.app */,
+				0A9BCB2118A13E5400AC8F34 /* Cattle.app */,
+				0A14AF4818A13F32001EBC22 /* Crop.app */,
+				0A14AFB318A13F3D001EBC22 /* Dairy.app */,
+				0A14B01E18A13F45001EBC22 /* Fish.app */,
+				0A14B08918A13F4D001EBC22 /* Meat.app */,
+				0A14B0F418A13F54001EBC22 /* Pig.app */,
+				0A14B15F18A13F5E001EBC22 /* Poultry.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1039,8 +1002,8 @@
 				0A31FE1E18A3EC9B00344822 /* DTArticleModel.m */,
 				0A31FE1F18A3EC9B00344822 /* DTContentViewController.h */,
 				0A31FE2018A3EC9B00344822 /* DTContentViewController.m */,
-				0A31FE2318A3EC9B00344822 /* DTMacros.h */,
-				0A31FE2418A3EC9B00344822 /* DTMacros.m */,
+				0A31FE2318A3EC9B00344822 /* DTHelpers.h */,
+				0A31FE2418A3EC9B00344822 /* DTHelpers.m */,
 				0A31FE2518A3EC9B00344822 /* DTModelSyncManager.h */,
 				0A31FE2618A3EC9B00344822 /* DTModelSyncManager.m */,
 				0A31FE2718A3EC9B00344822 /* DTSafariActivity.h */,
@@ -1200,12 +1163,21 @@
 			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
+		0A8FB1E118B60CD800D03A22 /* avicola */ = {
+			isa = PBXGroup;
+			children = (
+				0A8FB1E218B60CD800D03A22 /* avicola-Info.plist */,
+				0A8FB1E418B60CD800D03A22 /* Localizable.strings */,
+			);
+			path = avicola;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A14AEDF18A13F32001EBC22 /* crop */ = {
+		0A14AEDF18A13F32001EBC22 /* Crop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A14AF4518A13F32001EBC22 /* Build configuration list for PBXNativeTarget "crop" */;
+			buildConfigurationList = 0A14AF4518A13F32001EBC22 /* Build configuration list for PBXNativeTarget "Crop" */;
 			buildPhases = (
 				0A14AEE018A13F32001EBC22 /* Sources */,
 				0A14AF0218A13F32001EBC22 /* Frameworks */,
@@ -1215,14 +1187,14 @@
 			);
 			dependencies = (
 			);
-			name = crop;
+			name = Crop;
 			productName = Dust5M;
-			productReference = 0A14AF4818A13F32001EBC22 /* crop.app */;
+			productReference = 0A14AF4818A13F32001EBC22 /* Crop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A14AF4A18A13F3D001EBC22 /* dairy */ = {
+		0A14AF4A18A13F3D001EBC22 /* Dairy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A14AFB018A13F3D001EBC22 /* Build configuration list for PBXNativeTarget "dairy" */;
+			buildConfigurationList = 0A14AFB018A13F3D001EBC22 /* Build configuration list for PBXNativeTarget "Dairy" */;
 			buildPhases = (
 				0A14AF4B18A13F3D001EBC22 /* Sources */,
 				0A14AF6D18A13F3D001EBC22 /* Frameworks */,
@@ -1232,14 +1204,14 @@
 			);
 			dependencies = (
 			);
-			name = dairy;
+			name = Dairy;
 			productName = Dust5M;
-			productReference = 0A14AFB318A13F3D001EBC22 /* dairy.app */;
+			productReference = 0A14AFB318A13F3D001EBC22 /* Dairy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A14AFB518A13F45001EBC22 /* fish */ = {
+		0A14AFB518A13F45001EBC22 /* Fish */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A14B01B18A13F45001EBC22 /* Build configuration list for PBXNativeTarget "fish" */;
+			buildConfigurationList = 0A14B01B18A13F45001EBC22 /* Build configuration list for PBXNativeTarget "Fish" */;
 			buildPhases = (
 				0A14AFB618A13F45001EBC22 /* Sources */,
 				0A14AFD818A13F45001EBC22 /* Frameworks */,
@@ -1249,14 +1221,14 @@
 			);
 			dependencies = (
 			);
-			name = fish;
+			name = Fish;
 			productName = Dust5M;
-			productReference = 0A14B01E18A13F45001EBC22 /* fish.app */;
+			productReference = 0A14B01E18A13F45001EBC22 /* Fish.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A14B02018A13F4D001EBC22 /* meat */ = {
+		0A14B02018A13F4D001EBC22 /* Meat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A14B08618A13F4D001EBC22 /* Build configuration list for PBXNativeTarget "meat" */;
+			buildConfigurationList = 0A14B08618A13F4D001EBC22 /* Build configuration list for PBXNativeTarget "Meat" */;
 			buildPhases = (
 				0A14B02118A13F4D001EBC22 /* Sources */,
 				0A14B04318A13F4D001EBC22 /* Frameworks */,
@@ -1266,14 +1238,14 @@
 			);
 			dependencies = (
 			);
-			name = meat;
+			name = Meat;
 			productName = Dust5M;
-			productReference = 0A14B08918A13F4D001EBC22 /* meat.app */;
+			productReference = 0A14B08918A13F4D001EBC22 /* Meat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A14B08B18A13F54001EBC22 /* pig */ = {
+		0A14B08B18A13F54001EBC22 /* Pig */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A14B0F118A13F54001EBC22 /* Build configuration list for PBXNativeTarget "pig" */;
+			buildConfigurationList = 0A14B0F118A13F54001EBC22 /* Build configuration list for PBXNativeTarget "Pig" */;
 			buildPhases = (
 				0A14B08C18A13F54001EBC22 /* Sources */,
 				0A14B0AE18A13F54001EBC22 /* Frameworks */,
@@ -1283,14 +1255,14 @@
 			);
 			dependencies = (
 			);
-			name = pig;
+			name = Pig;
 			productName = Dust5M;
-			productReference = 0A14B0F418A13F54001EBC22 /* pig.app */;
+			productReference = 0A14B0F418A13F54001EBC22 /* Pig.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A14B0F618A13F5E001EBC22 /* poultry */ = {
+		0A14B0F618A13F5E001EBC22 /* Poultry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A14B15C18A13F5E001EBC22 /* Build configuration list for PBXNativeTarget "poultry" */;
+			buildConfigurationList = 0A14B15C18A13F5E001EBC22 /* Build configuration list for PBXNativeTarget "Poultry" */;
 			buildPhases = (
 				0A14B0F718A13F5E001EBC22 /* Sources */,
 				0A14B11918A13F5E001EBC22 /* Frameworks */,
@@ -1300,14 +1272,14 @@
 			);
 			dependencies = (
 			);
-			name = poultry;
+			name = Poultry;
 			productName = Dust5M;
-			productReference = 0A14B15F18A13F5E001EBC22 /* poultry.app */;
+			productReference = 0A14B15F18A13F5E001EBC22 /* Poultry.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A37620218312558001C484E /* elsitio */ = {
+		0A37620218312558001C484E /* Avicola */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A37623818312558001C484E /* Build configuration list for PBXNativeTarget "elsitio" */;
+			buildConfigurationList = 0A37623818312558001C484E /* Build configuration list for PBXNativeTarget "Avicola" */;
 			buildPhases = (
 				0A3761FF18312558001C484E /* Sources */,
 				0A37620018312558001C484E /* Frameworks */,
@@ -1317,14 +1289,14 @@
 			);
 			dependencies = (
 			);
-			name = elsitio;
+			name = Avicola;
 			productName = Dust5M;
-			productReference = 0A37620318312558001C484E /* elsitio.app */;
+			productReference = 0A37620318312558001C484E /* Avicola.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A9BCA4D18A13E4C00AC8F34 /* beef */ = {
+		0A9BCA4D18A13E4C00AC8F34 /* Beef */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A9BCAB318A13E4C00AC8F34 /* Build configuration list for PBXNativeTarget "beef" */;
+			buildConfigurationList = 0A9BCAB318A13E4C00AC8F34 /* Build configuration list for PBXNativeTarget "Beef" */;
 			buildPhases = (
 				0A9BCA4E18A13E4C00AC8F34 /* Sources */,
 				0A9BCA7018A13E4C00AC8F34 /* Frameworks */,
@@ -1334,14 +1306,14 @@
 			);
 			dependencies = (
 			);
-			name = beef;
+			name = Beef;
 			productName = Dust5M;
-			productReference = 0A9BCAB618A13E4C00AC8F34 /* beef.app */;
+			productReference = 0A9BCAB618A13E4C00AC8F34 /* Beef.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A9BCAB818A13E5400AC8F34 /* cattle */ = {
+		0A9BCAB818A13E5400AC8F34 /* Cattle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A9BCB1E18A13E5400AC8F34 /* Build configuration list for PBXNativeTarget "cattle" */;
+			buildConfigurationList = 0A9BCB1E18A13E5400AC8F34 /* Build configuration list for PBXNativeTarget "Cattle" */;
 			buildPhases = (
 				0A9BCAB918A13E5400AC8F34 /* Sources */,
 				0A9BCADB18A13E5400AC8F34 /* Frameworks */,
@@ -1351,9 +1323,9 @@
 			);
 			dependencies = (
 			);
-			name = cattle;
+			name = Cattle;
 			productName = Dust5M;
-			productReference = 0A9BCB2118A13E5400AC8F34 /* cattle.app */;
+			productReference = 0A9BCB2118A13E5400AC8F34 /* Cattle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1379,15 +1351,15 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A37620218312558001C484E /* elsitio */,
-				0A9BCA4D18A13E4C00AC8F34 /* beef */,
-				0A9BCAB818A13E5400AC8F34 /* cattle */,
-				0A14AEDF18A13F32001EBC22 /* crop */,
-				0A14AF4A18A13F3D001EBC22 /* dairy */,
-				0A14AFB518A13F45001EBC22 /* fish */,
-				0A14B02018A13F4D001EBC22 /* meat */,
-				0A14B08B18A13F54001EBC22 /* pig */,
-				0A14B0F618A13F5E001EBC22 /* poultry */,
+				0A37620218312558001C484E /* Avicola */,
+				0A9BCA4D18A13E4C00AC8F34 /* Beef */,
+				0A9BCAB818A13E5400AC8F34 /* Cattle */,
+				0A14AEDF18A13F32001EBC22 /* Crop */,
+				0A14AF4A18A13F3D001EBC22 /* Dairy */,
+				0A14AFB518A13F45001EBC22 /* Fish */,
+				0A14B02018A13F4D001EBC22 /* Meat */,
+				0A14B08B18A13F54001EBC22 /* Pig */,
+				0A14B0F618A13F5E001EBC22 /* Poultry */,
 			);
 		};
 /* End PBXProject section */
@@ -1514,9 +1486,10 @@
 				0A45EBAB18A3EDED009C9890 /* BetonEF-Light.otf in Resources */,
 				0A45EBAC18A3EDED009C9890 /* general.xcassets in Resources */,
 				0A37621118312558001C484E /* InfoPlist.strings in Resources */,
+				0A8FB1E718B60CD800D03A22 /* Localizable.strings in Resources */,
+				0A8FB1E518B60CD800D03A22 /* avicola-Info.plist in Resources */,
 				0A45ED3D18A3F9AE009C9890 /* README.md in Resources */,
 				0AA6B92D18A4E3E40019CE5B /* territories.plist in Resources */,
-				0A1CE26118A8D46A003285D9 /* Localizable.strings in Resources */,
 				0A45EBAA18A3EDED009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBBE18A3EE14009C9890 /* elsitio.xcassets in Resources */,
 				0A31FE6B18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
@@ -1574,7 +1547,7 @@
 			files = (
 				0AA4D64C18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1318A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FE9B18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FE9B18A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BEC18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8918A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14AEE118A13F32001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1600,7 +1573,6 @@
 				0A31FEAD18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14AEF018A13F32001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5918A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE29D18A8D6BB003285D9 /* DTConfig.m in Sources */,
 				0A14AEF418A13F32001EBC22 /* main.m in Sources */,
 				0A31FEB618A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9218A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1625,7 +1597,7 @@
 			files = (
 				0AA4D64D18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1418A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FE9C18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FE9C18A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BED18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8A18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14AF4C18A13F3D001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1651,7 +1623,6 @@
 				0A31FEAE18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14AF5B18A13F3D001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5A18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE2A018A8D6C0003285D9 /* DTConfig.m in Sources */,
 				0A14AF5F18A13F3D001EBC22 /* main.m in Sources */,
 				0A31FEB718A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9318A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1676,7 +1647,7 @@
 			files = (
 				0AA4D64E18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1518A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FE9D18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FE9D18A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BEE18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8B18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14AFB718A13F45001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1702,7 +1673,6 @@
 				0A31FEAF18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14AFC618A13F45001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5B18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE2A318A8D6CE003285D9 /* DTConfig.m in Sources */,
 				0A14AFCA18A13F45001EBC22 /* main.m in Sources */,
 				0A31FEB818A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9418A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1727,7 +1697,7 @@
 			files = (
 				0AA4D64F18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1618A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FE9E18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FE9E18A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BEF18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8C18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14B02218A13F4D001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1753,7 +1723,6 @@
 				0A31FEB018A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14B03118A13F4D001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5C18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE2A618A8D6D3003285D9 /* DTConfig.m in Sources */,
 				0A14B03518A13F4D001EBC22 /* main.m in Sources */,
 				0A31FEB918A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9518A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1778,7 +1747,7 @@
 			files = (
 				0AA4D65018A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1718A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FE9F18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FE9F18A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BF018A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8D18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14B08D18A13F54001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1804,7 +1773,6 @@
 				0A31FEB118A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14B09C18A13F54001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5D18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE29118A8D6A5003285D9 /* DTConfig.m in Sources */,
 				0A14B0A018A13F54001EBC22 /* main.m in Sources */,
 				0A31FEBA18A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9618A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1829,7 +1797,7 @@
 			files = (
 				0AA4D65118A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1818A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FEA018A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FEA018A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BF118A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8E18A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A14B0F818A13F5E001EBC22 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1855,7 +1823,6 @@
 				0A31FEB218A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A14B10718A13F5E001EBC22 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5E18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE29418A8D6AD003285D9 /* DTConfig.m in Sources */,
 				0A14B10B18A13F5E001EBC22 /* main.m in Sources */,
 				0A31FEBB18A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9718A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1880,7 +1847,7 @@
 			files = (
 				0AA4D64918A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1018A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FE9818A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FE9818A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BE918A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8618A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A376270183125C2001C484E /* UIProgressView+AFNetworking.m in Sources */,
@@ -1906,7 +1873,6 @@
 				0A31FEAA18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A37626C183125C2001C484E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5618A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE27C18A8D630003285D9 /* DTConfig.m in Sources */,
 				0A37621318312558001C484E /* main.m in Sources */,
 				0A31FEB318A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE8F18A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1931,7 +1897,7 @@
 			files = (
 				0AA4D64A18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1118A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FE9918A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FE9918A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BEA18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8718A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A9BCA4F18A13E4C00AC8F34 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1957,7 +1923,6 @@
 				0A31FEAB18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A9BCA5E18A13E4C00AC8F34 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5718A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE29718A8D6B2003285D9 /* DTConfig.m in Sources */,
 				0A9BCA6218A13E4C00AC8F34 /* main.m in Sources */,
 				0A31FEB418A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9018A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -1982,7 +1947,7 @@
 			files = (
 				0AA4D64B18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */,
 				0A45ED1218A3F9AE009C9890 /* MMDrawerBarButtonItem.m in Sources */,
-				0A31FE9A18A3EC9C00344822 /* DTMacros.m in Sources */,
+				0A31FE9A18A3EC9C00344822 /* DTHelpers.m in Sources */,
 				0A981BEB18A93E22003F1753 /* DTMainArticleCell.m in Sources */,
 				0A31FE8818A3EC9C00344822 /* DTContentViewController.m in Sources */,
 				0A9BCABA18A13E5400AC8F34 /* UIProgressView+AFNetworking.m in Sources */,
@@ -2008,7 +1973,6 @@
 				0A31FEAC18A3EC9C00344822 /* DTSafariActivity.m in Sources */,
 				0A9BCAC918A13E5400AC8F34 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0A45ED5818A400B9009C9890 /* DTMenuTableViewCell.m in Sources */,
-				0A1CE29A18A8D6B6003285D9 /* DTConfig.m in Sources */,
 				0A9BCACD18A13E5400AC8F34 /* main.m in Sources */,
 				0A31FEB518A3EC9C00344822 /* DTSettingsCell.m in Sources */,
 				0A31FE9118A3EC9C00344822 /* DTFavouritesViewController.m in Sources */,
@@ -2066,9 +2030,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/crop/crop-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = crop;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Crop;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2082,9 +2046,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/crop/crop-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = crop;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Crop;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2098,9 +2062,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/dairy/dairy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = dairy;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Dairy;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2114,9 +2078,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/dairy/dairy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = dairy;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Dairy;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2130,9 +2094,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/fish/fish-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = fish;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Fish;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2146,9 +2110,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/fish/fish-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = fish;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Fish;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2162,9 +2126,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/meat/meat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = meat;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Meat;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2178,9 +2142,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/meat/meat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = meat;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Meat;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2194,9 +2158,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/pig/pig-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = pig;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Pig;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2210,9 +2174,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/pig/pig-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = pig;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Pig;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2226,9 +2190,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/poultry/poultry-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = poultry;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Poultry;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2242,9 +2206,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/poultry/poultry-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = poultry;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Poultry;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2329,10 +2293,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "configs/elsitio/elsitio-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				INFOPLIST_FILE = "configs/avicola/avicola-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9C360220-E01A-4C3C-8B7A-E06691EE0590";
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2345,10 +2310,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
-				INFOPLIST_FILE = "configs/elsitio/elsitio-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				INFOPLIST_FILE = "configs/avicola/avicola-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9C360220-E01A-4C3C-8B7A-E06691EE0590";
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2362,9 +2328,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/beef/beef-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = beef;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Beef;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2378,9 +2344,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/beef/beef-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = beef;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Beef;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2394,9 +2360,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/cattle/cattle-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = cattle;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Cattle;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2410,9 +2376,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/cattle/cattle-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = cattle;
-				PROVISIONING_PROFILE = "5B291F00-9589-4DA3-A11D-887195E27204";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Cattle;
+				PROVISIONING_PROFILE = "66666AFE-9863-4D12-A7F7-BC7223BFB89D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2420,7 +2386,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A14AF4518A13F32001EBC22 /* Build configuration list for PBXNativeTarget "crop" */ = {
+		0A14AF4518A13F32001EBC22 /* Build configuration list for PBXNativeTarget "Crop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A14AF4618A13F32001EBC22 /* Debug */,
@@ -2429,7 +2395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A14AFB018A13F3D001EBC22 /* Build configuration list for PBXNativeTarget "dairy" */ = {
+		0A14AFB018A13F3D001EBC22 /* Build configuration list for PBXNativeTarget "Dairy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A14AFB118A13F3D001EBC22 /* Debug */,
@@ -2438,7 +2404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A14B01B18A13F45001EBC22 /* Build configuration list for PBXNativeTarget "fish" */ = {
+		0A14B01B18A13F45001EBC22 /* Build configuration list for PBXNativeTarget "Fish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A14B01C18A13F45001EBC22 /* Debug */,
@@ -2447,7 +2413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A14B08618A13F4D001EBC22 /* Build configuration list for PBXNativeTarget "meat" */ = {
+		0A14B08618A13F4D001EBC22 /* Build configuration list for PBXNativeTarget "Meat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A14B08718A13F4D001EBC22 /* Debug */,
@@ -2456,7 +2422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A14B0F118A13F54001EBC22 /* Build configuration list for PBXNativeTarget "pig" */ = {
+		0A14B0F118A13F54001EBC22 /* Build configuration list for PBXNativeTarget "Pig" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A14B0F218A13F54001EBC22 /* Debug */,
@@ -2465,7 +2431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A14B15C18A13F5E001EBC22 /* Build configuration list for PBXNativeTarget "poultry" */ = {
+		0A14B15C18A13F5E001EBC22 /* Build configuration list for PBXNativeTarget "Poultry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A14B15D18A13F5E001EBC22 /* Debug */,
@@ -2483,7 +2449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A37623818312558001C484E /* Build configuration list for PBXNativeTarget "elsitio" */ = {
+		0A37623818312558001C484E /* Build configuration list for PBXNativeTarget "Avicola" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A37623918312558001C484E /* Debug */,
@@ -2492,7 +2458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A9BCAB318A13E4C00AC8F34 /* Build configuration list for PBXNativeTarget "beef" */ = {
+		0A9BCAB318A13E4C00AC8F34 /* Build configuration list for PBXNativeTarget "Beef" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A9BCAB418A13E4C00AC8F34 /* Debug */,
@@ -2501,7 +2467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A9BCB1E18A13E5400AC8F34 /* Build configuration list for PBXNativeTarget "cattle" */ = {
+		0A9BCB1E18A13E5400AC8F34 /* Build configuration list for PBXNativeTarget "Cattle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A9BCB1F18A13E5400AC8F34 /* Debug */,

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 dust. All rights reserved.
 //
 
-#import "DTMacros.h"
+#import "DTHelpers.h"
 
-@implementation DTMacros
+@implementation DTHelpers
 
 void loadImage(UIImageView *imageView, NSURL *imageURL, NSString *placeholderURLString) {
     
@@ -45,11 +45,6 @@ void loadImage(UIImageView *imageView, NSURL *imageURL, NSString *placeholderURL
 
 NSString * trimString (NSString *stringToTrim) {
     
-    if([stringToTrim isEqualToString: @"Africa"]) {
-        
-        NSLog(@"AFrica");
-    }
-    
     return [stringToTrim stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
 }
 
@@ -59,6 +54,56 @@ NSString * documentPath() {
     NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
     return [documentPath objectAtIndex: 0];
+}
+
+UIColor * logoColor() {
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSDictionary *info = [bundle infoDictionary];
+    NSString *prodName = info[@"CFBundleDisplayName"];
+    prodName = prodName.lowercaseString;
+    
+    if([prodName isEqualToString: @"avicola"]) {
+        
+        return RGB(238, 53, 35);
+    }
+    else if([prodName isEqualToString: @"beef"]) {
+        
+        return RGB(119, 99, 79);
+    }
+    else if([prodName isEqualToString: @"cattle"]) {
+        
+        return RGB(66, 18, 20);
+    }
+    else if([prodName isEqualToString: @"crop"]) {
+        
+        return RGB(140, 198, 63);
+    }
+    else if([prodName isEqualToString: @"dairy"]) {
+        
+        return RGB(246, 139, 32);
+    }
+    else if([prodName isEqualToString: @"fish"]) {
+        
+        return RGB(26, 176, 230);
+    }
+    else if([prodName isEqualToString: @"meat"]) {
+        
+        return RGB(150, 46, 53);
+    }
+    else if([prodName isEqualToString: @"pig"]) {
+        
+        return RGB(8, 64, 31);
+    }
+    else if([prodName isEqualToString: @"poultry"]) {
+        
+        return RGB(188, 166, 105);
+    }
+    else {
+        
+        return [UIColor blackColor];
+    }
+    
 }
 
 @end

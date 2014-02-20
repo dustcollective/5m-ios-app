@@ -14,6 +14,7 @@
 - (void) willMoveToSuperview:(UIView *)newSuperview {
     
     self.textLabel.textColor = RGB(88, 88, 91);
+    self.textLabel.numberOfLines = 2;
     self.textLabel.font = [UIFont fontWithName: @"BetonEF-Demibold" size: 14.0f];
     self.textLabel.textAlignment = NSTextAlignmentLeft;
 }

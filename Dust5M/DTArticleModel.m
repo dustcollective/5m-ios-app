@@ -38,9 +38,9 @@
 
 - (void) setWithAttributes: (NSDictionary *) attributes {
     
-    [self syncContentFromFeed: attributes[@"contents"]];
-    
     [self syncTerritories: attributes[@"territories"]];
+    
+    [self syncContentFromFeed: attributes[@"contents"]];
     
     [self syncAds: attributes[@"adverts"]];
 }
@@ -120,38 +120,33 @@
     
     NSFetchRequest *fetchRequest = nil;
     
-    if(self.territories) {
-        
-        BOOL allEnabled = [regionModel[@"all"] boolValue];
-        
-        if(allEnabled) {
-            
-            fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"allRegionsContentFetch"
-                                                         substitutionVariables: @{@"CONTENT_TYPE" : contentType}];
-        }
-        else {
-            
-            NSMutableSet *regions = [NSMutableSet setWithCapacity: 1];
-            NSArray *terArray = regionModel[@"territories"];
-            
-            for(NSDictionary *territoryDictionary in terArray) {
-                
-                if([territoryDictionary[@"selected"] boolValue]) {
-                    
-                    [regions addObject: territoryDictionary[@"name"]];
-                }
-            }
-            
-            //Filter the array and get a list of territories we want.
-            
-            fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"filteredRegionsContentFetch"
-                                                         substitutionVariables: @{@"CONTENT_TYPE" : contentType,
-                                                                                  @"REGIONS" : regions}];
-            
-            
-        }
-    }
+    BOOL allEnabled = [regionModel[@"all"] boolValue];
     
+    if(allEnabled) {
+        
+        fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"allRegionsContentFetch"
+                                                     substitutionVariables: @{@"CONTENT_TYPE" : contentType}];
+    }
+    else {
+        
+        NSMutableSet *regions = [NSMutableSet setWithCapacity: 1];
+        NSArray *terArray = regionModel[@"territories"];
+        
+        for(NSDictionary *territoryDictionary in terArray) {
+            
+            if([territoryDictionary[@"selected"] boolValue]) {
+                
+                [regions addObject: territoryDictionary[@"name"]];
+            }
+        }
+        
+        //Filter the array and get a list of territories we want.
+        fetchRequest = [self.managedModel fetchRequestFromTemplateWithName: @"filteredRegionsContentFetch"
+                                                     substitutionVariables: @{@"CONTENT_TYPE" : contentType,
+                                                                              @"REGIONS" : regions}];
+        
+        
+    }
     
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey: @"date" ascending: NO];
     fetchRequest.sortDescriptors= @[sortDescriptor];
@@ -206,7 +201,7 @@
 
 + (AFHTTPRequestOperation *) articleListWithBlock: (void (^)(DTArticleModel *articleModel, NSError *error)) block {
     
-    return [[DTAPIClient sharedClient] GET: @"http://avicola.ios-app-feed.5m-app.dust.screenformat.com"
+    return [[DTAPIClient sharedClient] GET: @""
                                       parameters: nil
                                          success: ^(AFHTTPRequestOperation * __unused task, id JSON) {
                                              
@@ -218,9 +213,16 @@
                                                  block(articleModel, nil);
                                              }
                                          }
-                                         failure: ^(AFHTTPRequestOperation *__unused task, NSError *error) {
-                                             
-                                             // If there's an error we create the model and perhaps use
+                                   failure: ^(AFHTTPRequestOperation *__unused task, NSError *error) {
+                                       
+                                       UIAlertView *alert = [[UIAlertView alloc] initWithTitle: NSLocalizedString(@"NETWORK_ERROR_TITLE", @"Network error Title")
+                                                                                       message: NSLocalizedString(@"NETWORK_ERROR_MESSAGE", @"Network error Message")
+                                                                                      delegate: Nil
+                                                                             cancelButtonTitle: NSLocalizedString(@"OK", @"Ok")
+                                                                             otherButtonTitles: nil];
+                                       [alert show];
+                                       
+                                       // If there's an error we create the model and perhaps use
                                              // unsynced data
                                              DTArticleModel *articleModel = [[DTArticleModel alloc] init];
                                              

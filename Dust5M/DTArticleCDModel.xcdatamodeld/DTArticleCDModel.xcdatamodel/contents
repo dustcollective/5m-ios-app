@@ -16,10 +16,10 @@
         <attribute name="territory" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="thumbnailURL" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <fetchRequest name="allRegionsContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE"/>
-    <fetchRequest name="articleForIDFetch" entity="DTArticle" predicateString="contentId == $CONTENT_ID" fetchLimit="60"/>
-    <fetchRequest name="favouriteContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE AND favourite == 1" fetchLimit="60"/>
-    <fetchRequest name="filteredRegionsContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE AND $REGIONS CONTAINS[cd] territory" includePropertyValues="YES"/>
+    <fetchRequest name="allRegionsContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE" fetchLimit="50"/>
+    <fetchRequest name="articleForIDFetch" entity="DTArticle" predicateString="contentId == $CONTENT_ID"/>
+    <fetchRequest name="favouriteContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE AND favourite == 1"/>
+    <fetchRequest name="filteredRegionsContentFetch" entity="DTArticle" predicateString="contentType LIKE $CONTENT_TYPE AND $REGIONS CONTAINS[cd] territory" fetchLimit="50" includePropertyValues="YES"/>
     <fetchRequest name="helpFetch" entity="DTArticle" predicateString="contentType == &quot;help&quot;" fetchLimit="1"/>
     <elements>
         <element name="DTArticle" positionX="0" positionY="0" width="0" height="0"/>
