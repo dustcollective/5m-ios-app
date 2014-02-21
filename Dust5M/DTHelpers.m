@@ -6,7 +6,11 @@
 //  Copyright (c) 2013 dust. All rights reserved.
 //
 
+#import <EventKit/EventKit.h>
+
 #import "DTHelpers.h"
+
+#import "DTArticleModel.h"
 
 @implementation DTHelpers
 
@@ -104,6 +108,89 @@ UIColor * logoColor() {
         return [UIColor blackColor];
     }
     
+}
+
+void syncEvents() {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: nil
+                                                    message: NSLocalizedString(@"EVENTS_ADDED", @"EVENTS ADDED")
+                                                   delegate: nil
+                                          cancelButtonTitle: NSLocalizedString(@"OK", @"Ok")
+                                          otherButtonTitles: nil];
+    [alert show];
+    
+    NSString *path = [documentPath() stringByAppendingPathComponent: @"storedevents"];
+    
+    [DTArticleModel articleListWithBlock: ^(DTArticleModel *articleModel, NSError *error) {
+        
+        EKEventStore *store = [[EKEventStore alloc] init];
+        
+        [store requestAccessToEntityType: EKEntityTypeEvent completion: ^(BOOL granted, NSError *error) {
+            
+            if (!granted) {
+                
+                return;
+            }
+            else {
+                
+                // Remove all the old events we stored so we don't get duplicates
+                NSMutableArray *previousEventIDs = [NSMutableArray arrayWithContentsOfFile: path];
+                if(previousEventIDs) {
+                    
+                    for(NSString *eventID in previousEventIDs) {
+                        
+                        EKEvent *eventToRemove = [store eventWithIdentifier: eventID];
+                        
+                        if (eventToRemove) {
+                            
+                            NSError* error = nil;
+                            
+                            [store removeEvent: eventToRemove span: EKSpanThisEvent commit: YES error: &error];
+                            
+                            if(error) {
+                                
+                                NSLog(@"Error! %@", error);
+                            }
+                        }
+                    }
+                }
+                
+
+                // Add all the new events
+                [articleModel fetchFavouriteContentForContentType: @"event"];
+                
+                NSMutableArray *storedEventIDs = [NSMutableArray arrayWithCapacity: articleModel.content.count];
+                
+                for(DTArticle *event in articleModel.content) {
+                    
+                    EKEvent *calendarEvent = [EKEvent eventWithEventStore:store];
+                    calendarEvent.title = event.headline;
+                    calendarEvent.location = event.location;
+                    calendarEvent.startDate = event.startDate;
+                    calendarEvent.endDate = event.endDate;
+                    calendarEvent.calendar = [store defaultCalendarForNewEvents];
+                    calendarEvent.allDay = YES;
+                    calendarEvent.URL = [NSURL URLWithString: event.linkString];
+                    calendarEvent.alarms = @[[EKAlarm alarmWithAbsoluteDate: calendarEvent.startDate]];
+                    
+                    error = nil;
+                    [store saveEvent: calendarEvent span: EKSpanThisEvent commit: YES error: &error];
+                    
+                    if(error) {
+                        
+                        NSLog(@"Error! %@", error);
+                    }
+                    
+                    [storedEventIDs addObject: calendarEvent.eventIdentifier];
+                    
+                }
+                
+                [storedEventIDs writeToFile: path atomically: YES];
+                
+                
+            }
+        }];
+    }];
 }
 
 @end
