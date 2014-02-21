@@ -161,6 +161,9 @@
         
         NSLog(@"Error setting favourite");
     }
+    
+    // Sync Facourites
+    syncEvents();
 }
 
 
