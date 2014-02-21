@@ -73,7 +73,7 @@
                                             <action selector="toggleDrawer:" destination="0Ti-sj-bLu" eventType="touchUpInside" id="yXv-7M-MbZ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ot5-3r-eCK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Ot5-3r-eCK">
                                         <rect key="frame" x="60" y="85" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -85,7 +85,7 @@
                                             <action selector="filterToEverythig:" destination="0Ti-sj-bLu" eventType="touchUpInside" id="r6b-Wd-cOz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uZL-bq-Wr3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="uZL-bq-Wr3">
                                         <rect key="frame" x="125" y="85" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -97,7 +97,7 @@
                                             <action selector="filterToNews:" destination="0Ti-sj-bLu" eventType="touchUpInside" id="lmB-o3-beS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vAd-4t-9u1">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="vAd-4t-9u1">
                                         <rect key="frame" x="200" y="85" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -117,7 +117,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tVA-S4-NEb" userLabel="Search Bu">
-                                        <rect key="frame" x="276" y="85" width="30" height="30"/>
+                                        <rect key="frame" x="270" y="75" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="SearchIcon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -301,20 +301,20 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puede eliminar los eventos en" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Eq-49-d6k">
-                                            <rect key="frame" x="20" y="77" width="161" height="14"/>
+                                            <rect key="frame" x="20" y="77" width="275" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajustes > Correo, Contactos, Calendarios > Calendarios suscritos" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4ts-qi-BEu">
-                                            <rect key="frame" x="20" y="99" width="252" height="29"/>
+                                            <rect key="frame" x="20" y="99" width="275" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recordatorio de eventos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="81s-a8-rcb">
-                                            <rect key="frame" x="20" y="20" width="133" height="14"/>
+                                            <rect key="frame" x="20" y="20" width="275" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                             <nil key="highlightedColor"/>
@@ -395,8 +395,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="OI5-al-8Uu"/>
                     <connections>
+                        <outlet property="eventButton" destination="U2w-vX-5aR" id="y9d-AL-sBb"/>
+                        <outlet property="instruc1" destination="8Eq-49-d6k" id="8pd-tM-Wjd"/>
+                        <outlet property="instruc2" destination="4ts-qi-BEu" id="ytE-Op-xRr"/>
                         <outlet property="logoLabel" destination="IIX-sf-SD7" id="B1V-VZ-2ct"/>
                         <outlet property="tableView" destination="at7-Tw-ZfR" id="1pi-nz-F6m"/>
+                        <outlet property="titleLabel" destination="81s-a8-rcb" id="cqL-6c-BAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZI-nf-ZZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -536,7 +540,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qGe-uc-7eD" userLabel="Share">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="qGe-uc-7eD" userLabel="Share">
                                                         <rect key="frame" x="237" y="22" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="ShareButtonIcon">
@@ -546,12 +550,13 @@
                                                             <action selector="share:" destination="ZlS-fV-fga" eventType="touchUpInside" id="ZhI-4X-7E6"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ECf-Yp-k3b" userLabel="Fav">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ECf-Yp-k3b" userLabel="Fav">
                                                         <rect key="frame" x="275" y="22" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="FavouriteButtonIcon">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <state key="selected" image="FavouriteButtonIconSelected"/>
                                                         <connections>
                                                             <action selector="favourite:" destination="ZlS-fV-fga" eventType="touchUpInside" id="MbP-df-ssT"/>
                                                         </connections>
@@ -579,6 +584,7 @@
                     <navigationItem key="navigationItem" id="gcq-Qx-gqz"/>
                     <connections>
                         <outlet property="dateLabel" destination="ZHO-ba-Lk2" id="2Zc-pb-qzA"/>
+                        <outlet property="favouriteButton" destination="ECf-Yp-k3b" id="TAt-MS-PLR"/>
                         <outlet property="imageView" destination="bW2-8X-0pV" id="FZm-gX-0yI"/>
                         <outlet property="logoLabel" destination="Rcx-cW-jj4" id="19n-sj-Znw"/>
                         <outlet property="scrollView" destination="QTS-Tp-qji" id="7se-Bp-Opi"/>
@@ -629,7 +635,7 @@
                                             <action selector="toggleDrawer:" destination="OvU-xZ-UYZ" eventType="touchUpInside" id="XU0-b5-2T1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y7K-jN-2VF">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Y7K-jN-2VF">
                                         <rect key="frame" x="60" y="85" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -641,7 +647,7 @@
                                             <action selector="filterToEverythig:" destination="OvU-xZ-UYZ" eventType="touchUpInside" id="SEb-ji-EHr"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sut-5s-Blb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Sut-5s-Blb">
                                         <rect key="frame" x="125" y="85" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -653,7 +659,7 @@
                                             <action selector="filterToNews:" destination="OvU-xZ-UYZ" eventType="touchUpInside" id="sIB-hj-iGu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y1G-qD-6q0">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Y1G-qD-6q0">
                                         <rect key="frame" x="200" y="85" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -710,6 +716,7 @@
     <resources>
         <image name="CloseIcon" width="30" height="30"/>
         <image name="FavouriteButtonIcon" width="30" height="30"/>
+        <image name="FavouriteButtonIconSelected" width="30" height="30"/>
         <image name="Logo" width="60" height="60"/>
         <image name="MenuIcon" width="30" height="30"/>
         <image name="SearchIcon" width="30" height="30"/>

@@ -14,4 +14,9 @@
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
+@property (nonatomic, strong) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) IBOutlet UIButton *eventButton;
+@property (nonatomic, strong) IBOutlet UILabel *instruc1;
+@property (nonatomic, strong) IBOutlet UILabel *instruc2;
+
 @end

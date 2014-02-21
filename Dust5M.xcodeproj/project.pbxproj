@@ -365,15 +365,6 @@
 		0A45EBA118A3EDED009C9890 /* app.css in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9018A3EDED009C9890 /* app.css */; };
 		0A45EBAA18A3EDED009C9890 /* BetonEF-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9A18A3EDED009C9890 /* BetonEF-DemiBold.otf */; };
 		0A45EBAB18A3EDED009C9890 /* BetonEF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9B18A3EDED009C9890 /* BetonEF-Light.otf */; };
-		0A45EBAC18A3EDED009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
-		0A45EBB018A3EDF5009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
-		0A45EBB118A3EDF6009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
-		0A45EBB218A3EDF6009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
-		0A45EBB318A3EDF6009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
-		0A45EBB418A3EDF7009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
-		0A45EBB518A3EDF7009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
-		0A45EBB618A3EDF7009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
-		0A45EBB718A3EDF8009C9890 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9C18A3EDED009C9890 /* general.xcassets */; };
 		0A45EBB918A3EDFD009C9890 /* beef.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9118A3EDED009C9890 /* beef.xcassets */; };
 		0A45EBBA18A3EE01009C9890 /* cattle.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9218A3EDED009C9890 /* cattle.xcassets */; };
 		0A45EBBB18A3EE06009C9890 /* crop.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A45EB9318A3EDED009C9890 /* crop.xcassets */; };
@@ -557,6 +548,15 @@
 		0AAA934818A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
 		0AAA934918A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
 		0AAA934A18A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
+		0AE2BD0B18B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
+		0AE2BD0C18B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
+		0AE2BD0D18B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
+		0AE2BD0E18B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
+		0AE2BD0F18B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
+		0AE2BD1018B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
+		0AE2BD1118B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
+		0AE2BD1218B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
+		0AE2BD1318B78BC800F6EC77 /* general.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2BD0A18B78BC800F6EC77 /* general.xcassets */; };
 		0AEC342B1850B032001F924E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEC342A1850B032001F924E /* CoreData.framework */; };
 		0AF5873E18B4B4C60007A055 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
 /* End PBXBuildFile section */
@@ -676,7 +676,6 @@
 		0A45EB9618A3EDED009C9890 /* fish.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = fish.xcassets; sourceTree = "<group>"; };
 		0A45EB9A18A3EDED009C9890 /* BetonEF-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BetonEF-DemiBold.otf"; sourceTree = "<group>"; };
 		0A45EB9B18A3EDED009C9890 /* BetonEF-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BetonEF-Light.otf"; sourceTree = "<group>"; };
-		0A45EB9C18A3EDED009C9890 /* general.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = general.xcassets; sourceTree = "<group>"; };
 		0A45EB9D18A3EDED009C9890 /* meat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = meat.xcassets; sourceTree = "<group>"; };
 		0A45EB9E18A3EDED009C9890 /* pig.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pig.xcassets; sourceTree = "<group>"; };
 		0A45EB9F18A3EDED009C9890 /* poultry.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = poultry.xcassets; sourceTree = "<group>"; };
@@ -708,6 +707,7 @@
 		0AA6B92C18A4E3E40019CE5B /* territories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = territories.plist; sourceTree = "<group>"; };
 		0AAA934018A9709900EE3E26 /* DTBaseArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseArticleCell.h; sourceTree = "<group>"; };
 		0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseArticleCell.m; sourceTree = "<group>"; };
+		0AE2BD0A18B78BC800F6EC77 /* general.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = general.xcassets; sourceTree = "<group>"; };
 		0AEC342A1850B032001F924E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0AF5873D18B4B4C60007A055 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -1117,10 +1117,10 @@
 				0A45EB9418A3EDED009C9890 /* dairy.xcassets */,
 				0A45EB9518A3EDED009C9890 /* elsitio.xcassets */,
 				0A45EB9618A3EDED009C9890 /* fish.xcassets */,
-				0A45EB9C18A3EDED009C9890 /* general.xcassets */,
 				0A45EB9D18A3EDED009C9890 /* meat.xcassets */,
 				0A45EB9E18A3EDED009C9890 /* pig.xcassets */,
 				0A45EB9F18A3EDED009C9890 /* poultry.xcassets */,
+				0AE2BD0A18B78BC800F6EC77 /* general.xcassets */,
 				0AA6B92C18A4E3E40019CE5B /* territories.plist */,
 				0A45EB9018A3EDED009C9890 /* app.css */,
 			);
@@ -1369,9 +1369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A45EBB218A3EDF6009C9890 /* general.xcassets in Resources */,
 				0A1CE26F18A8D47C003285D9 /* Localizable.strings in Resources */,
 				0A14AF3618A13F32001EBC22 /* InfoPlist.strings in Resources */,
+				0AE2BD0E18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC418A3EE30009C9890 /* app.css in Resources */,
 				0AA6B93018A4E3E70019CE5B /* territories.plist in Resources */,
 				0A31FE6E18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
@@ -1388,9 +1388,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A45EBB318A3EDF6009C9890 /* general.xcassets in Resources */,
 				0A1CE27118A8D480003285D9 /* Localizable.strings in Resources */,
 				0A14AFA118A13F3D001EBC22 /* InfoPlist.strings in Resources */,
+				0AE2BD0F18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC518A3EE30009C9890 /* app.css in Resources */,
 				0AA6B93118A4E3E80019CE5B /* territories.plist in Resources */,
 				0A31FE6F18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
@@ -1407,9 +1407,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A45EBB418A3EDF7009C9890 /* general.xcassets in Resources */,
 				0A1CE27318A8D487003285D9 /* Localizable.strings in Resources */,
 				0A14B00C18A13F45001EBC22 /* InfoPlist.strings in Resources */,
+				0AE2BD1018B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC618A3EE31009C9890 /* app.css in Resources */,
 				0AA6B93218A4E3E80019CE5B /* territories.plist in Resources */,
 				0A31FE7018A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
@@ -1426,9 +1426,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A45EBB518A3EDF7009C9890 /* general.xcassets in Resources */,
 				0A14B07718A13F4D001EBC22 /* InfoPlist.strings in Resources */,
 				0A1CE27418A8D48B003285D9 /* Localizable.strings in Resources */,
+				0AE2BD1118B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC718A3EE31009C9890 /* app.css in Resources */,
 				0AA6B93318A4E3E90019CE5B /* territories.plist in Resources */,
 				0A31FE7118A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
@@ -1445,9 +1445,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A45EBB618A3EDF7009C9890 /* general.xcassets in Resources */,
 				0A14B0E218A13F54001EBC22 /* InfoPlist.strings in Resources */,
 				0A1CE27618A8D48E003285D9 /* Localizable.strings in Resources */,
+				0AE2BD1218B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC818A3EE32009C9890 /* app.css in Resources */,
 				0AA6B93418A4E3E90019CE5B /* territories.plist in Resources */,
 				0A45EBC018A3EE1C009C9890 /* pig.xcassets in Resources */,
@@ -1465,8 +1465,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A31FEE818A3EC9C00344822 /* Main.storyboard in Resources */,
-				0A45EBB718A3EDF8009C9890 /* general.xcassets in Resources */,
 				0A1CE27818A8D492003285D9 /* Localizable.strings in Resources */,
+				0AE2BD1318B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A31FED618A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0AA6B93518A4E3E90019CE5B /* territories.plist in Resources */,
 				0A45EBE918A3EE62009C9890 /* BetonEF-Light.otf in Resources */,
@@ -1484,7 +1484,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A45EBAB18A3EDED009C9890 /* BetonEF-Light.otf in Resources */,
-				0A45EBAC18A3EDED009C9890 /* general.xcassets in Resources */,
 				0A37621118312558001C484E /* InfoPlist.strings in Resources */,
 				0A8FB1E718B60CD800D03A22 /* Localizable.strings in Resources */,
 				0A8FB1E518B60CD800D03A22 /* avicola-Info.plist in Resources */,
@@ -1492,6 +1491,7 @@
 				0AA6B92D18A4E3E40019CE5B /* territories.plist in Resources */,
 				0A45EBAA18A3EDED009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBBE18A3EE14009C9890 /* elsitio.xcassets in Resources */,
+				0AE2BD0B18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A31FE6B18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A981BDE18A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBA118A3EDED009C9890 /* app.css in Resources */,
@@ -1504,9 +1504,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A45EBB018A3EDF5009C9890 /* general.xcassets in Resources */,
 				0A1CE26B18A8D476003285D9 /* Localizable.strings in Resources */,
 				0A45EBB918A3EDFD009C9890 /* beef.xcassets in Resources */,
+				0AE2BD0C18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC218A3EE2F009C9890 /* app.css in Resources */,
 				0AA6B92E18A4E3E70019CE5B /* territories.plist in Resources */,
 				0A9BCAA418A13E4C00AC8F34 /* InfoPlist.strings in Resources */,
@@ -1523,9 +1523,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A45EBB118A3EDF6009C9890 /* general.xcassets in Resources */,
 				0A1CE26D18A8D479003285D9 /* Localizable.strings in Resources */,
 				0A9BCB0F18A13E5400AC8F34 /* InfoPlist.strings in Resources */,
+				0AE2BD0D18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC318A3EE30009C9890 /* app.css in Resources */,
 				0AA6B92F18A4E3E70019CE5B /* territories.plist in Resources */,
 				0A45EBBA18A3EE01009C9890 /* cattle.xcassets in Resources */,

@@ -32,6 +32,16 @@
     
     [super viewDidLoad];
     
+    self.logoLabel.textColor = logoColor();
+    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
+    
+    
+    self.titleLabel.text = NSLocalizedString(@"EVENTS_TITLE", @"Events Title");
+    [self.eventButton setTitle: NSLocalizedString(@"EVENTS_BUTTON", @"Events Button")
+                      forState: UIControlStateNormal];
+    self.instruc1.text = NSLocalizedString(@"EVENT_INSTRUCTIONS_1", @"Add Favourite Events to Calendar");
+    self.instruc2.text = NSLocalizedString(@"EVENT_INSTRUCTIONS_2", @"You can remove these events in");
+    
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
     self.tableView.backgroundColor = [UIColor whiteColor];
 }
@@ -244,17 +254,20 @@
                     
                     [storedEventIDs writeToFile: path atomically: YES];
                 }
+                
+                [self showAlert: NSLocalizedString(@"EVENTS_ADDED", @"EVENTS ADDED")];
+  
             }];
     }];
 }
 
 
-- (void) showEventErrorAlert: (NSString *) errorText {
+- (void) showAlert: (NSString *) alertText {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Error adding events."
-                                                    message: errorText
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: nil
+                                                    message: alertText
                                                    delegate: nil
-                                          cancelButtonTitle: @"OK"
+                                          cancelButtonTitle: NSLocalizedString(@"OK", @"Ok")
                                           otherButtonTitles: nil];
     [alert show];
 }

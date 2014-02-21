@@ -21,19 +21,13 @@
 @implementation DTContentViewController
 
 
-- (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil {
-    
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void) viewDidLoad {
     
     [super viewDidLoad];
+    
+    DTAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    self.managedObjectContext = appDelegate.managedObjectContext;
+    self.managedObjectModel = appDelegate.managedObjectModel;
     
     self.webView.delegate = self;
     
@@ -42,18 +36,24 @@
     self.titleLabel.font = [UIFont fontWithName: @"BetonEF-DemiBold" size: 14.0f];
     
     [self.titleLabel sizeToFit];
-
+    
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAction target: self action:@selector(share:)];
     
     UIBarButtonItem *favouriteButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self action:@selector(favourite:)];
     
+
+    if(self.article.favourite.boolValue) {
+        
+        [self.favouriteButton setSelected: YES];
+    }
+    else {
+        
+        [self.favouriteButton setSelected: NO];
+    }
+    
     NSArray *rightItems = @[shareButton, favouriteButton];
     
     self.navigationItem.rightBarButtonItems = rightItems;
-    
-    DTAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    self.managedObjectContext = appDelegate.managedObjectContext;
-    self.managedObjectModel = appDelegate.managedObjectModel;
 }
 
 
@@ -141,11 +141,17 @@
 
 - (IBAction) favourite: (id) button {
     
-    if(self.article.favourite == 0) {
-        self.article.favourite = @1;
+    if(!self.article.favourite.boolValue) {
+        
+        self.article.favourite = [NSNumber numberWithBool: YES];
+        
+        [self.favouriteButton setSelected: YES];
     }
     else {
-        self.article.favourite = @0;
+        
+        self.article.favourite = [NSNumber numberWithBool: NO];
+        
+        [self.favouriteButton setSelected: NO];
     }
     
     NSError *error = nil;

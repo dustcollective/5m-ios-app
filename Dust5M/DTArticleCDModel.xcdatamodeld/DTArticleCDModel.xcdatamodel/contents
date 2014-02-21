@@ -6,7 +6,7 @@
         <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="favourite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="favourite" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="htmlBody" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageBinary" optional="YES" attributeType="Binary" syncable="YES"/>

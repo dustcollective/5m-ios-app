@@ -19,6 +19,9 @@
     
     [super viewWillAppear: animated];
     
+    self.logoLabel.textColor = logoColor();
+    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
+    
     CGSize limitedWidthSize = CGSizeMake(self.view.frame.size.width, self.webView.scrollView.contentSize.height);
     self.webView.scrollView.contentSize = limitedWidthSize;
     
