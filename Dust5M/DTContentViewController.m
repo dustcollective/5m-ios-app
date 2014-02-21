@@ -162,8 +162,10 @@
         NSLog(@"Error setting favourite");
     }
     
-    // Sync Facourites
-    syncEvents();
+    if([self.article.contentType isEqualToString: @"event"]) {
+        // Sync Facourites
+        syncEvents();
+    }
 }
 
 
