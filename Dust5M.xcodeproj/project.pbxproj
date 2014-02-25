@@ -521,6 +521,15 @@
 		0A9BCAE018A13E5400AC8F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620A18312558001C484E /* UIKit.framework */; };
 		0A9BCAE118A13E5400AC8F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37620618312558001C484E /* Foundation.framework */; };
 		0A9BCB0F18A13E5400AC8F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A37620F18312558001C484E /* InfoPlist.strings */; };
+		0A9F9F3418BCD9C800F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3218BCD9C800F89AB7 /* territories.plist */; };
+		0A9F9F3518BCD9CC00F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3018BCD9C800F89AB7 /* territories.plist */; };
+		0A9F9F3618BCD9CC00F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3018BCD9C800F89AB7 /* territories.plist */; };
+		0A9F9F3718BCD9CD00F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3018BCD9C800F89AB7 /* territories.plist */; };
+		0A9F9F3818BCD9CD00F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3018BCD9C800F89AB7 /* territories.plist */; };
+		0A9F9F3918BCD9CE00F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3018BCD9C800F89AB7 /* territories.plist */; };
+		0A9F9F3A18BCD9CE00F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3018BCD9C800F89AB7 /* territories.plist */; };
+		0A9F9F3B18BCD9CE00F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3018BCD9C800F89AB7 /* territories.plist */; };
+		0A9F9F3C18BCD9D000F89AB7 /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9F9F3018BCD9C800F89AB7 /* territories.plist */; };
 		0AA4D64918A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
 		0AA4D64A18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
 		0AA4D64B18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
@@ -530,15 +539,6 @@
 		0AA4D64F18A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
 		0AA4D65018A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
 		0AA4D65118A7F82C008A0C20 /* DTAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */; };
-		0AA6B92D18A4E3E40019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B92E18A4E3E70019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B92F18A4E3E70019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B93018A4E3E70019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B93118A4E3E80019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B93218A4E3E80019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B93318A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B93418A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
-		0AA6B93518A4E3E90019CE5B /* territories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA6B92C18A4E3E40019CE5B /* territories.plist */; };
 		0AAA934218A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
 		0AAA934318A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
 		0AAA934418A9709900EE3E26 /* DTBaseArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */; };
@@ -702,9 +702,10 @@
 		0A981BE818A93E22003F1753 /* DTMainArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMainArticleCell.m; sourceTree = "<group>"; };
 		0A9BCAB618A13E4C00AC8F34 /* Beef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9BCB2118A13E5400AC8F34 /* Cattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9F9F3018BCD9C800F89AB7 /* territories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = territories.plist; sourceTree = "<group>"; };
+		0A9F9F3218BCD9C800F89AB7 /* territories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = territories.plist; sourceTree = "<group>"; };
 		0AA4D64718A7F82C008A0C20 /* DTAdvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAdvertViewController.h; sourceTree = "<group>"; };
 		0AA4D64818A7F82C008A0C20 /* DTAdvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAdvertViewController.m; sourceTree = "<group>"; };
-		0AA6B92C18A4E3E40019CE5B /* territories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = territories.plist; sourceTree = "<group>"; };
 		0AAA934018A9709900EE3E26 /* DTBaseArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBaseArticleCell.h; sourceTree = "<group>"; };
 		0AAA934118A9709900EE3E26 /* DTBaseArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBaseArticleCell.m; sourceTree = "<group>"; };
 		0AE2BD0A18B78BC800F6EC77 /* general.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = general.xcassets; sourceTree = "<group>"; };
@@ -1110,6 +1111,8 @@
 		0A45EB8E18A3EDED009C9890 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A9F9F2F18BCD9C800F89AB7 /* englishterritories */,
+				0A9F9F3118BCD9C800F89AB7 /* spanishterritories */,
 				0A45EB9718A3EDED009C9890 /* fonts */,
 				0A45EB9118A3EDED009C9890 /* beef.xcassets */,
 				0A45EB9218A3EDED009C9890 /* cattle.xcassets */,
@@ -1121,7 +1124,6 @@
 				0A45EB9E18A3EDED009C9890 /* pig.xcassets */,
 				0A45EB9F18A3EDED009C9890 /* poultry.xcassets */,
 				0AE2BD0A18B78BC800F6EC77 /* general.xcassets */,
-				0AA6B92C18A4E3E40019CE5B /* territories.plist */,
 				0A45EB9018A3EDED009C9890 /* app.css */,
 			);
 			path = resources;
@@ -1170,6 +1172,22 @@
 				0A8FB1E418B60CD800D03A22 /* Localizable.strings */,
 			);
 			path = avicola;
+			sourceTree = "<group>";
+		};
+		0A9F9F2F18BCD9C800F89AB7 /* englishterritories */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F9F3018BCD9C800F89AB7 /* territories.plist */,
+			);
+			path = englishterritories;
+			sourceTree = "<group>";
+		};
+		0A9F9F3118BCD9C800F89AB7 /* spanishterritories */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F9F3218BCD9C800F89AB7 /* territories.plist */,
+			);
+			path = spanishterritories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1373,10 +1391,10 @@
 				0A14AF3618A13F32001EBC22 /* InfoPlist.strings in Resources */,
 				0AE2BD0E18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC418A3EE30009C9890 /* app.css in Resources */,
-				0AA6B93018A4E3E70019CE5B /* territories.plist in Resources */,
 				0A31FE6E18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBD418A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBBB18A3EE06009C9890 /* crop.xcassets in Resources */,
+				0A9F9F3718BCD9CD00F89AB7 /* territories.plist in Resources */,
 				0A31FEE318A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A981BE118A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A31FED118A3EC9C00344822 /* InfoPlist.strings in Resources */,
@@ -1392,10 +1410,10 @@
 				0A14AFA118A13F3D001EBC22 /* InfoPlist.strings in Resources */,
 				0AE2BD0F18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC518A3EE30009C9890 /* app.css in Resources */,
-				0AA6B93118A4E3E80019CE5B /* territories.plist in Resources */,
 				0A31FE6F18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBD818A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FEE418A3EC9C00344822 /* Main.storyboard in Resources */,
+				0A9F9F3818BCD9CD00F89AB7 /* territories.plist in Resources */,
 				0A31FED218A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A981BE218A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBBC18A3EE09009C9890 /* dairy.xcassets in Resources */,
@@ -1411,10 +1429,10 @@
 				0A14B00C18A13F45001EBC22 /* InfoPlist.strings in Resources */,
 				0AE2BD1018B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC618A3EE31009C9890 /* app.css in Resources */,
-				0AA6B93218A4E3E80019CE5B /* territories.plist in Resources */,
 				0A31FE7018A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBDC18A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FEE518A3EC9C00344822 /* Main.storyboard in Resources */,
+				0A9F9F3918BCD9CE00F89AB7 /* territories.plist in Resources */,
 				0A31FED318A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A981BE318A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBBD18A3EE11009C9890 /* fish.xcassets in Resources */,
@@ -1430,10 +1448,10 @@
 				0A1CE27418A8D48B003285D9 /* Localizable.strings in Resources */,
 				0AE2BD1118B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC718A3EE31009C9890 /* app.css in Resources */,
-				0AA6B93318A4E3E90019CE5B /* territories.plist in Resources */,
 				0A31FE7118A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBE018A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FEE618A3EC9C00344822 /* Main.storyboard in Resources */,
+				0A9F9F3A18BCD9CE00F89AB7 /* territories.plist in Resources */,
 				0A45EBBF18A3EE19009C9890 /* meat.xcassets in Resources */,
 				0A981BE418A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A31FED418A3EC9C00344822 /* InfoPlist.strings in Resources */,
@@ -1449,10 +1467,10 @@
 				0A1CE27618A8D48E003285D9 /* Localizable.strings in Resources */,
 				0AE2BD1218B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC818A3EE32009C9890 /* app.css in Resources */,
-				0AA6B93418A4E3E90019CE5B /* territories.plist in Resources */,
 				0A45EBC018A3EE1C009C9890 /* pig.xcassets in Resources */,
 				0A45EBE418A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FE7218A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
+				0A9F9F3B18BCD9CE00F89AB7 /* territories.plist in Resources */,
 				0A31FEE718A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A981BE518A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A31FED518A3EC9C00344822 /* InfoPlist.strings in Resources */,
@@ -1468,10 +1486,10 @@
 				0A1CE27818A8D492003285D9 /* Localizable.strings in Resources */,
 				0AE2BD1318B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A31FED618A3EC9C00344822 /* InfoPlist.strings in Resources */,
-				0AA6B93518A4E3E90019CE5B /* territories.plist in Resources */,
 				0A45EBE918A3EE62009C9890 /* BetonEF-Light.otf in Resources */,
 				0A31FE7318A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBC118A3EE1F009C9890 /* poultry.xcassets in Resources */,
+				0A9F9F3C18BCD9D000F89AB7 /* territories.plist in Resources */,
 				0A14B14D18A13F5E001EBC22 /* InfoPlist.strings in Resources */,
 				0A981BE618A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
 				0A45EBE818A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
@@ -1488,7 +1506,6 @@
 				0A8FB1E718B60CD800D03A22 /* Localizable.strings in Resources */,
 				0A8FB1E518B60CD800D03A22 /* avicola-Info.plist in Resources */,
 				0A45ED3D18A3F9AE009C9890 /* README.md in Resources */,
-				0AA6B92D18A4E3E40019CE5B /* territories.plist in Resources */,
 				0A45EBAA18A3EDED009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A45EBBE18A3EE14009C9890 /* elsitio.xcassets in Resources */,
 				0AE2BD0B18B78BC800F6EC77 /* general.xcassets in Resources */,
@@ -1497,6 +1514,7 @@
 				0A45EBA118A3EDED009C9890 /* app.css in Resources */,
 				0A31FEE018A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FECE18A3EC9C00344822 /* InfoPlist.strings in Resources */,
+				0A9F9F3418BCD9C800F89AB7 /* territories.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1508,10 +1526,10 @@
 				0A45EBB918A3EDFD009C9890 /* beef.xcassets in Resources */,
 				0AE2BD0C18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC218A3EE2F009C9890 /* app.css in Resources */,
-				0AA6B92E18A4E3E70019CE5B /* territories.plist in Resources */,
 				0A9BCAA418A13E4C00AC8F34 /* InfoPlist.strings in Resources */,
 				0A45EBCC18A3EE60009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FE6C18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
+				0A9F9F3518BCD9CC00F89AB7 /* territories.plist in Resources */,
 				0A31FEE118A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FECF18A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A981BDF18A93C00003F1753 /* DTMainArticleCell.xib in Resources */,
@@ -1527,10 +1545,10 @@
 				0A9BCB0F18A13E5400AC8F34 /* InfoPlist.strings in Resources */,
 				0AE2BD0D18B78BC800F6EC77 /* general.xcassets in Resources */,
 				0A45EBC318A3EE30009C9890 /* app.css in Resources */,
-				0AA6B92F18A4E3E70019CE5B /* territories.plist in Resources */,
 				0A45EBBA18A3EE01009C9890 /* cattle.xcassets in Resources */,
 				0A45EBD018A3EE60009C9890 /* BetonEF-DemiBold.otf in Resources */,
 				0A31FE6D18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
+				0A9F9F3618BCD9CC00F89AB7 /* territories.plist in Resources */,
 				0A31FEE218A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FED018A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A981BE018A93C00003F1753 /* DTMainArticleCell.xib in Resources */,

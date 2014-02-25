@@ -129,6 +129,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Articles" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bdW-z1-kcJ" userLabel="Label - No Articles">
+                                <rect key="frame" x="10" y="0.0" width="300" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" id="L79-Od-rzt" userLabel="Overlay">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
@@ -156,6 +163,7 @@
                         <outlet property="allButton" destination="Ot5-3r-eCK" id="bbB-Ze-EeU"/>
                         <outlet property="eventButton" destination="vAd-4t-9u1" id="FoL-wb-0Xv"/>
                         <outlet property="logoLabel" destination="klx-fm-MIb" id="rrr-Ve-7NQ"/>
+                        <outlet property="messageLabel" destination="bdW-z1-kcJ" id="DRG-HP-nNi"/>
                         <outlet property="newsButton" destination="uZL-bq-Wr3" id="Md6-N7-TjH"/>
                         <outlet property="overlayView" destination="L79-Od-rzt" id="DgP-UR-m0S"/>
                         <outlet property="searchDisplayController" destination="EaO-Qw-kT8" id="3pA-EM-CGX"/>
@@ -690,7 +698,7 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Favourites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ws2-as-Oe9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
                                 <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -732,7 +740,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Qj2-oJ-wnD"/>
-        <segue reference="ihT-l5-s9e"/>
+        <segue reference="LHi-Vb-nwY"/>
+        <segue reference="3nA-vd-Kuv"/>
     </inferredMetricsTieBreakers>
 </document>

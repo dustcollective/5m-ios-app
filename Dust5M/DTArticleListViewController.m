@@ -31,6 +31,8 @@
     
     [super viewDidLoad];
     
+    self.messageLabel.text = NSLocalizedString(@"NO_NEWS_EVENTS",  @"No Articles");
+    
     self.searchDisplayController.searchBar.placeholder = NSLocalizedString(@"SEARCH", @"Search");
     
     self.logoLabel.textColor = logoColor();
@@ -135,7 +137,9 @@
 
             self.model = articleModel;
             
-            [self.model fetchContentForContentType: @"*" withRegionModel: self.regionModel]; // news, event, *
+           // [self.model fetchContentForContentType: @"*" withRegionModel: self.regionModel]; // news, event, *
+            
+            [self filterToEverythig: nil];
             
             [self.tableView reloadData];
             
@@ -363,6 +367,8 @@
     [self.model fetchContentForContentType: filterString withRegionModel: self.regionModel];
             
     [self.tableView reloadData];
+    
+    self.messageLabel.hidden = self.model.content.count != 0;
 }
 
 

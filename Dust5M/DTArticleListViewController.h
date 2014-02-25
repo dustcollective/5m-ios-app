@@ -13,6 +13,7 @@
 
 @interface DTArticleListViewController : DTBaseViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
 
+@property (nonatomic, strong) IBOutlet UILabel *messageLabel;
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
