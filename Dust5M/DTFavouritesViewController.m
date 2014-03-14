@@ -34,6 +34,8 @@
 
 - (void) loadData {
     
+    self.messageLabel.hidden = YES;
+    
     if(!self.model) {
         
         [DTArticleModel articleListWithBlock: ^(DTArticleModel *articleModel, NSError *error) {

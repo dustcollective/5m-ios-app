@@ -16,4 +16,6 @@
 
 @property (nonatomic, strong) NSString *htmlString;
 
+@property (nonatomic, strong) NSString *pageURLString;
+
 @end

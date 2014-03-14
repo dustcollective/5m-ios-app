@@ -23,10 +23,6 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *logoLabel;
 
-@property (nonatomic, strong) IBOutlet UIButton *allButton;
-@property (nonatomic, strong) IBOutlet UIButton *newsButton;
-@property (nonatomic, strong) IBOutlet UIButton *eventButton;
-
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @property (nonatomic, strong) NSMutableDictionary *regionModel;

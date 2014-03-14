@@ -147,6 +147,7 @@
         
         
     }
+    fetchRequest.fetchLimit = 80;
     
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey: @"date" ascending: NO];
     fetchRequest.sortDescriptors= @[sortDescriptor];

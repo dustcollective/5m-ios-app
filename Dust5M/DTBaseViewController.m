@@ -21,6 +21,18 @@
     
     self.logoLabel.font = [UIFont fontWithName: @"BetonEF-Light" size: 52];
     self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
+    self.logoLabel.textColor = logoColor();
+    
+    [self.allButton setTitle: NSLocalizedString(@"INICIO", @"Home Button") forState: UIControlStateNormal];
+    [self.newsButton setTitle: NSLocalizedString(@"NOTICIAS", @"News Button") forState: UIControlStateNormal];
+    [self.eventButton setTitle: NSLocalizedString(@"EVENTOS", @"Events Button") forState: UIControlStateNormal];
+    
+    if(IOS_MAJOR_VERSION < 7) {
+        
+        self.allButton.titleLabel.font = [UIFont systemFontOfSize: 16];
+        self.newsButton.titleLabel.font = [UIFont systemFontOfSize: 16];
+        self.eventButton.titleLabel.font = [UIFont systemFontOfSize: 16];
+    }
 }
 
 

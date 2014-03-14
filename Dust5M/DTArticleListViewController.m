@@ -35,19 +35,10 @@
     
     self.searchDisplayController.searchBar.placeholder = NSLocalizedString(@"SEARCH", @"Search");
     
-    self.logoLabel.textColor = logoColor();
-    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
+    //self.logoLabel.textColor = logoColor();
+    //self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
     
-    [self.allButton setTitle: NSLocalizedString(@"INICIO", @"Home Button") forState: UIControlStateNormal];
-    [self.newsButton setTitle: NSLocalizedString(@"NOTICIAS", @"News Button") forState: UIControlStateNormal];
-    [self.eventButton setTitle: NSLocalizedString(@"EVENTOS", @"Events Button") forState: UIControlStateNormal];
     
-    if(IOS_MAJOR_VERSION < 7) {
-        
-        self.allButton.titleLabel.font = [UIFont systemFontOfSize: 16];
-        self.newsButton.titleLabel.font = [UIFont systemFontOfSize: 16];
-        self.eventButton.titleLabel.font = [UIFont systemFontOfSize: 16];
-    }
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
     
     UINib *mainCellNib = [UINib nibWithNibName: @"DTMainArticleCell" bundle: nil];
@@ -121,6 +112,8 @@
 
 
 - (void) loadData {
+    
+    self.messageLabel.hidden = YES;
     
     if(!self.model) {
         

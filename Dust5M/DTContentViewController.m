@@ -9,6 +9,7 @@
 #import "DTContentViewController.h"
 #import "DTSafariActivity.h"
 #import "DTAppDelegate.h"
+#import "DTWebViewController.h"
 
 @interface DTContentViewController ()
 
@@ -36,6 +37,8 @@
     self.titleLabel.font = [UIFont fontWithName: @"BetonEF-DemiBold" size: 14.0f];
     
     [self.titleLabel sizeToFit];
+    
+    
     
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAction target: self action:@selector(share:)];
     
@@ -93,7 +96,9 @@
     
     NSURL *baseURL = [NSURL fileURLWithPath: path];
     
-    [self.webView loadHTMLString: self.article.htmlBody baseURL: baseURL];
+    NSString *htmlBody = [self stringByStrippingHTML: self.article.htmlBody];
+    
+    [self.webView loadHTMLString: htmlBody baseURL: baseURL];
 }
 
 
@@ -175,6 +180,11 @@
     if(navigationType == UIWebViewNavigationTypeLinkClicked) {
         
         // Maybe open in a browser on top?
+        DTWebViewController *webViewController = [self.storyboard instantiateViewControllerWithIdentifier: @"WebController"];
+        
+        webViewController.pageURLString = request.URL.absoluteString;
+        
+        [self.navigationController pushViewController: webViewController animated: YES];
         
         return  NO;
     }
@@ -183,10 +193,18 @@
 }
 
 
-- (IBAction) toggleDrawer: (id) sender {
+- (IBAction) close: (id) sender {
     
     [self.navigationController popViewControllerAnimated: YES];
 }
 
+
+- (NSString *) stringByStrippingHTML: (NSString *) stringToFilter {
+    
+    NSRange r;
+    while ((r = [stringToFilter rangeOfString:@"<img[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+        stringToFilter = [stringToFilter stringByReplacingCharactersInRange:r withString :@""];
+    return stringToFilter;
+}
 
 @end

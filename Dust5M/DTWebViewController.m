@@ -19,9 +19,6 @@
     
     [super viewWillAppear: animated];
     
-    self.logoLabel.textColor = logoColor();
-    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
-    
     CGSize limitedWidthSize = CGSizeMake(self.view.frame.size.width, self.webView.scrollView.contentSize.height);
     self.webView.scrollView.contentSize = limitedWidthSize;
     
@@ -30,9 +27,15 @@
         
         [self.webView loadHTMLString: self.htmlString baseURL: nil];
     }
+    else if(self.pageURLString) {
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: self.pageURLString]];
+        
+        [self.webView loadRequest: request];
+    }
     else {
         
-        NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://app.5mpublishing.com/apps_es.php"]];
+        NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: NSLocalizedString(@"MORE_APPS_LINK", @"More apps link")]];
         
         [self.webView loadRequest: request];
     }
@@ -44,8 +47,6 @@
     [super viewDidLoad];
     
     self.webView.delegate = self;
-    
-    
 }
 
 
@@ -55,6 +56,24 @@
     // drawer gesture is recognised instead of the webview scroll recogniser.
     webView.scrollView.contentSize = CGSizeMake(webView.frame.size.width, webView.scrollView.contentSize.height);
     
+}
+
+
+- (IBAction) toggleDrawer: (id) sender {
+    
+    if(self.pageURLString) {
+        
+        [self.navigationController popViewControllerAnimated: YES];
+    }
+    else {
+        if(self.mm_drawerController.openSide == MMDrawerSideNone) {
+            
+            [self.mm_drawerController openDrawerSide: MMDrawerSideLeft animated: YES completion:nil];
+        }
+        else {
+            [self.mm_drawerController closeDrawerAnimated: YES completion: nil];
+        }
+    }
 }
 
 @end

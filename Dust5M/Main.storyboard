@@ -195,7 +195,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yen-Ld-0K8">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yen-Ld-0K8">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -508,7 +508,43 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="toggleDrawer:" destination="ZlS-fV-fga" eventType="touchUpInside" id="dXC-vI-BX1"/>
+                                            <action selector="toggleDrawer:" destination="ZlS-fV-fga" eventType="touchUpInside" id="D74-0A-y2K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="uy9-GX-BKL">
+                                        <rect key="frame" x="60" y="85" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Inicio">
+                                            <color key="titleColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close:" destination="ZlS-fV-fga" eventType="touchUpInside" id="xm7-F1-IcH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ChP-zj-ce4">
+                                        <rect key="frame" x="200" y="85" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Eventos">
+                                            <color key="titleColor" red="0.58039215690000001" green="0.7843137255" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close:" destination="ZlS-fV-fga" eventType="touchUpInside" id="YWd-Y4-z62"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="2uX-vI-RnQ">
+                                        <rect key="frame" x="125" y="85" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Noticios">
+                                            <color key="titleColor" red="0.0" green="0.58431372550000005" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close:" destination="ZlS-fV-fga" eventType="touchUpInside" id="PO1-gJ-9QM"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rcx-cW-jj4">
@@ -594,10 +630,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="gcq-Qx-gqz"/>
                     <connections>
+                        <outlet property="allButton" destination="uy9-GX-BKL" id="0fL-Z5-lzz"/>
                         <outlet property="dateLabel" destination="ZHO-ba-Lk2" id="2Zc-pb-qzA"/>
+                        <outlet property="eventButton" destination="ChP-zj-ce4" id="Why-AX-TfM"/>
                         <outlet property="favouriteButton" destination="ECf-Yp-k3b" id="TAt-MS-PLR"/>
                         <outlet property="imageView" destination="bW2-8X-0pV" id="FZm-gX-0yI"/>
                         <outlet property="logoLabel" destination="Rcx-cW-jj4" id="19n-sj-Znw"/>
+                        <outlet property="newsButton" destination="2uX-vI-RnQ" id="LCp-Za-0YB"/>
                         <outlet property="scrollView" destination="QTS-Tp-qji" id="7se-Bp-Opi"/>
                         <outlet property="titleLabel" destination="Y2i-Su-F9m" id="Pne-4g-byC"/>
                         <outlet property="webView" destination="2kt-Qr-Mlw" id="4fe-JZ-e5W"/>
@@ -740,7 +779,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="LHi-Vb-nwY"/>
-        <segue reference="3nA-vd-Kuv"/>
+        <segue reference="ihT-l5-s9e"/>
+        <segue reference="Qj2-oJ-wnD"/>
     </inferredMetricsTieBreakers>
 </document>

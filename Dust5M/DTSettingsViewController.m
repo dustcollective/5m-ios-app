@@ -32,8 +32,8 @@
     
     [super viewDidLoad];
     
-    self.logoLabel.textColor = logoColor();
-    self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
+   // self.logoLabel.textColor = logoColor();
+   // self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
     
     
     self.titleLabel.text = NSLocalizedString(@"EVENTS_TITLE", @"Events Title");
