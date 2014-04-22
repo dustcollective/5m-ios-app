@@ -32,10 +32,8 @@
     
     [super viewDidLoad];
     
-   // self.logoLabel.textColor = logoColor();
-   // self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
-    
-    
+    self.screenName = @"Settings";
+        
     self.titleLabel.text = NSLocalizedString(@"EVENTS_TITLE", @"Events Title");
     [self.eventButton setTitle: NSLocalizedString(@"EVENTS_BUTTON", @"Events Button")
                       forState: UIControlStateNormal];

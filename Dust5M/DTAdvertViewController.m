@@ -18,6 +18,8 @@
 - (void) viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.screenName = @"Advertisement";
 	   
     loadImage(self.advertImageView, [NSURL URLWithString: self.advertURL], nil);
 }

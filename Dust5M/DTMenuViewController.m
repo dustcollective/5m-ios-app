@@ -21,6 +21,8 @@
 - (void) viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.screenName = @"Main Menu";
 
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
     
@@ -135,6 +137,12 @@
 
 - (IBAction) openHelp: (id) sender {
     
+    NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory: @"UI"
+                                                                         action: @"Pressed Help"
+                                                                          label: @"dispatch"
+                                                                          value: nil] build];
+    [[GAI sharedInstance].defaultTracker send: event];
+    [[GAI sharedInstance] dispatch];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle: NSLocalizedString(@"HELP_TITLE", @"Help Title")
                                                     message: NSLocalizedString(@"HELP_MESSAGE", @"Help Message")

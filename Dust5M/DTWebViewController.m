@@ -7,6 +7,8 @@
 //
 
 #import "DTWebViewController.h"
+#import "DTAppDelegate.h"
+#import "GAI.h"
 
 @interface DTWebViewController ()
 
@@ -21,7 +23,6 @@
     
     CGSize limitedWidthSize = CGSizeMake(self.view.frame.size.width, self.webView.scrollView.contentSize.height);
     self.webView.scrollView.contentSize = limitedWidthSize;
-    
     
     if(self.htmlString) {
         
@@ -56,6 +57,12 @@
     // drawer gesture is recognised instead of the webview scroll recogniser.
     webView.scrollView.contentSize = CGSizeMake(webView.frame.size.width, webView.scrollView.contentSize.height);
     
+    NSString *screen = self.pageURLString ? [NSString stringWithFormat: @"Web Content: %@", self.pageURLString] : @"More Apps";
+    
+    DTAppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    [delegate.tracker set: kGAIScreenName
+                    value: screen];
+    [delegate.tracker send: [[GAIDictionaryBuilder createAppView] build]];
 }
 
 

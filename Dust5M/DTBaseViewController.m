@@ -56,11 +56,19 @@
 }
 
 
+/*
 - (IBAction) openSearch: (id) sender {
+    
+    NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory: @"UI"
+                                                                         action: @"Pressed Search"
+                                                                          label: @"dispatch"
+                                                                          value: nil] build];
+    [[GAI sharedInstance].defaultTracker send: event];
+    [[GAI sharedInstance] dispatch];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Open Search" message: @"" delegate: Nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
     
     [alert show];
-}
+}*/
 
 @end

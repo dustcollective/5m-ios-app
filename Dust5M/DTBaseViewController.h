@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTBaseViewController : UIViewController
+@interface DTBaseViewController : GAITrackedViewController
 
 @property (nonatomic, strong) IBOutlet UILabel *logoLabel;
 

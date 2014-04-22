@@ -31,13 +31,11 @@
     
     [super viewDidLoad];
     
+    self.screenName = @"Article List";
+    
     self.messageLabel.text = NSLocalizedString(@"NO_NEWS_EVENTS",  @"No Articles");
     
     self.searchDisplayController.searchBar.placeholder = NSLocalizedString(@"SEARCH", @"Search");
-    
-    //self.logoLabel.textColor = logoColor();
-    //self.logoLabel.text = NSLocalizedString(@"APP_NAME", @"Name of Application");
-    
     
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame: CGRectZero];
     
@@ -105,6 +103,13 @@
 
 
 - (void) pullToLoadData {
+    
+    NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory: @"UI"
+                                                                         action: @"Pulled to Refresh"
+                                                                          label: @"dispatch"
+                                                                          value: nil] build];
+    [[GAI sharedInstance].defaultTracker send: event];
+    [[GAI sharedInstance] dispatch];
     
     self.model = nil;
     [self loadData];
@@ -308,6 +313,13 @@
     if([self.model.content[indexPath.row] isKindOfClass: [NSNumber class]]) {
     
         // Advert pressed
+        
+        NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory: @"UI"
+                                                                             action: @"Clicked an advert"
+                                                                              label: @"dispatch"
+                                                                              value: nil] build];
+        [[GAI sharedInstance].defaultTracker send: event];
+        [[GAI sharedInstance] dispatch];
     }
     else {
         
@@ -337,17 +349,38 @@
 
 - (IBAction) filterToEverythig: (id) sender {
  
+    NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory: @"UI"
+                                                                         action: @"Filter (show all)"
+                                                                          label: @"dispatch"
+                                                                          value: nil] build];
+    [[GAI sharedInstance].defaultTracker send: event];
+    [[GAI sharedInstance] dispatch];
+    
     [self filterArticleModelTo: @"*"];
 }
 
 
 - (IBAction) filterToNews: (id) sender {
     
+    NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory: @"UI"
+                                                                         action: @"Filter (show news)"
+                                                                          label: @"dispatch"
+                                                                          value: nil] build];
+    [[GAI sharedInstance].defaultTracker send: event];
+    [[GAI sharedInstance] dispatch];
+    
     [self filterArticleModelTo: @"news"];
 }
 
 
 - (IBAction) filterToEvents: (id) sender {
+    
+    NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory: @"UI"
+                                                                         action: @"Filter (show events)"
+                                                                          label: @"dispatch"
+                                                                          value: nil] build];
+    [[GAI sharedInstance].defaultTracker send: event];
+    [[GAI sharedInstance] dispatch];
     
     [self filterArticleModelTo: @"event"];
 }
@@ -389,6 +422,13 @@
 
 
 - (IBAction) openSearch: (id) sender {
+    
+    NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory: @"UI"
+                                                                         action: @"Pressed Search"
+                                                                          label: @"dispatch"
+                                                                          value: nil] build];
+    [[GAI sharedInstance].defaultTracker send: event];
+    [[GAI sharedInstance] dispatch];
     
     CGRect searchFrame = self.searchDisplayController.searchBar.frame;
     

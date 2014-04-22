@@ -453,6 +453,16 @@
 		0A45ED5C18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
 		0A45ED5D18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
 		0A45ED5E18A400B9009C9890 /* DTMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */; };
+		0A5F0EE2190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EE3190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EE4190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EE5190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EE6190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EE7190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EE8190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EE9190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EEA190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
+		0A5F0EEC1901056700660086 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
 		0A8FB1E718B60CD800D03A22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A8FB1E418B60CD800D03A22 /* Localizable.strings */; };
 		0A981BDE18A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
 		0A981BDF18A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
@@ -472,6 +482,24 @@
 		0A981BEF18A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
 		0A981BF018A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
 		0A981BF118A93E22003F1753 /* DTMainArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A981BE818A93E22003F1753 /* DTMainArticleCell.m */; };
+		0A99E30E190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E30F190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E310190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E311190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E312190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E313190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E314190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E315190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E316190694CE00C518DF /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A99E30B190694CE00C518DF /* iRate.bundle */; };
+		0A99E317190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
+		0A99E318190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
+		0A99E319190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
+		0A99E31A190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
+		0A99E31B190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
+		0A99E31C190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
+		0A99E31D190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
+		0A99E31E190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
+		0A99E31F190694CE00C518DF /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E30D190694CE00C518DF /* iRate.m */; };
 		0A9BCA4F18A13E4C00AC8F34 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A37625F183125C2001C484E /* UIProgressView+AFNetworking.m */; };
 		0A9BCA5318A13E4C00AC8F34 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A37625A183125C2001C484E /* UIButton+AFNetworking.m */; };
 		0A9BCA5418A13E4C00AC8F34 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A376258183125C2001C484E /* UIAlertView+AFNetworking.m */; };
@@ -694,11 +722,22 @@
 		0A45ED4A18A3FFCB009C9890 /* DTMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMenuViewController.m; sourceTree = "<group>"; };
 		0A45ED5418A400B9009C9890 /* DTMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMenuTableViewCell.h; sourceTree = "<group>"; };
 		0A45ED5518A400B9009C9890 /* DTMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMenuTableViewCell.m; sourceTree = "<group>"; };
+		0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		0A5F0EDC190102CF00660086 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		0A5F0EDD190102CF00660086 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		0A5F0EDE190102CF00660086 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		0A5F0EDF190102CF00660086 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		0A5F0EE0190102CF00660086 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		0A5F0EE1190102CF00660086 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		0A5F0EEB1901056700660086 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		0A8FB1E218B60CD800D03A22 /* avicola-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "avicola-Info.plist"; sourceTree = "<group>"; };
 		0A8FB1E418B60CD800D03A22 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTMainArticleCell.xib; sourceTree = "<group>"; };
 		0A981BE718A93E22003F1753 /* DTMainArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMainArticleCell.h; sourceTree = "<group>"; };
 		0A981BE818A93E22003F1753 /* DTMainArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMainArticleCell.m; sourceTree = "<group>"; };
+		0A99E30B190694CE00C518DF /* iRate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iRate.bundle; sourceTree = "<group>"; };
+		0A99E30C190694CE00C518DF /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
+		0A99E30D190694CE00C518DF /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		0A9BCAB618A13E4C00AC8F34 /* Beef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9BCB2118A13E5400AC8F34 /* Cattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9F9F3018BCD9C800F89AB7 /* territories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = territories.plist; sourceTree = "<group>"; };
@@ -720,6 +759,7 @@
 				0A14AF0318A13F32001EBC22 /* CoreData.framework in Frameworks */,
 				0A14AF0418A13F32001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14AF0518A13F32001EBC22 /* MobileCoreServices.framework in Frameworks */,
+				0A5F0EE5190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14AF0618A13F32001EBC22 /* CoreGraphics.framework in Frameworks */,
 				0A14AF0718A13F32001EBC22 /* UIKit.framework in Frameworks */,
 				0A14AF0818A13F32001EBC22 /* Foundation.framework in Frameworks */,
@@ -733,6 +773,7 @@
 				0A14AF6E18A13F3D001EBC22 /* CoreData.framework in Frameworks */,
 				0A14AF6F18A13F3D001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14AF7018A13F3D001EBC22 /* MobileCoreServices.framework in Frameworks */,
+				0A5F0EE6190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14AF7118A13F3D001EBC22 /* CoreGraphics.framework in Frameworks */,
 				0A14AF7218A13F3D001EBC22 /* UIKit.framework in Frameworks */,
 				0A14AF7318A13F3D001EBC22 /* Foundation.framework in Frameworks */,
@@ -746,6 +787,7 @@
 				0A14AFD918A13F45001EBC22 /* CoreData.framework in Frameworks */,
 				0A14AFDA18A13F45001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14AFDB18A13F45001EBC22 /* MobileCoreServices.framework in Frameworks */,
+				0A5F0EE7190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14AFDC18A13F45001EBC22 /* CoreGraphics.framework in Frameworks */,
 				0A14AFDD18A13F45001EBC22 /* UIKit.framework in Frameworks */,
 				0A14AFDE18A13F45001EBC22 /* Foundation.framework in Frameworks */,
@@ -759,6 +801,7 @@
 				0A14B04418A13F4D001EBC22 /* CoreData.framework in Frameworks */,
 				0A14B04518A13F4D001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14B04618A13F4D001EBC22 /* MobileCoreServices.framework in Frameworks */,
+				0A5F0EE8190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14B04718A13F4D001EBC22 /* CoreGraphics.framework in Frameworks */,
 				0A14B04818A13F4D001EBC22 /* UIKit.framework in Frameworks */,
 				0A14B04918A13F4D001EBC22 /* Foundation.framework in Frameworks */,
@@ -772,6 +815,7 @@
 				0A14B0AF18A13F54001EBC22 /* CoreData.framework in Frameworks */,
 				0A14B0B018A13F54001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14B0B118A13F54001EBC22 /* MobileCoreServices.framework in Frameworks */,
+				0A5F0EE9190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14B0B218A13F54001EBC22 /* CoreGraphics.framework in Frameworks */,
 				0A14B0B318A13F54001EBC22 /* UIKit.framework in Frameworks */,
 				0A14B0B418A13F54001EBC22 /* Foundation.framework in Frameworks */,
@@ -785,6 +829,7 @@
 				0A14B11A18A13F5E001EBC22 /* CoreData.framework in Frameworks */,
 				0A14B11B18A13F5E001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14B11C18A13F5E001EBC22 /* MobileCoreServices.framework in Frameworks */,
+				0A5F0EEA190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14B11D18A13F5E001EBC22 /* CoreGraphics.framework in Frameworks */,
 				0A14B11E18A13F5E001EBC22 /* UIKit.framework in Frameworks */,
 				0A14B11F18A13F5E001EBC22 /* Foundation.framework in Frameworks */,
@@ -795,9 +840,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5F0EEC1901056700660086 /* libz.dylib in Frameworks */,
 				0AF5873E18B4B4C60007A055 /* EventKit.framework in Frameworks */,
 				0AEC342B1850B032001F924E /* CoreData.framework in Frameworks */,
 				0A37627818312FF2001C484E /* SystemConfiguration.framework in Frameworks */,
+				0A5F0EE2190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A37627618312EAC001C484E /* MobileCoreServices.framework in Frameworks */,
 				0A37620918312558001C484E /* CoreGraphics.framework in Frameworks */,
 				0A37620B18312558001C484E /* UIKit.framework in Frameworks */,
@@ -812,6 +859,7 @@
 				0A9BCA7118A13E4C00AC8F34 /* CoreData.framework in Frameworks */,
 				0A9BCA7218A13E4C00AC8F34 /* SystemConfiguration.framework in Frameworks */,
 				0A9BCA7318A13E4C00AC8F34 /* MobileCoreServices.framework in Frameworks */,
+				0A5F0EE3190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A9BCA7418A13E4C00AC8F34 /* CoreGraphics.framework in Frameworks */,
 				0A9BCA7518A13E4C00AC8F34 /* UIKit.framework in Frameworks */,
 				0A9BCA7618A13E4C00AC8F34 /* Foundation.framework in Frameworks */,
@@ -825,6 +873,7 @@
 				0A9BCADC18A13E5400AC8F34 /* CoreData.framework in Frameworks */,
 				0A9BCADD18A13E5400AC8F34 /* SystemConfiguration.framework in Frameworks */,
 				0A9BCADE18A13E5400AC8F34 /* MobileCoreServices.framework in Frameworks */,
+				0A5F0EE4190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A9BCADF18A13E5400AC8F34 /* CoreGraphics.framework in Frameworks */,
 				0A9BCAE018A13E5400AC8F34 /* UIKit.framework in Frameworks */,
 				0A9BCAE118A13E5400AC8F34 /* Foundation.framework in Frameworks */,
@@ -933,6 +982,8 @@
 		0A3761FA18312558001C484E = {
 			isa = PBXGroup;
 			children = (
+				0A99E30A190694CE00C518DF /* iRate */,
+				0A5F0ED9190102CF00660086 /* Analytics306 */,
 				0A1CE23C18A8D46A003285D9 /* configs */,
 				0A45EB8E18A3EDED009C9890 /* resources */,
 				0A37620C18312558001C484E /* Dust5M */,
@@ -961,6 +1012,7 @@
 		0A37620518312558001C484E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A5F0EEB1901056700660086 /* libz.dylib */,
 				0AF5873D18B4B4C60007A055 /* EventKit.framework */,
 				0AEC342A1850B032001F924E /* CoreData.framework */,
 				0A37627718312FF2001C484E /* SystemConfiguration.framework */,
@@ -1164,6 +1216,28 @@
 			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
+		0A5F0ED9190102CF00660086 /* Analytics306 */ = {
+			isa = PBXGroup;
+			children = (
+				0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */,
+				0A5F0EDB190102CF00660086 /* Library */,
+			);
+			path = Analytics306;
+			sourceTree = "<group>";
+		};
+		0A5F0EDB190102CF00660086 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0A5F0EDC190102CF00660086 /* GAI.h */,
+				0A5F0EDD190102CF00660086 /* GAIDictionaryBuilder.h */,
+				0A5F0EDE190102CF00660086 /* GAIFields.h */,
+				0A5F0EDF190102CF00660086 /* GAILogger.h */,
+				0A5F0EE0190102CF00660086 /* GAITrackedViewController.h */,
+				0A5F0EE1190102CF00660086 /* GAITracker.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		0A8FB1E118B60CD800D03A22 /* avicola */ = {
 			isa = PBXGroup;
 			children = (
@@ -1171,6 +1245,16 @@
 				0A8FB1E418B60CD800D03A22 /* Localizable.strings */,
 			);
 			path = avicola;
+			sourceTree = "<group>";
+		};
+		0A99E30A190694CE00C518DF /* iRate */ = {
+			isa = PBXGroup;
+			children = (
+				0A99E30B190694CE00C518DF /* iRate.bundle */,
+				0A99E30C190694CE00C518DF /* iRate.h */,
+				0A99E30D190694CE00C518DF /* iRate.m */,
+			);
+			path = iRate;
 			sourceTree = "<group>";
 		};
 		0A9F9F2F18BCD9C800F89AB7 /* englishterritories */ = {
@@ -1392,6 +1476,7 @@
 				0A45EBC418A3EE30009C9890 /* app.css in Resources */,
 				0A31FE6E18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBD418A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0A99E311190694CE00C518DF /* iRate.bundle in Resources */,
 				0A45EBBB18A3EE06009C9890 /* crop.xcassets in Resources */,
 				0A9F9F3718BCD9CD00F89AB7 /* territories.plist in Resources */,
 				0A31FEE318A3EC9C00344822 /* Main.storyboard in Resources */,
@@ -1411,6 +1496,7 @@
 				0A45EBC518A3EE30009C9890 /* app.css in Resources */,
 				0A31FE6F18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBD818A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0A99E312190694CE00C518DF /* iRate.bundle in Resources */,
 				0A31FEE418A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A9F9F3818BCD9CD00F89AB7 /* territories.plist in Resources */,
 				0A31FED218A3EC9C00344822 /* InfoPlist.strings in Resources */,
@@ -1430,6 +1516,7 @@
 				0A45EBC618A3EE31009C9890 /* app.css in Resources */,
 				0A31FE7018A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBDC18A3EE61009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0A99E313190694CE00C518DF /* iRate.bundle in Resources */,
 				0A31FEE518A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A9F9F3918BCD9CE00F89AB7 /* territories.plist in Resources */,
 				0A31FED318A3EC9C00344822 /* InfoPlist.strings in Resources */,
@@ -1449,6 +1536,7 @@
 				0A45EBC718A3EE31009C9890 /* app.css in Resources */,
 				0A31FE7118A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A45EBE018A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0A99E314190694CE00C518DF /* iRate.bundle in Resources */,
 				0A31FEE618A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A9F9F3A18BCD9CE00F89AB7 /* territories.plist in Resources */,
 				0A45EBBF18A3EE19009C9890 /* meat.xcassets in Resources */,
@@ -1468,6 +1556,7 @@
 				0A45EBC818A3EE32009C9890 /* app.css in Resources */,
 				0A45EBC018A3EE1C009C9890 /* pig.xcassets in Resources */,
 				0A45EBE418A3EE62009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0A99E315190694CE00C518DF /* iRate.bundle in Resources */,
 				0A31FE7218A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A9F9F3B18BCD9CE00F89AB7 /* territories.plist in Resources */,
 				0A31FEE718A3EC9C00344822 /* Main.storyboard in Resources */,
@@ -1487,6 +1576,7 @@
 				0A31FED618A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A45EBE918A3EE62009C9890 /* BetonEF-Light.otf in Resources */,
 				0A31FE7318A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
+				0A99E316190694CE00C518DF /* iRate.bundle in Resources */,
 				0A45EBC118A3EE1F009C9890 /* poultry.xcassets in Resources */,
 				0A9F9F3C18BCD9D000F89AB7 /* territories.plist in Resources */,
 				0A14B14D18A13F5E001EBC22 /* InfoPlist.strings in Resources */,
@@ -1513,6 +1603,7 @@
 				0A31FEE018A3EC9C00344822 /* Main.storyboard in Resources */,
 				0A31FECE18A3EC9C00344822 /* InfoPlist.strings in Resources */,
 				0A9F9F3418BCD9C800F89AB7 /* territories.plist in Resources */,
+				0A99E30E190694CE00C518DF /* iRate.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1526,6 +1617,7 @@
 				0A45EBC218A3EE2F009C9890 /* app.css in Resources */,
 				0A9BCAA418A13E4C00AC8F34 /* InfoPlist.strings in Resources */,
 				0A45EBCC18A3EE60009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0A99E30F190694CE00C518DF /* iRate.bundle in Resources */,
 				0A31FE6C18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A9F9F3518BCD9CC00F89AB7 /* territories.plist in Resources */,
 				0A31FEE118A3EC9C00344822 /* Main.storyboard in Resources */,
@@ -1545,6 +1637,7 @@
 				0A45EBC318A3EE30009C9890 /* app.css in Resources */,
 				0A45EBBA18A3EE01009C9890 /* cattle.xcassets in Resources */,
 				0A45EBD018A3EE60009C9890 /* BetonEF-DemiBold.otf in Resources */,
+				0A99E310190694CE00C518DF /* iRate.bundle in Resources */,
 				0A31FE6D18A3EC9C00344822 /* DTStandardArticleCell.xib in Resources */,
 				0A9F9F3618BCD9CC00F89AB7 /* territories.plist in Resources */,
 				0A31FEE218A3EC9C00344822 /* Main.storyboard in Resources */,
@@ -1600,6 +1693,7 @@
 				0A45ED2E18A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A14AEFB18A13F32001EBC22 /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED4E18A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E31A190694CE00C518DF /* iRate.m in Sources */,
 				0A14AEFC18A13F32001EBC22 /* AFURLResponseSerialization.m in Sources */,
 				0A14AEFD18A13F32001EBC22 /* AFURLSessionManager.m in Sources */,
 				0A14AEFE18A13F32001EBC22 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1650,6 +1744,7 @@
 				0A45ED2F18A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A14AF6618A13F3D001EBC22 /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED4F18A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E31B190694CE00C518DF /* iRate.m in Sources */,
 				0A14AF6718A13F3D001EBC22 /* AFURLResponseSerialization.m in Sources */,
 				0A14AF6818A13F3D001EBC22 /* AFURLSessionManager.m in Sources */,
 				0A14AF6918A13F3D001EBC22 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1700,6 +1795,7 @@
 				0A45ED3018A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A14AFD118A13F45001EBC22 /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED5018A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E31C190694CE00C518DF /* iRate.m in Sources */,
 				0A14AFD218A13F45001EBC22 /* AFURLResponseSerialization.m in Sources */,
 				0A14AFD318A13F45001EBC22 /* AFURLSessionManager.m in Sources */,
 				0A14AFD418A13F45001EBC22 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1750,6 +1846,7 @@
 				0A45ED3118A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A14B03C18A13F4D001EBC22 /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED5118A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E31D190694CE00C518DF /* iRate.m in Sources */,
 				0A14B03D18A13F4D001EBC22 /* AFURLResponseSerialization.m in Sources */,
 				0A14B03E18A13F4D001EBC22 /* AFURLSessionManager.m in Sources */,
 				0A14B03F18A13F4D001EBC22 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1800,6 +1897,7 @@
 				0A45ED3218A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A14B0A718A13F54001EBC22 /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED5218A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E31E190694CE00C518DF /* iRate.m in Sources */,
 				0A14B0A818A13F54001EBC22 /* AFURLResponseSerialization.m in Sources */,
 				0A14B0A918A13F54001EBC22 /* AFURLSessionManager.m in Sources */,
 				0A14B0AA18A13F54001EBC22 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1850,6 +1948,7 @@
 				0A45ED3318A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A14B11218A13F5E001EBC22 /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED5318A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E31F190694CE00C518DF /* iRate.m in Sources */,
 				0A14B11318A13F5E001EBC22 /* AFURLResponseSerialization.m in Sources */,
 				0A14B11418A13F5E001EBC22 /* AFURLSessionManager.m in Sources */,
 				0A14B11518A13F5E001EBC22 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1900,6 +1999,7 @@
 				0A45ED2B18A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A376265183125C2001C484E /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED4B18A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E317190694CE00C518DF /* iRate.m in Sources */,
 				0A376269183125C2001C484E /* AFURLResponseSerialization.m in Sources */,
 				0A37626A183125C2001C484E /* AFURLSessionManager.m in Sources */,
 				0A37626B183125C2001C484E /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1950,6 +2050,7 @@
 				0A45ED2C18A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A9BCA6918A13E4C00AC8F34 /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED4C18A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E318190694CE00C518DF /* iRate.m in Sources */,
 				0A9BCA6A18A13E4C00AC8F34 /* AFURLResponseSerialization.m in Sources */,
 				0A9BCA6B18A13E4C00AC8F34 /* AFURLSessionManager.m in Sources */,
 				0A9BCA6C18A13E4C00AC8F34 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -2000,6 +2101,7 @@
 				0A45ED2D18A3F9AE009C9890 /* UIViewController+MMDrawerController.m in Sources */,
 				0A9BCAD418A13E5400AC8F34 /* AFNetworkReachabilityManager.m in Sources */,
 				0A45ED4D18A3FFCB009C9890 /* DTMenuViewController.m in Sources */,
+				0A99E319190694CE00C518DF /* iRate.m in Sources */,
 				0A9BCAD518A13E5400AC8F34 /* AFURLResponseSerialization.m in Sources */,
 				0A9BCAD618A13E5400AC8F34 /* AFURLSessionManager.m in Sources */,
 				0A9BCAD718A13E5400AC8F34 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -2047,6 +2149,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/crop/crop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Crop;
 				PROVISIONING_PROFILE = "33837CC6-1F26-4300-B56B-3E002082C34C";
 				WRAPPER_EXTENSION = app;
@@ -2063,6 +2169,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/crop/crop-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Crop;
 				PROVISIONING_PROFILE = "33837CC6-1F26-4300-B56B-3E002082C34C";
 				WRAPPER_EXTENSION = app;
@@ -2079,6 +2189,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/dairy/dairy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Dairy;
 				PROVISIONING_PROFILE = "DF7AE204-9D6D-41DD-BE85-2AFBBA07A980";
 				WRAPPER_EXTENSION = app;
@@ -2095,6 +2209,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/dairy/dairy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Dairy;
 				PROVISIONING_PROFILE = "DF7AE204-9D6D-41DD-BE85-2AFBBA07A980";
 				WRAPPER_EXTENSION = app;
@@ -2111,6 +2229,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/fish/fish-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Fish;
 				PROVISIONING_PROFILE = "A95EB3AD-8749-41E1-8495-B406A2819022";
 				WRAPPER_EXTENSION = app;
@@ -2127,6 +2249,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/fish/fish-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Fish;
 				PROVISIONING_PROFILE = "A95EB3AD-8749-41E1-8495-B406A2819022";
 				WRAPPER_EXTENSION = app;
@@ -2143,6 +2269,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/meat/meat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Meat;
 				PROVISIONING_PROFILE = "141816D7-C8E6-40CA-A3EB-B82F433CF842";
 				WRAPPER_EXTENSION = app;
@@ -2159,6 +2289,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/meat/meat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Meat;
 				PROVISIONING_PROFILE = "141816D7-C8E6-40CA-A3EB-B82F433CF842";
 				WRAPPER_EXTENSION = app;
@@ -2175,6 +2309,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/pig/pig-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Pig;
 				PROVISIONING_PROFILE = "E5F619B5-ADC2-481D-97A0-192A410162B6";
 				WRAPPER_EXTENSION = app;
@@ -2191,6 +2329,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/pig/pig-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Pig;
 				PROVISIONING_PROFILE = "E5F619B5-ADC2-481D-97A0-192A410162B6";
 				WRAPPER_EXTENSION = app;
@@ -2207,6 +2349,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/poultry/poultry-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Poultry;
 				PROVISIONING_PROFILE = "C030A235-B5A3-431B-8781-C7BAC9C6B327";
 				WRAPPER_EXTENSION = app;
@@ -2223,6 +2369,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/poultry/poultry-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Poultry;
 				PROVISIONING_PROFILE = "C030A235-B5A3-431B-8781-C7BAC9C6B327";
 				WRAPPER_EXTENSION = app;
@@ -2304,6 +2454,7 @@
 		0A37623918312558001C484E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2311,6 +2462,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/avicola/avicola-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "04230A24-3478-428B-A414-9850D52B3349";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2321,6 +2476,7 @@
 		0A37623A18312558001C484E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2328,6 +2484,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/avicola/avicola-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "04230A24-3478-428B-A414-9850D52B3349";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2345,6 +2505,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/beef/beef-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Beef;
 				PROVISIONING_PROFILE = "F31AE2F6-52D0-46D8-A389-BE27333736E8";
 				WRAPPER_EXTENSION = app;
@@ -2361,6 +2525,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/beef/beef-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Beef;
 				PROVISIONING_PROFILE = "F31AE2F6-52D0-46D8-A389-BE27333736E8";
 				WRAPPER_EXTENSION = app;
@@ -2377,6 +2545,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/cattle/cattle-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Cattle;
 				PROVISIONING_PROFILE = "62B7EEF0-8B93-4AA8-8FB2-B32150FB76A6";
 				WRAPPER_EXTENSION = app;
@@ -2393,6 +2565,10 @@
 				GCC_PREFIX_HEADER = "Dust5M/Dust5M-Prefix.pch";
 				INFOPLIST_FILE = "configs/cattle/cattle-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Analytics306",
+				);
 				PRODUCT_NAME = Cattle;
 				PROVISIONING_PROFILE = "62B7EEF0-8B93-4AA8-8FB2-B32150FB76A6";
 				WRAPPER_EXTENSION = app;

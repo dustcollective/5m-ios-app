@@ -23,6 +23,8 @@
 - (void) viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.screenName = @"Favourites";
 	// Do any additional setup after loading the view.
     
     self.messageLabel.text = NSLocalizedString(@"NO_FAVOURITES",  @"No Favourites");

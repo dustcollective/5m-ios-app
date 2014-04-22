@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTAdvertViewController : UIViewController
+@interface DTAdvertViewController : GAITrackedViewController
 
 @property (nonatomic, strong) IBOutlet UIImageView *advertImageView;
 @property (nonatomic, strong) IBOutlet UIButton *closeButton;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface DTMenuViewController : GAITrackedViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 

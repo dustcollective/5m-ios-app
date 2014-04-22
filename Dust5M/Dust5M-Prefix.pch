@@ -23,4 +23,8 @@
     #import "UIViewController+MMDrawerController.h"
     #import "MMDrawerVisualState.h"
     #import "DTHelpers.h"
+
+    #import "GAI.h"
+    #import "GAIDictionaryBuilder.h"
+    #import "GAIFields.h"
 #endif

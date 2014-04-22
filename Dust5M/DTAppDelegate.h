@@ -12,6 +12,8 @@ extern BOOL splashShown;
 
 @interface DTAppDelegate : UIResponder <UIApplicationDelegate>
 
+@property(nonatomic, strong) id<GAITracker> tracker;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) MMDrawerController *drawerController;

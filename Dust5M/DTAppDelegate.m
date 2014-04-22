@@ -8,6 +8,8 @@
 
 #import "DTAppDelegate.h"
 
+#import "iRate.h"
+
 BOOL splashShown = NO;
 
 @implementation DTAppDelegate
@@ -16,7 +18,22 @@ BOOL splashShown = NO;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+
++ (void)initialize {
+
+    [iRate sharedInstance].daysUntilPrompt = 3;
+    [iRate sharedInstance].usesUntilPrompt = 5;
+    [iRate sharedInstance].previewMode = YES;
+}
+
+
 - (BOOL) application: (UIApplication *) application didFinishLaunchingWithOptions: (NSDictionary *) launchOptions {
+    
+    [GAI sharedInstance].optOut = NO;
+    [GAI sharedInstance].dispatchInterval = 10;
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    self.tracker = [[GAI sharedInstance] trackerWithName: NSLocalizedString(@"APP_NAME", nil)
+                                              trackingId: NSLocalizedString(@"TRACKER_ID", nil)];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName: @"Main" bundle: nil];
     

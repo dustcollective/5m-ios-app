@@ -26,6 +26,8 @@
     
     [super viewDidLoad];
     
+    self.screenName = @"Article";
+    
     DTAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     self.managedObjectContext = appDelegate.managedObjectContext;
     self.managedObjectModel = appDelegate.managedObjectModel;
