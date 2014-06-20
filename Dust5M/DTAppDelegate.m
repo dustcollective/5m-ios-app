@@ -21,9 +21,9 @@ BOOL splashShown = NO;
 
 + (void)initialize {
 
-    [iRate sharedInstance].daysUntilPrompt = 3;
-    [iRate sharedInstance].usesUntilPrompt = 5;
-    [iRate sharedInstance].previewMode = YES;
+    [iRate sharedInstance].daysUntilPrompt = 2;
+    [iRate sharedInstance].usesUntilPrompt = 3;
+    [iRate sharedInstance].previewMode = NO;
 }
 
 

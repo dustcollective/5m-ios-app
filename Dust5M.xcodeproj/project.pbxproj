@@ -463,6 +463,22 @@
 		0A5F0EE9190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
 		0A5F0EEA190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EDA190102CF00660086 /* libGoogleAnalyticsServices.a */; };
 		0A5F0EEC1901056700660086 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551119221A6D00964D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551219221A6E00964D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551319221A6E00964D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551419221A6E00964D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551519221A6F00964D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551619221A6F00964D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551719221A6F00964D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551819221A7000964D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5F0EEB1901056700660086 /* libz.dylib */; };
+		0A8C551919221A7300964D48 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
+		0A8C551A19221A7300964D48 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
+		0A8C551B19221A7300964D48 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
+		0A8C551C19221A7400964D48 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
+		0A8C551D19221A7400964D48 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
+		0A8C551E19221A7400964D48 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
+		0A8C551F19221A7400964D48 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
+		0A8C552019221A7500964D48 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF5873D18B4B4C60007A055 /* EventKit.framework */; };
 		0A8FB1E718B60CD800D03A22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A8FB1E418B60CD800D03A22 /* Localizable.strings */; };
 		0A981BDE18A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
 		0A981BDF18A93C00003F1753 /* DTMainArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A981BDD18A93C00003F1753 /* DTMainArticleCell.xib */; };
@@ -757,10 +773,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A14AF0318A13F32001EBC22 /* CoreData.framework in Frameworks */,
+				0A8C551B19221A7300964D48 /* EventKit.framework in Frameworks */,
 				0A14AF0418A13F32001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14AF0518A13F32001EBC22 /* MobileCoreServices.framework in Frameworks */,
 				0A5F0EE5190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14AF0618A13F32001EBC22 /* CoreGraphics.framework in Frameworks */,
+				0A8C551319221A6E00964D48 /* libz.dylib in Frameworks */,
 				0A14AF0718A13F32001EBC22 /* UIKit.framework in Frameworks */,
 				0A14AF0818A13F32001EBC22 /* Foundation.framework in Frameworks */,
 			);
@@ -771,10 +789,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A14AF6E18A13F3D001EBC22 /* CoreData.framework in Frameworks */,
+				0A8C551C19221A7400964D48 /* EventKit.framework in Frameworks */,
 				0A14AF6F18A13F3D001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14AF7018A13F3D001EBC22 /* MobileCoreServices.framework in Frameworks */,
 				0A5F0EE6190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14AF7118A13F3D001EBC22 /* CoreGraphics.framework in Frameworks */,
+				0A8C551419221A6E00964D48 /* libz.dylib in Frameworks */,
 				0A14AF7218A13F3D001EBC22 /* UIKit.framework in Frameworks */,
 				0A14AF7318A13F3D001EBC22 /* Foundation.framework in Frameworks */,
 			);
@@ -785,10 +805,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A14AFD918A13F45001EBC22 /* CoreData.framework in Frameworks */,
+				0A8C551D19221A7400964D48 /* EventKit.framework in Frameworks */,
 				0A14AFDA18A13F45001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14AFDB18A13F45001EBC22 /* MobileCoreServices.framework in Frameworks */,
 				0A5F0EE7190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14AFDC18A13F45001EBC22 /* CoreGraphics.framework in Frameworks */,
+				0A8C551519221A6F00964D48 /* libz.dylib in Frameworks */,
 				0A14AFDD18A13F45001EBC22 /* UIKit.framework in Frameworks */,
 				0A14AFDE18A13F45001EBC22 /* Foundation.framework in Frameworks */,
 			);
@@ -799,10 +821,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A14B04418A13F4D001EBC22 /* CoreData.framework in Frameworks */,
+				0A8C551E19221A7400964D48 /* EventKit.framework in Frameworks */,
 				0A14B04518A13F4D001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14B04618A13F4D001EBC22 /* MobileCoreServices.framework in Frameworks */,
 				0A5F0EE8190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14B04718A13F4D001EBC22 /* CoreGraphics.framework in Frameworks */,
+				0A8C551619221A6F00964D48 /* libz.dylib in Frameworks */,
 				0A14B04818A13F4D001EBC22 /* UIKit.framework in Frameworks */,
 				0A14B04918A13F4D001EBC22 /* Foundation.framework in Frameworks */,
 			);
@@ -813,10 +837,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A14B0AF18A13F54001EBC22 /* CoreData.framework in Frameworks */,
+				0A8C551F19221A7400964D48 /* EventKit.framework in Frameworks */,
 				0A14B0B018A13F54001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14B0B118A13F54001EBC22 /* MobileCoreServices.framework in Frameworks */,
 				0A5F0EE9190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14B0B218A13F54001EBC22 /* CoreGraphics.framework in Frameworks */,
+				0A8C551719221A6F00964D48 /* libz.dylib in Frameworks */,
 				0A14B0B318A13F54001EBC22 /* UIKit.framework in Frameworks */,
 				0A14B0B418A13F54001EBC22 /* Foundation.framework in Frameworks */,
 			);
@@ -827,10 +853,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A14B11A18A13F5E001EBC22 /* CoreData.framework in Frameworks */,
+				0A8C552019221A7500964D48 /* EventKit.framework in Frameworks */,
 				0A14B11B18A13F5E001EBC22 /* SystemConfiguration.framework in Frameworks */,
 				0A14B11C18A13F5E001EBC22 /* MobileCoreServices.framework in Frameworks */,
 				0A5F0EEA190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A14B11D18A13F5E001EBC22 /* CoreGraphics.framework in Frameworks */,
+				0A8C551819221A7000964D48 /* libz.dylib in Frameworks */,
 				0A14B11E18A13F5E001EBC22 /* UIKit.framework in Frameworks */,
 				0A14B11F18A13F5E001EBC22 /* Foundation.framework in Frameworks */,
 			);
@@ -857,10 +885,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A9BCA7118A13E4C00AC8F34 /* CoreData.framework in Frameworks */,
+				0A8C551919221A7300964D48 /* EventKit.framework in Frameworks */,
 				0A9BCA7218A13E4C00AC8F34 /* SystemConfiguration.framework in Frameworks */,
 				0A9BCA7318A13E4C00AC8F34 /* MobileCoreServices.framework in Frameworks */,
 				0A5F0EE3190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A9BCA7418A13E4C00AC8F34 /* CoreGraphics.framework in Frameworks */,
+				0A8C551119221A6D00964D48 /* libz.dylib in Frameworks */,
 				0A9BCA7518A13E4C00AC8F34 /* UIKit.framework in Frameworks */,
 				0A9BCA7618A13E4C00AC8F34 /* Foundation.framework in Frameworks */,
 			);
@@ -871,10 +901,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A9BCADC18A13E5400AC8F34 /* CoreData.framework in Frameworks */,
+				0A8C551A19221A7300964D48 /* EventKit.framework in Frameworks */,
 				0A9BCADD18A13E5400AC8F34 /* SystemConfiguration.framework in Frameworks */,
 				0A9BCADE18A13E5400AC8F34 /* MobileCoreServices.framework in Frameworks */,
 				0A5F0EE4190102CF00660086 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0A9BCADF18A13E5400AC8F34 /* CoreGraphics.framework in Frameworks */,
+				0A8C551219221A6E00964D48 /* libz.dylib in Frameworks */,
 				0A9BCAE018A13E5400AC8F34 /* UIKit.framework in Frameworks */,
 				0A9BCAE118A13E5400AC8F34 /* Foundation.framework in Frameworks */,
 			);
@@ -2142,6 +2174,7 @@
 		0A14AF4618A13F32001EBC22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2162,6 +2195,7 @@
 		0A14AF4718A13F32001EBC22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2182,6 +2216,7 @@
 		0A14AFB118A13F3D001EBC22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2202,6 +2237,7 @@
 		0A14AFB218A13F3D001EBC22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2222,6 +2258,7 @@
 		0A14B01C18A13F45001EBC22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2242,6 +2279,7 @@
 		0A14B01D18A13F45001EBC22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2262,6 +2300,7 @@
 		0A14B08718A13F4D001EBC22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2282,6 +2321,7 @@
 		0A14B08818A13F4D001EBC22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2302,6 +2342,7 @@
 		0A14B0F218A13F54001EBC22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2322,6 +2363,7 @@
 		0A14B0F318A13F54001EBC22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2342,6 +2384,7 @@
 		0A14B15D18A13F5E001EBC22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2362,6 +2405,7 @@
 		0A14B15E18A13F5E001EBC22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2498,6 +2542,7 @@
 		0A9BCAB418A13E4C00AC8F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2518,6 +2563,7 @@
 		0A9BCAB518A13E4C00AC8F34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2538,6 +2584,7 @@
 		0A9BCB1F18A13E5400AC8F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
@@ -2558,6 +2605,7 @@
 		0A9BCB2018A13E5400AC8F34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Benchmark Holdings Limited (2ZM29529FR)";
